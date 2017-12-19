@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Tue Dec 19 16:14:59 2017
+# Process ID: 5476
+# Current directory: C:/Users/NTHUCS/Desktop/Good_Game/Good_Game
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6108 C:\Users\NTHUCS\Desktop\Good_Game\Good_Game\Good_Game.xpr
+# Log file: C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/vivado.log
+# Journal file: C:/Users/NTHUCS/Desktop/Good_Game/Good_Game\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/NTHUCS/Desktop/Good_Game' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files', nor could it be found using path 'C:/Users/NTHUCS/Desktop/Good_Game/Good_Game.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 763.488 ; gain = 39.117
+file mkdir C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new
+close [ open C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/top.v w ]
+add_files C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/top.v
