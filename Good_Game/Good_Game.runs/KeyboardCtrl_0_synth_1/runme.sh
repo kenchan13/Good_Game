@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.runs/KeyboardCtrl_0_synth_1'
+HD_PWD='C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/KeyboardCtrl_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

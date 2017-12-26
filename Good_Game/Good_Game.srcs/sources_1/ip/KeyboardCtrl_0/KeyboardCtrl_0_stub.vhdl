@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
 -- Date        : Tue Dec 19 16:30:23 2017
 -- Host        : pc-37 running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top KeyboardCtrl_0 -prefix
+--               KeyboardCtrl_0_ KeyboardCtrl_0_stub.vhdl
 -- Design      : KeyboardCtrl_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a35tcpg236-1
