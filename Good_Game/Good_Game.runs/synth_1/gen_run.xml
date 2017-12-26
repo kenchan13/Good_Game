@@ -10,8 +10,10 @@
   <File Type="VDS-TIMING-PB" Name="top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../../KeyboardSampleCode/KeyboardDecoder.v">
+    <File Path="$PSRCDIR/sources_1/imports/KeyboardSampleCode/KeyboardDecoder.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../KeyboardSampleCode/KeyboardDecoder.v"/>
+        <Attr Name="ImportTime" Val="1514245762"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
