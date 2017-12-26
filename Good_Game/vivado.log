@@ -51,3 +51,7 @@ Run output will be captured here: C:/Users/user/Desktop/Good_Game/Good_Game/Good
 launch_runs impl_1 -to_step write_bitstream -jobs 4
 [Tue Dec 26 08:01:02 2017] Launched impl_1...
 Run output will be captured here: C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/runme.log
+import_files -norecurse C:/Users/user/Desktop/KeyboardSampleCode/KeyboardDecoder.v
+add_files -norecurse -scan_for_includes C:/Users/user/Desktop/KeyboardSampleCode/KeyboardDecoder.v
+import_files -force -norecurse C:/Users/user/Desktop/KeyboardSampleCode/KeyboardDecoder.v
+update_compile_order -fileset sources_1

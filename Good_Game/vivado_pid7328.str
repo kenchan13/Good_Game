@@ -463,3 +463,337 @@ dismissDialog("Add Sources"); // bs:g (c:g)
 // TclEventType: DG_GRAPH_GENERATED
 // TclEventType: FILE_SET_CHANGE
 // Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 27 seconds
+selectCodeEditor("top.v", 177, 302); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 183, 233); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 180 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), key_de : KeyboardDecoder (KeyboardDecoder.v)]", 6); // B:i (D:JPanel, cg:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), key_de : KeyboardDecoder (KeyboardDecoder.v)]", 6); // B:i (D:JPanel, cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_FILE, "Open File..."); // ac:JMenuItem (JPopupMenu:JComponent, cg:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_FILE
+setFileChooser("C:/Users/user/Desktop/KeyboardSampleCode/SampleDisplay.v");
+// 'e' command handler elapsed time: 5 seconds
+// Elapsed time: 39 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // A:b
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 25 seconds
+selectCodeEditor("top.v", 113, 238); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 207, 305); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 127, 260); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 196, 288); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 224, 300); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 195, 291); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 182, 351); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 191, 355); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 252, 262); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 252, 262); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 263, 280); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 165, 332); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 323, 336); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 168, 329); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 166, 387); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 359, 390); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("top.v", 234, 232); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 29 seconds
+selectCodeEditor("top.v", 139, 240); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 186, 237); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 119 MB (+277kb) [00:40:05]
+// Elapsed time: 114 seconds
+selectCodeEditor("top.v", 133, 256); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("top.v", 179, 279); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 194, 340); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("top.v", 198, 308); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 70, 333); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 59 seconds
+selectCodeEditor("top.v", 205, 243); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("top.v", 127, 142); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("top.v", 146, 261); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 130, 254); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("top.v", 139, 143); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 132, 332); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("top.v", 183, 324); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 213, 334); // bI:J (JPanel:JComponent, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 696 MB. GUI used memory: 57 MB. Current time: 12/26/17 8:31:01 AM CST
+// Elapsed time: 24 seconds
+selectCodeEditor("top.v", 192, 394); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("top.v", 529, 328); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 539, 311); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 115 seconds
+selectCodeEditor("top.v", 199, 371); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 76 seconds
+selectCodeEditor("top.v", 281, 208); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 304, 215); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("top.v", 79, 107); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 207, 300); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("top.v", 153, 299); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 95, 214); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 218, 336); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 247, 312); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 287, 409); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 332, 354); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 287, 387); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 302, 374); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 255, 292); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 168, 173); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 168, 290); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 180, 331); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 144, 337); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 149, 326); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 169, 235); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 168, 329); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 223, 328); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 355, 301); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 238, 402); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 218, 199); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 225, 372); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 192, 387); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 223, 262); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 161, 382); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 312, 235); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 185, 290); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 250, 276); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 531, 151); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 524, 153); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 533, 161); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 538, 402); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 527, 390); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 531, 392, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("top.v", 522, 392); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 532, 392); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 338, 140); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 376, 364); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 353, 135); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 372, 368); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 344, 382); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 176, 348); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 544, 356); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 78, 337); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 88, 314); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 124, 336); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 348, 331); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 522, 349); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 175, 349); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 48 seconds
+selectCodeEditor("top.v", 97, 171); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 90, 197); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 11, 315); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 256, 177); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 63, 150); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 245, 172); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 132, 341); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 209, 386); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 233, 326); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 15, 408); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 313 seconds
+selectCodeEditor("top.v", 171, 353); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 63 seconds
+selectCodeEditor("top.v", 216, 135); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 28 seconds
+selectCodeEditor("top.v", 160, 303); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("top.v", 232, 333); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 26 seconds
+selectCodeEditor("top.v", 230, 328); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 113 seconds
+selectCodeEditor("top.v", 205, 395); // bI:J (JPanel:JComponent, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 696 MB. GUI used memory: 55 MB. Current time: 12/26/17 9:01:01 AM CST
+// Elapsed time: 1368 seconds
+selectCodeEditor("top.v", 694, 326); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("top.v", 120, 311); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 199, 180); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 151, 85); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 152, 102); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 155, 119); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 151, 141); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 145, 155); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 133, 87); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 59, 349); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 58 seconds
+selectCodeEditor("top.v", 131, 258); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 204, 253); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("top.v", 255, 274); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 130, 185); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 58, 249); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 138, 284); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 143, 287); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("top.v", 218, 336); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 68 seconds
+selectCodeEditor("top.v", 67, 334); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 200, 278); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 192, 270); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 207, 281); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 75, 161); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 19 seconds
+selectCodeEditor("top.v", 196, 208); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 180, 215); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 514, 321); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 246, 203); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 251, 224); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("top.v", 237, 186); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 225, 151); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("top.v", 182, 218); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("top.v", 240, 101); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 242, 106); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 155, 220); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("top.v", 243, 106); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 434, 117); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 252, 105); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 194, 208); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 167, 199); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 154, 198); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 141, 205); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 145, 202, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("top.v", 246, 384); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 41 seconds
+selectCodeEditor("top.v", 199, 140); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 122, 220); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 112, 239); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "top.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 165, 238); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 33 seconds
+selectCodeEditor("top.v", 230, 390); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 38 seconds
+selectCodeEditor("top.v", 234, 386); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 207, 346); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 44 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 106 seconds
+selectCodeEditor("top.v", 394, 280); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 365, 328); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 28 seconds
+selectCodeEditor("top.v", 247, 290); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 88, 269); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 85 seconds
+selectCodeEditor("top.v", 122, 324); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 125, 311); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 62 seconds
+selectCodeEditor("top.v", 78, 407); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 56, 298); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("top.v", 100, 301); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BCD_counter (BCD_counter.v)]", 13, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BCD_counter (BCD_counter.v)]", 13, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("top.v", 47, 335); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 160, 390); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCD_counter.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCD_counter.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("top.v", 23, 332); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 407, 287); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("top.v", 97, 369); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 54 seconds
+selectCodeEditor("top.v", 454, 272); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 183, 110); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 317, 88); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
