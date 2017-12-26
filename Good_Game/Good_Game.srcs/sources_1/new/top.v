@@ -17,8 +17,8 @@ module top(
     parameter INIT = 6'b000001;
     parameter RANDOM = 6'b000010;
     parameter PLAY = 6'b000100;
-    parameter CHECK = 6'b001000;
-    parameter MOVE = 6'b010000;
+    parameter MOVE = 6'b001000;
+    parameter CHECK = 6'b010000;
     parameter WIN = 6'b100000;
     
     parameter [8:0] W_CODES = 9'h1D;
@@ -27,9 +27,10 @@ module top(
     parameter [8:0] D_CODES = 9'h23;
     parameter [8:0] ENTER_CODES = 9'h5A;
     
-    wire clk_16, clk_25;
-    clock_divider #(16) _clk_16(clk, clk_16);
-    clock_divider #(25) _clk_25(clk, clk_25);
+    wire clk_13, clk_16, clk_25;
+    clock_divider #(.n(13)) _clk_13(clk, clk_13);
+    clock_divider #(.n(16)) _clk_16(clk, clk_16);
+    clock_divider #(.n(25)) _clk_25(clk, clk_25);
     wire rst_db;
     debouncer _rst_db(rst, clk_16, rst_db);
     wire rst_1p;
@@ -51,20 +52,24 @@ module top(
     reg [13:0] steps, n_steps;
     wire cmd_move = up || left || down || right;
     
-    reg [15:0] blank, n_blank;
-    reg valid, n_valid;
+    reg [59:0] gamepad, n_gamepad;
+    reg [3:0] blank, n_blank;
+    
+    //reg [15:0] FSM_sim, nFSM_sim;
     
     always@(posedge clk_16 or posedge rst_1p)begin
         if(rst_1p)begin
             curr_state <= INIT;
             steps <= 14'd0;
-            blank <= 16'b1000_0000_0000_0000;
-            valid <= 1'b1;
+            blank <= 4'd15;
+            gamepad <= {4'd8, 4'd4, 4'd2, 4'd9, 4'd12, 4'd6, 4'd11, 4'd5, 4'd10, 4'd13, 4'd14, 4'd15, 4'd7, 4'd3, 4'd1, 4'd0};
+            //FSM_sim <= 16'd0;
         end else begin
             curr_state <= next_state;
             steps <= n_steps;
             blank <= n_blank;
-            valid <= n_valid;
+            gamepad <= n_gamepad;
+            //FSM_sim <= nFSM_sim;
         end    
     end
     
@@ -74,84 +79,91 @@ module top(
                 next_state = RANDOM;
                 n_steps = 14'd0;
                 n_blank = blank;
-                n_valid = 1'b0;
+                n_gamepad = gamepad;
+                //nFSM_sim = 16'd0;
             end
             RANDOM:begin
                 if(start) next_state = PLAY;
                 else next_state = RANDOM;
                 n_steps = 14'd0;
                 n_blank = blank;
-                n_valid = 1'b0;
+                n_gamepad = {gamepad[55:4], gamepad[59:56], gamepad[3:0]};
+                //nFSM_sim = 16'd1;
             end
             PLAY:begin
-                if(cmd_move) next_state = CHECK;
+                if(cmd_move) next_state = MOVE;
                 else next_state = PLAY;
                 n_steps = steps;
                 n_blank = blank;
-                n_valid = 1'b0;
+                n_gamepad = gamepad;
+                //nFSM_sim = 16'd2;
             end
-            CHECK:begin
+            MOVE:begin
                 if(last_change==W_CODES)begin // UP
-                    if(blank[0] || blank[1] || blank[2] || blank[3])begin 
+                    if(blank==4'd12 || blank==4'd13 || blank==4'd14 || blank==4'd15)begin // 12 13 14 15 are invalid for moving upward
                         next_state = PLAY;
                         n_steps = steps;
                         n_blank = blank;
-                        n_valid = 1'b0;
+                        n_gamepad = gamepad;
                     end else begin
-                        next_state = MOVE;
+                        next_state = CHECK;
                         n_steps = steps;
-                        n_blank = {4'b0000, blank[15:4]};
-                        n_valid = 1'b1;
+                        n_blank = blank - 4'd4;
+                        n_gamepad[59-blank*4'd4 -: 4] = gamepad[59-(blank+4'd4)*4'd4 -: 4]; // shard moved upward
+                        n_gamepad[59-(blank+4'd4)*4'd4 -: 4] = gamepad[59-blank*4'd4 -: 4]; // blank move downward
+                        //latch
                     end
                 end else if(last_change==A_CODES)begin // LEFT
-                    if(blank[0] || blank[4] || blank[8] || blank[12])begin
+                    if(blank==4'd3 || blank==4'd7 || blank==4'd11 || blank==4'd15)begin // 3 7 11 15
                         next_state = PLAY;
                         n_steps = steps;
                         n_blank = blank;
-                        n_valid = 1'b0;
+                        n_gamepad = gamepad;
                     end else begin
-                        next_state = MOVE;
+                        next_state = CHECK;
                         n_steps = steps;
-                        n_blank = blank >> 1;
-                        n_valid = 1'b1;
+                        n_blank = blank - 4'd1;
+                        n_gamepad = gamepad;
                     end 
                 end else if(last_change==S_CODES)begin // DOWN
-                    if(blank[12] || blank[13] || blank[14] || blank[15])begin
+                    if(blank==4'd0 || blank==4'd1 || blank==4'd2 || blank==4'd3)begin
                         next_state = PLAY;
                         n_steps = steps;
-                        n_blank = {blank[11:0], 4'b0000};
-                        n_valid = 1'b0;
-                    end else begin
-                        next_state = MOVE;
-                        n_steps = steps;
                         n_blank = blank;
-                        n_valid = 1'b1;
+                        n_gamepad = gamepad;
+                    end else begin
+                        next_state = CHECK;
+                        n_steps = steps;
+                        n_blank = blank + 4'd4;
+                        n_gamepad = gamepad;
                     end
                 end else if(last_change==D_CODES)begin // RIGHT
-                    if(blank[3] || blank[7] || blank[11] || blank[15])begin
+                    if(blank==4'd0 || blank==4'd4 || blank==4'd8 || blank==4'd12)begin
                         next_state = PLAY;
                         n_steps = steps;
                         n_blank = blank;
-                        n_valid = 1'b0;
+                        n_gamepad = gamepad;
                     end else begin
-                        next_state = MOVE;
+                        next_state = CHECK;
                         n_steps = steps;
-                        n_blank = blank << 1;
-                        n_valid = 1'b1;
+                        n_blank = blank + 4'd1;
+                        n_gamepad = gamepad;
                     end              
                 end else begin
                     next_state = PLAY;
                     n_steps = steps;
                     n_blank = blank;
-                    n_valid = 1'b0;              
+                    n_gamepad = gamepad;           
                 end
+                //nFSM_sim = 16'd3;
             end
-            MOVE:begin
+            CHECK:begin // check if player win
                 next_state = PLAY;
                 if(steps<14'd9999) n_steps = steps + 14'd1;
                 else n_steps = 14'd0; // Who would play over 10000 moves tho
                 n_blank = blank;
-                n_valid = 1'b0;
+                n_gamepad = gamepad;
+                //nFSM_sim = 16'd4;
             end
             WIN:begin
                 
@@ -160,20 +172,19 @@ module top(
             default:begin
                 next_state = INIT;
                 n_steps = 14'd0;
-                n_blank = 16'b1000_0000_0000_0000;
+                n_blank = 16'b0000_0000_0000_0001;
+                n_gamepad = gamepad;
+                //nFSM_sim = 16'd0;
             end
         endcase
     end
     
-    wire s1000 = (steps / 1000) % 10;
-    wire s100 = (steps / 100) % 10;
-    wire s10 = (steps / 10) % 10;
-    wire s1 = steps % 10;
-    SevenSegment _display(DISPLAY, DIGIT,,rst_1p, clk_16);
-        /*output reg [6:0] display,
-        output reg [3:0] digit,
-        input wire [15:0] nums,
-        input wire rst,
-        input wire clk*/
+    wire [3:0] s1000 = (steps / 1000) % 10;
+    wire [3:0] s100 = (steps / 100) % 10;
+    wire [3:0] s10 = (steps / 10) % 10;
+    wire [3:0] s1 = steps % 10;
+    wire [15:0] nums = {s1000, s100, s10, s1};
+    SevenSegment _display(DISPLAY, DIGIT, nums, rst_1p, clk_16);
+    //SevenSegment _test(DISPLAY, DIGIT, FSM_sim, rst_1p, clk);
     
 endmodule
