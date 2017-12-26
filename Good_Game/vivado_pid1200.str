@@ -1670,3 +1670,10 @@ selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B:Jide
 selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B:JideButton (f:CommandBar, cg:JFrame)
 // Elapsed time: 13 seconds
 selectCodeEditor("top.v", 687, 277); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 38 seconds
+selectCodeEditor("top.v", 676, 50); // bI:J (JPanel:JComponent, cg:JFrame)
