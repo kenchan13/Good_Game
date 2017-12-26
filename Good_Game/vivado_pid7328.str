@@ -403,3 +403,5 @@ selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v",
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
 // [GUI Memory]: 107 MB (+575kb) [00:15:35]
+// Elapsed time: 77 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Constraints.xdc", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
