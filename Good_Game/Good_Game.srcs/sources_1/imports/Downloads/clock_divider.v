@@ -21,7 +21,7 @@
 
 
 module clock_divider(clk, clk_div);
-    parameter n = 25;
+    parameter n = 13;
     input clk;
     output clk_div;
     reg [n-1:0] curr_num;

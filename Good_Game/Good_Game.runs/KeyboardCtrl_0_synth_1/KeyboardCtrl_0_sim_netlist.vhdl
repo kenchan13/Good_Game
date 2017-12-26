@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
--- Date        : Tue Dec 26 16:05:36 2017
+-- Date        : Tue Dec 26 16:05:35 2017
 -- Host        : pc-37 running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
+--               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ KeyboardCtrl_0_sim_netlist.vhdl
 -- Design      : KeyboardCtrl_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -14,7 +14,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity KeyboardCtrl_0_Ps2Interface is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Ps2Interface is
   port (
     rx_valid : out STD_LOGIC;
     err : out STD_LOGIC;
@@ -34,11 +34,9 @@ entity KeyboardCtrl_0_Ps2Interface is
     \tx_data_reg[2]\ : in STD_LOGIC;
     \tx_data_reg[7]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of KeyboardCtrl_0_Ps2Interface : entity is "Ps2Interface";
-end KeyboardCtrl_0_Ps2Interface;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Ps2Interface;
 
-architecture STRUCTURE of KeyboardCtrl_0_Ps2Interface is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Ps2Interface is
   signal \FSM_onehot_state[0]_i_1_n_0\ : STD_LOGIC;
   signal \FSM_onehot_state[0]_i_2_n_0\ : STD_LOGIC;
   signal \FSM_onehot_state[0]_i_3_n_0\ : STD_LOGIC;
@@ -2679,7 +2677,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity KeyboardCtrl_0_KeyboardCtrl is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_KeyboardCtrl is
   port (
     err : out STD_LOGIC;
     key_in : out STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -2691,11 +2689,9 @@ entity KeyboardCtrl_0_KeyboardCtrl is
     clk : in STD_LOGIC;
     rst : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of KeyboardCtrl_0_KeyboardCtrl : entity is "KeyboardCtrl";
-end KeyboardCtrl_0_KeyboardCtrl;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_KeyboardCtrl;
 
-architecture STRUCTURE of KeyboardCtrl_0_KeyboardCtrl is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_KeyboardCtrl is
   signal Ps2Interface_i_n_11 : STD_LOGIC;
   signal Ps2Interface_i_n_12 : STD_LOGIC;
   signal Ps2Interface_i_n_13 : STD_LOGIC;
@@ -2744,7 +2740,7 @@ begin
       D => Ps2Interface_i_n_11,
       Q => state(2)
     );
-Ps2Interface_i: entity work.KeyboardCtrl_0_Ps2Interface
+Ps2Interface_i: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Ps2Interface
      port map (
       D(2) => Ps2Interface_i_n_11,
       D(1) => Ps2Interface_i_n_12,
@@ -2905,7 +2901,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity KeyboardCtrl_0 is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   port (
     key_in : out STD_LOGIC_VECTOR ( 7 downto 0 );
     is_extend : out STD_LOGIC;
@@ -2918,18 +2914,18 @@ entity KeyboardCtrl_0 is
     clk : in STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
-  attribute NotValidForBitStream of KeyboardCtrl_0 : entity is true;
+  attribute NotValidForBitStream of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of KeyboardCtrl_0 : entity is "KeyboardCtrl_0,KeyboardCtrl,{}";
+  attribute CHECK_LICENSE_TYPE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is "KeyboardCtrl_0,KeyboardCtrl,{}";
   attribute DowngradeIPIdentifiedWarnings : string;
-  attribute DowngradeIPIdentifiedWarnings of KeyboardCtrl_0 : entity is "yes";
+  attribute DowngradeIPIdentifiedWarnings of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is "yes";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of KeyboardCtrl_0 : entity is "KeyboardCtrl,Vivado 2017.2";
-end KeyboardCtrl_0;
+  attribute X_CORE_INFO of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is "KeyboardCtrl,Vivado 2017.2";
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix;
 
-architecture STRUCTURE of KeyboardCtrl_0 is
+architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
 begin
-inst: entity work.KeyboardCtrl_0_KeyboardCtrl
+inst: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_KeyboardCtrl
      port map (
       PS2_CLK => PS2_CLK,
       PS2_DATA => PS2_DATA,

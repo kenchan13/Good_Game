@@ -1,0 +1,70 @@
+/*
+
+Vivado v2017.2 (64-bit)
+SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+
+Process ID: 5060
+License: Customer
+
+Current time: 	12/26/17 3:50:36 PM CST
+Time zone: 	China Standard Time (Asia/Taipei)
+
+OS: Windows 7
+OS Version: 6.1
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 178 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/java.exe
+Java library paths: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o;C:/Windows/Sun/Java/bin;C:/Windows/system32;C:/Windows;C:/Xilinx/Vivado/2017.2/bin;C:/Xilinx/Vivado/2017.2/lib/win64.o;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/server;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado_HLS/2017.2/bin;C:/ProgramData/Oracle/Java/javapath;C:/Windows/system32;C:/Windows;C:/Windows/System32/Wbem;C:/Windows/System32/WindowsPowerShell/v1.0/;C:/Program Files/MATLAB/R2016a/runtime/win64;C:/Program Files/MATLAB/R2016a/bin;C:/Program Files/Microsoft SQL Server/130/Tools/Binn/;C:/Program Files/Git/cmd;C:/Program Files/nodejs/;C:/Program Files (x86)/GtkSharp/2.12/bin;C:/Program Files (x86)/Yarn/bin;C:/Users/NTHUCS/AppData/Local/Programs/Python/Python35/Scripts/;C:/Users/NTHUCS/AppData/Local/Programs/Python/Python35/;C:/Users/NTHUCS/AppData/Roaming/npm;C:/Program Files (x86)/Microsoft VS Code/bin;C:/Users/NTHUCS/AppData/Local/Yarn/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/libexec/gcc/x86_64-w64-mingw32/6.2.0;.
+
+User name: 	NTHUCS
+User home directory: C:/Users/NTHUCS
+User working directory: C:/Users/NTHUCS/Desktop/Good_Game/Good_Game
+User country: 	TW
+User language: 	zh
+User locale: 	zh_TW
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.2
+RDI_DATADIR: C:/Xilinx/Vivado/2017.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.2/bin
+
+User preferences location: C:/Users/NTHUCS/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/NTHUCS/AppData/Roaming/Xilinx/Vivado/2017.2/vivado.xml
+Vivado layouts directory: C:/Users/NTHUCS/AppData/Roaming/Xilinx/Vivado/2017.2/layouts
+PlanAhead jar location: 	C:/Xilinx/Vivado/2017.2/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/.Xil/Vivado-5060-pc-37
+
+GUI allocated memory:	131 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 462 MB
+
+*/
+
+// [GUI Memory]: 37 MB (+35920kb) [00:00:05]
+// [Engine Memory]: 305 MB (+168720kb) [00:00:05]
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 43 MB (+4814kb) [00:00:40]
+// [Engine Memory]: 435 MB (+120381kb) [00:00:40]
+// bs:g (cg:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\NTHUCS\Desktop\Good_Game\Good_Game\Good_Game.xpr. Version: Vivado v2017.2 
+// HMemoryUtils.trashcanNow. Engine heap size: 462 MB. GUI used memory: 31 MB. Current time: 12/26/17 3:50:37 PM CST
+// Tcl Message: open_project C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.xpr 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [Engine Memory]: 462 MB (+4606kb) [00:00:46]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT

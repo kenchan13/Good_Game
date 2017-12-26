@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-// Date        : Tue Dec 26 16:05:36 2017
+// Date        : Tue Dec 26 16:05:35 2017
 // Host        : pc-37 running 64-bit Service Pack 1  (build 7601)
-// Command     : write_verilog -force -mode funcsim
-//               C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
+//               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ KeyboardCtrl_0_sim_netlist.v
 // Design      : KeyboardCtrl_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,52 +12,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "KeyboardCtrl_0,KeyboardCtrl,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "KeyboardCtrl,Vivado 2017.2" *) 
-(* NotValidForBitStream *)
-module KeyboardCtrl_0
-   (key_in,
-    is_extend,
-    is_break,
-    valid,
-    err,
-    PS2_DATA,
-    PS2_CLK,
-    rst,
-    clk);
-  output [7:0]key_in;
-  output is_extend;
-  output is_break;
-  output valid;
-  output err;
-  inout PS2_DATA;
-  inout PS2_CLK;
-  input rst;
-  input clk;
-
-  (* DRIVE = "12" *) (* IBUF_LOW_PWR *) (* SLEW = "SLOW" *) wire PS2_CLK;
-  (* DRIVE = "12" *) (* IBUF_LOW_PWR *) (* SLEW = "SLOW" *) wire PS2_DATA;
-  wire clk;
-  wire err;
-  wire is_break;
-  wire is_extend;
-  wire [7:0]key_in;
-  wire rst;
-  wire valid;
-
-  KeyboardCtrl_0_KeyboardCtrl inst
-       (.PS2_CLK(PS2_CLK),
-        .PS2_DATA(PS2_DATA),
-        .clk(clk),
-        .err(err),
-        .is_break(is_break),
-        .is_extend(is_extend),
-        .key_in(key_in),
-        .rst(rst),
-        .valid(valid));
-endmodule
-
-(* ORIG_REF_NAME = "KeyboardCtrl" *) 
-module KeyboardCtrl_0_KeyboardCtrl
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_KeyboardCtrl
    (err,
     key_in,
     is_break,
@@ -123,7 +78,7 @@ module KeyboardCtrl_0_KeyboardCtrl
         .CLR(rst),
         .D(Ps2Interface_i_n_11),
         .Q(state[2]));
-  KeyboardCtrl_0_Ps2Interface Ps2Interface_i
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Ps2Interface Ps2Interface_i
        (.D({Ps2Interface_i_n_11,Ps2Interface_i_n_12,Ps2Interface_i_n_13}),
         .PS2_CLK(PS2_CLK),
         .PS2_DATA(PS2_DATA),
@@ -243,8 +198,51 @@ module KeyboardCtrl_0_KeyboardCtrl
         .Q(valid));
 endmodule
 
-(* ORIG_REF_NAME = "Ps2Interface" *) 
-module KeyboardCtrl_0_Ps2Interface
+(* CHECK_LICENSE_TYPE = "KeyboardCtrl_0,KeyboardCtrl,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "KeyboardCtrl,Vivado 2017.2" *) 
+(* NotValidForBitStream *)
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
+   (key_in,
+    is_extend,
+    is_break,
+    valid,
+    err,
+    PS2_DATA,
+    PS2_CLK,
+    rst,
+    clk);
+  output [7:0]key_in;
+  output is_extend;
+  output is_break;
+  output valid;
+  output err;
+  inout PS2_DATA;
+  inout PS2_CLK;
+  input rst;
+  input clk;
+
+  (* DRIVE = "12" *) (* IBUF_LOW_PWR *) (* SLEW = "SLOW" *) wire PS2_CLK;
+  (* DRIVE = "12" *) (* IBUF_LOW_PWR *) (* SLEW = "SLOW" *) wire PS2_DATA;
+  wire clk;
+  wire err;
+  wire is_break;
+  wire is_extend;
+  wire [7:0]key_in;
+  wire rst;
+  wire valid;
+
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_KeyboardCtrl inst
+       (.PS2_CLK(PS2_CLK),
+        .PS2_DATA(PS2_DATA),
+        .clk(clk),
+        .err(err),
+        .is_break(is_break),
+        .is_extend(is_extend),
+        .key_in(key_in),
+        .rst(rst),
+        .valid(valid));
+endmodule
+
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Ps2Interface
    (rx_valid,
     err,
     is_extend_reg,
