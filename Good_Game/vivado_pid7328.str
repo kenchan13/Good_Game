@@ -405,3 +405,61 @@ selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v",
 // [GUI Memory]: 107 MB (+575kb) [00:15:35]
 // Elapsed time: 77 seconds
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Constraints.xdc", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 720 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("top.v", 112, 392); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 61, 336); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 133, 389); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("top.v", 245, 326); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 77 seconds
+selectCodeEditor("top.v", 220, 346); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 29 seconds
+selectCodeEditor("top.v", 169, 364); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("top.v", 129, 305); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 65 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c:g (cg:JFrame): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a:JRadioButton (JPanel:JComponent, c:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, c:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (C:JPanel, c:g)
+// Elapsed time: 35 seconds
+setFileChooser("C:/Users/user/Desktop/KeyboardSampleCode/KeyboardDecoder.v");
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, c:g)
+// 'h' command handler elapsed time: 39 seconds
+dismissDialog("Add Sources"); // c:g (cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse C:/Users/user/Desktop/KeyboardSampleCode/KeyboardDecoder.v 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c:g (cg:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, c:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (C:JPanel, c:g)
+setFileChooser("C:/Users/user/Desktop/KeyboardSampleCode/KeyboardDecoder.v");
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_SCAN_AND_ADD_RTL_INCLUDE_FILES_INTO, "Scan and add RTL include files into project", true); // g:JCheckBox (JPanel:JComponent, c:g): TRUE
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, c:g)
+// 'h' command handler elapsed time: 7 seconds
+dismissDialog("Add Sources"); // c:g (cg:JFrame)
+// c:g (cg:JFrame): Add Sources: addNotify
+// bG:g (c:g): Import Source Conflicts: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, bG:g)
+// [GUI Memory]: 113 MB (+119kb) [00:32:13]
+dismissDialog("Import Source Conflicts"); // bG:g (c:g)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// bs:g (c:g):  Add Sources  : addNotify
+// Tcl Message: add_files -norecurse -scan_for_includes C:/Users/user/Desktop/KeyboardSampleCode/KeyboardDecoder.v 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -force -norecurse C:/Users/user/Desktop/KeyboardSampleCode/KeyboardDecoder.v 
+dismissDialog("Add Sources"); // bs:g (c:g)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
