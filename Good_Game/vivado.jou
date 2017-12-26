@@ -2,30 +2,13 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Tue Dec 19 16:14:59 2017
-# Process ID: 5476
-# Current directory: C:/Users/NTHUCS/Desktop/Good_Game/Good_Game
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6108 C:\Users\NTHUCS\Desktop\Good_Game\Good_Game\Good_Game.xpr
-# Log file: C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/vivado.log
-# Journal file: C:/Users/NTHUCS/Desktop/Good_Game/Good_Game\vivado.jou
+# Start of session at: Tue Dec 26 07:47:30 2017
+# Process ID: 7328
+# Current directory: C:/Users/user/Desktop/Good_Game/Good_Game
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2248 C:\Users\user\Desktop\Good_Game\Good_Game\Good_Game.xpr
+# Log file: C:/Users/user/Desktop/Good_Game/Good_Game/vivado.log
+# Journal file: C:/Users/user/Desktop/Good_Game/Good_Game\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.xpr
-file mkdir C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new
-close [ open C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/top.v w ]
-add_files C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/top.v
+open_project C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.xpr
 update_compile_order -fileset sources_1
-add_files -norecurse {C:/Users/NTHUCS/Desktop/KeyboardSampleCode/SampleDisplay.v C:/Users/NTHUCS/Desktop/KeyboardSampleCode/OnePulse.v C:/Users/NTHUCS/Desktop/KeyboardSampleCode/KeyboardDecoder.v C:/Users/NTHUCS/Desktop/KeyboardSampleCode/SevenSegment.v}
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-remove_files  C:/Users/NTHUCS/Desktop/KeyboardSampleCode/SampleDisplay.v
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-set_property  ip_repo_paths  C:/Users/NTHUCS/Desktop/KeyboardSampleCode/ip [current_project]
-update_ip_catalog
-create_ip -name KeyboardCtrl -vendor xilinx.com -library user -version 1.0 -module_name KeyboardCtrl_0 -dir c:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip
-generate_target {instantiation_template} [get_files c:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.xci]
-generate_target all [get_files  c:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.xci]
-export_ip_user_files -of_objects [get_files c:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.xci]
-launch_runs -jobs 2 KeyboardCtrl_0_synth_1

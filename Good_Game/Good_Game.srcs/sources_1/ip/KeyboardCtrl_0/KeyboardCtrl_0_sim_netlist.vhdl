@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
 -- Date        : Tue Dec 19 16:30:23 2017
 -- Host        : pc-37 running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top KeyboardCtrl_0 -prefix
+--               KeyboardCtrl_0_ KeyboardCtrl_0_sim_netlist.vhdl
 -- Design      : KeyboardCtrl_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -34,8 +34,6 @@ entity KeyboardCtrl_0_Ps2Interface is
     \tx_data_reg[2]\ : in STD_LOGIC;
     \tx_data_reg[7]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of KeyboardCtrl_0_Ps2Interface : entity is "Ps2Interface";
 end KeyboardCtrl_0_Ps2Interface;
 
 architecture STRUCTURE of KeyboardCtrl_0_Ps2Interface is
@@ -2691,8 +2689,6 @@ entity KeyboardCtrl_0_KeyboardCtrl is
     clk : in STD_LOGIC;
     rst : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of KeyboardCtrl_0_KeyboardCtrl : entity is "KeyboardCtrl";
 end KeyboardCtrl_0_KeyboardCtrl;
 
 architecture STRUCTURE of KeyboardCtrl_0_KeyboardCtrl is

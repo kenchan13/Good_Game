@@ -3,7 +3,7 @@
 module top(
     input clk,
     input rst, //BTNC
-    input difficulty, //sw[0]
+    //input difficulty, //sw[0]
     inout PS2_CLK,
     inout PS2_DATA,
     output [3:0] DIGIT,
@@ -15,7 +15,7 @@ module top(
     output vsync
     );
     parameter INIT = 6'b000001;
-    parameter IDLE = 6'b000010;
+    parameter PLAY = 6'b000010;
     parameter CHECK = 6'b000100;
     parameter MOVE = 6'b001000;
     parameter WIN = 6'b010000;
@@ -25,6 +25,7 @@ module top(
     parameter [8:0] A_CODES = 9'h1C;
     parameter [8:0] S_CODES = 9'h1B;
     parameter [8:0] D_CODES = 9'h23;
+    parameter [8:0] ENTER_CODES = 9'h5A;
     
     wire clk_16, clk_25;
     clock_divider #(16) _clk_16(clk, clk_16);
@@ -38,20 +39,23 @@ module top(
     wire [8:0] last_change;
     wire been_ready;
     KeyboardDecoder key_de(key_down, last_change, been_ready, PS2_DATA, PS2_CLK, rst, clk);
-    wire up, left, down, right;
+    wire up, left, down, right, start;
     OnePulse _up(up, key_down[W_CODES], clk_16);
     OnePulse _left(left, key_down[A_CODES], clk_16);
     OnePulse _down(down, key_down[S_CODES], clk_16);
     OnePulse _right(right, key_down[D_CODES], clk_16);
+    OnePulse _start(start, key_down[ENTER_CODES], clk_16);
     ////////////////////////////////////////////////////////////////
     
     reg [5:0] curr_state, next_state;
     reg [13:0] steps, n_steps;
     wire cmd_move = up || left || down || right;
     
+    reg [15:0] blank;
+    
     always@(posedge clk_16 or posedge rst_1p)begin
         if(rst_1p)begin
-            curr_state <= IDLE;
+            curr_state <= INIT;
             steps <= 14'd0;
         end else begin
             curr_state <= next_state;
@@ -62,12 +66,13 @@ module top(
     always@(*)begin
         case(curr_state)
             INIT:begin
-        
-        
+                if(start) next_state = PLAY;
+                else next_state = INIT;
+                n_steps = 0;
             end
-            IDLE:begin
+            PLAY:begin
                 if(cmd_move) next_state = CHECK;
-                else next_state = IDLE;
+                else next_state = PLAY;
                 n_steps = steps;
             end
             CHECK:begin
