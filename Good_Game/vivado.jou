@@ -2,121 +2,13 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Tue Dec 26 15:50:00 2017
-# Process ID: 4560
-# Current directory: C:/Users/NTHUCS/Desktop/Good_Game/Good_Game
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3080 C:\Users\NTHUCS\Desktop\Good_Game\Good_Game\Good_Game.xpr
-# Log file: C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/vivado.log
-# Journal file: C:/Users/NTHUCS/Desktop/Good_Game/Good_Game\vivado.jou
+# Start of session at: Thu Dec 28 17:54:43 2017
+# Process ID: 6520
+# Current directory: C:/Users/AquaDragon/Desktop/Good_Game/Good_Game
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14096 C:\Users\AquaDragon\Desktop\Good_Game\Good_Game\Good_Game.xpr
+# Log file: C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/vivado.log
+# Journal file: C:/Users/AquaDragon/Desktop/Good_Game/Good_Game\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.xpr
+open_project C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.xpr
 update_compile_order -fileset sources_1
-file mkdir C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.srcs/sim_1/new
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.srcs/sim_1/new/FSM_sim.v w ]
-add_files -fileset sim_1 C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.srcs/sim_1/new/FSM_sim.v
-update_compile_order -fileset sim_1
-reset_run synth_1
-reset_run KeyboardCtrl_0_synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-remove_files  -fileset sim_1 C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.srcs/sim_1/new/FSM_sim.v
-file delete -force C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.srcs/sim_1/new/FSM_sim.v
-open_hw
-connect_hw_server -url localhost:3121
-current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183711773A]
-set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183711773A]
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-open_hw
-connect_hw_server -url localhost:3121
-current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183711773A]
-set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183711773A]
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-open_hw
-connect_hw_server -url localhost:3121
-current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183711773A]
-set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183711773A]
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-open_hw
-connect_hw_server -url localhost:3121
-current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183711773A]
-set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183711773A]
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw
-open_hw
-connect_hw_server -url localhost:3121
-current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183711773A]
-set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183711773A]
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-reset_run impl_1

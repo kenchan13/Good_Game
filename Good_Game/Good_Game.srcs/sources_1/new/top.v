@@ -3,7 +3,6 @@
 module top(
     input clk,
     input rst, //BTNC
-    //input difficulty, //sw[0]
     inout PS2_CLK,
     inout PS2_DATA,
     output [3:0] DIGIT,
@@ -50,26 +49,42 @@ module top(
     
     reg [5:0] curr_state, next_state;
     reg [13:0] steps, n_steps;
+    reg print_0, n_print_0; // print blank or original part
     wire cmd_move = up || left || down || right;
     
-    reg [59:0] gamepad, n_gamepad;
-    reg [3:0] blank, n_blank;
+    reg [63:0] game_map, n_game_map;
+    /*
+        63:60 59:56 55:52 51:48
+        47:44 43:40 39:36 35:32
+        31:28 27:24 23:20 19:16
+        15:12 11:08 07:04 03:00
+        */  
     
-    //reg [15:0] FSM_sim, nFSM_sim;
+    reg [3:0] blank_pos, n_blank_pos;
+    /*
+        15 14 13 12
+        11 10 09 08
+        07 06 05 04
+        03 02 01 00
+        */    
+    
+    reg finished;
     
     always@(posedge clk_16 or posedge rst_1p)begin
         if(rst_1p)begin
             curr_state <= INIT;
             steps <= 14'd0;
-            blank <= 4'd15;
-            gamepad <= {4'd8, 4'd4, 4'd2, 4'd9, 4'd12, 4'd6, 4'd11, 4'd5, 4'd10, 4'd13, 4'd14, 4'd15, 4'd7, 4'd3, 4'd1, 4'd0};
-            //FSM_sim <= 16'd0;
+            blank_pos <= 4'd0;
+            game_map <= {4'd8, 4'd12, 4'd14, 4'd7, 4'd4, 4'd10, 4'd5, 4'd11, 4'd6, 4'd3, 4'd2, 4'd1, 4'd9, 4'd13, 4'd15, 4'd0};
+            finished <= 1'b0;
+            print_0 <= 1'b0;
         end else begin
             curr_state <= next_state;
             steps <= n_steps;
-            blank <= n_blank;
-            gamepad <= n_gamepad;
-            //FSM_sim <= nFSM_sim;
+            blank_pos <= n_blank_pos;
+            game_map <= n_game_map;
+            finished <= (game_map=={4'd15, 4'd14, 4'd13, 4'd12, 4'd11, 4'd10, 4'd9, 4'd8, 4'd7, 4'd6, 4'd5, 4'd4, 4'd3, 4'd2, 4'd1, 4'd0});
+            print_0 <= n_print_0;
         end    
     end
     
@@ -78,103 +93,179 @@ module top(
             INIT:begin
                 next_state = RANDOM;
                 n_steps = 14'd0;
-                n_blank = blank;
-                n_gamepad = gamepad;
-                //nFSM_sim = 16'd0;
+                n_blank_pos = blank_pos;
+                n_game_map = game_map;
+                n_print_0 = 1'b0;
             end
             RANDOM:begin
                 if(start) next_state = PLAY;
                 else next_state = RANDOM;
                 n_steps = 14'd0;
-                n_blank = blank;
-                n_gamepad = {gamepad[55:4], gamepad[59:56], gamepad[3:0]};
-                //nFSM_sim = 16'd1;
+                n_blank_pos = blank_pos;
+                n_game_map = {game_map[59:4], game_map[63:60], game_map[3:0]};
+                n_print_0 = 1'b0;
             end
             PLAY:begin
                 if(cmd_move) next_state = MOVE;
                 else next_state = PLAY;
                 n_steps = steps;
-                n_blank = blank;
-                n_gamepad = gamepad;
-                //nFSM_sim = 16'd2;
+                n_blank_pos = blank_pos;
+                n_game_map = game_map;
+                n_print_0 = 1'b0;
             end
             MOVE:begin
                 if(last_change==W_CODES)begin // UP
-                    if(blank==4'd12 || blank==4'd13 || blank==4'd14 || blank==4'd15)begin // 12 13 14 15 are invalid for moving upward
+                    if(blank_pos==4'd3 || blank_pos==4'd2 || blank_pos==4'd1 || blank_pos==4'd0)begin // 3 2 1 0 are invalid for moving upward
                         next_state = PLAY;
                         n_steps = steps;
-                        n_blank = blank;
-                        n_gamepad = gamepad;
+                        n_blank_pos = blank_pos;
+                        n_game_map = game_map;
+                        n_print_0 = 1'b0;
                     end else begin
                         next_state = CHECK;
                         n_steps = steps;
-                        n_blank = blank - 4'd4;
-                        n_gamepad[59-blank*4'd4 -: 4] = gamepad[59-(blank+4'd4)*4'd4 -: 4]; // shard moved upward
-                        n_gamepad[59-(blank+4'd4)*4'd4 -: 4] = gamepad[59-blank*4'd4 -: 4]; // blank move downward
-                        //latch
+                        n_blank_pos = blank_pos - 4'd4;
+                        case(blank_pos) // {unchanged(0~44), swapped(4), unchanged(12), swapped(4), unchanged(44~0)}
+                            4'd15: n_game_map = {                 game_map[47:44], game_map[59:48], game_map[63:60], game_map[43:0]};
+                            4'd14: n_game_map = {game_map[63:60], game_map[43:40], game_map[55:44], game_map[59:56], game_map[39:0]};
+                            4'd13: n_game_map = {game_map[63:56], game_map[39:36], game_map[51:40], game_map[55:52], game_map[35:0]};
+                            4'd12: n_game_map = {game_map[63:52], game_map[35:32], game_map[47:36], game_map[51:48], game_map[31:0]};
+                            4'd11: n_game_map = {game_map[63:48], game_map[31:28], game_map[43:32], game_map[47:44], game_map[27:0]};
+                            4'd10: n_game_map = {game_map[63:44], game_map[27:24], game_map[39:28], game_map[43:40], game_map[23:0]};
+                            4'd9:  n_game_map = {game_map[63:40], game_map[23:20], game_map[35:24], game_map[39:36], game_map[19:0]};
+                            4'd8:  n_game_map = {game_map[63:36], game_map[19:16], game_map[31:20], game_map[35:32], game_map[15:0]};
+                            4'd7:  n_game_map = {game_map[63:32], game_map[15:12], game_map[27:16], game_map[31:28], game_map[11:0]};
+                            4'd6:  n_game_map = {game_map[63:28], game_map[11:8] , game_map[23:15], game_map[27:24], game_map[7:0] };
+                            4'd5:  n_game_map = {game_map[63:24], game_map[7:4]  , game_map[19:8] , game_map[23:20], game_map[3:0] };
+                            4'd4:  n_game_map = {game_map[63:20], game_map[3:0]  , game_map[15:4] , game_map[19:16]                };
+                            default: n_game_map = game_map;
+                        endcase
+                        n_print_0 = 1'b0;
                     end
                 end else if(last_change==A_CODES)begin // LEFT
-                    if(blank==4'd3 || blank==4'd7 || blank==4'd11 || blank==4'd15)begin // 3 7 11 15
+                    if(blank_pos==4'd12 || blank_pos==4'd8 || blank_pos==4'd4 || blank_pos==4'd0)begin // 3 7 11 15
                         next_state = PLAY;
                         n_steps = steps;
-                        n_blank = blank;
-                        n_gamepad = gamepad;
+                        n_blank_pos = blank_pos;
+                        n_game_map = game_map;
+                        n_print_0 = 1'b0;
                     end else begin
                         next_state = CHECK;
                         n_steps = steps;
-                        n_blank = blank - 4'd1;
-                        n_gamepad = gamepad;
+                        n_blank_pos = blank_pos - 4'd1;
+                        case(blank_pos) // {unchanged(0~56), swapped(4), swapped(4), unchanged(56~0)}
+                            4'd15: n_game_map = {                 game_map[59:56], game_map[63:60], game_map[55:0]};
+                            4'd14: n_game_map = {game_map[63:60], game_map[55:52], game_map[59:56], game_map[51:0]};
+                            4'd13: n_game_map = {game_map[63:56], game_map[51:48], game_map[55:52], game_map[47:0]};
+                            
+                            4'd11: n_game_map = {game_map[63:48], game_map[43:40], game_map[47:44], game_map[39:0]};
+                            4'd10: n_game_map = {game_map[63:44], game_map[39:36], game_map[43:40], game_map[35:0]};
+                            4'd9:  n_game_map = {game_map[63:40], game_map[35:32], game_map[39:36], game_map[31:0]};
+                            
+                            4'd7:  n_game_map = {game_map[63:32], game_map[27:24], game_map[31:28], game_map[23:0]};
+                            4'd6:  n_game_map = {game_map[63:28], game_map[23:20], game_map[27:24], game_map[19:0]};
+                            4'd5:  n_game_map = {game_map[63:24], game_map[19:16], game_map[23:20], game_map[15:0]};
+                            
+                            4'd3:  n_game_map = {game_map[63:16], game_map[11:8] , game_map[15:12], game_map[7:0] };
+                            4'd2:  n_game_map = {game_map[63:12], game_map[7:4]  , game_map[11:8] , game_map[3:0] };
+                            4'd1:  n_game_map = {game_map[63:8] , game_map[3:0]  , game_map[7:4]                  };
+                            default: n_game_map = game_map;
+                        endcase
+                        n_print_0 = 1'b0;
                     end 
                 end else if(last_change==S_CODES)begin // DOWN
-                    if(blank==4'd0 || blank==4'd1 || blank==4'd2 || blank==4'd3)begin
+                    if(blank_pos==4'd15 || blank_pos==4'd14 || blank_pos==4'd13 || blank_pos==4'd12)begin
                         next_state = PLAY;
                         n_steps = steps;
-                        n_blank = blank;
-                        n_gamepad = gamepad;
+                        n_blank_pos = blank_pos;
+                        n_game_map = game_map;
+                        n_print_0 = 1'b0;
                     end else begin
                         next_state = CHECK;
                         n_steps = steps;
-                        n_blank = blank + 4'd4;
-                        n_gamepad = gamepad;
+                        n_blank_pos = blank_pos + 4'd4;
+                        case(blank_pos) // {unchanged(0~44), swapped(4), unchanged(12), swapped(4), unchanged(44~0)}
+                            4'd11: n_game_map = {                 game_map[47:43], game_map[59:48], game_map[63:60], game_map[43:0]};
+                            4'd10: n_game_map = {game_map[63:60], game_map[43:40], game_map[55:44], game_map[59:56], game_map[39:0]};
+                            4'd9:  n_game_map = {game_map[63:56], game_map[39:36], game_map[51:40], game_map[55:52], game_map[35:0]};
+                            4'd8:  n_game_map = {game_map[63:52], game_map[35:32], game_map[47:36], game_map[51:48], game_map[31:0]};
+                            4'd7:  n_game_map = {game_map[63:48], game_map[31:28], game_map[43:32], game_map[47:44], game_map[27:0]};
+                            4'd6:  n_game_map = {game_map[63:44], game_map[27:24], game_map[39:28], game_map[43:40], game_map[23:0]};
+                            4'd5:  n_game_map = {game_map[63:40], game_map[23:20], game_map[35:24], game_map[39:36], game_map[19:0]};
+                            4'd4:  n_game_map = {game_map[63:36], game_map[19:16], game_map[31:20], game_map[35:32], game_map[15:0]};
+                            4'd3:  n_game_map = {game_map[63:32], game_map[15:12], game_map[27:16], game_map[31:28], game_map[11:0]};
+                            4'd2:  n_game_map = {game_map[63:28], game_map[11:8] , game_map[23:15], game_map[27:24], game_map[7:0] };
+                            4'd1:  n_game_map = {game_map[63:24], game_map[7:4]  , game_map[19:8] , game_map[23:20], game_map[3:0] };
+                            4'd0:  n_game_map = {game_map[63:20], game_map[3:0]  , game_map[15:4] , game_map[19:16]                };
+                            default: n_game_map = game_map;
+                        endcase
+                        n_print_0 = 1'b0;
                     end
                 end else if(last_change==D_CODES)begin // RIGHT
-                    if(blank==4'd0 || blank==4'd4 || blank==4'd8 || blank==4'd12)begin
+                    if(blank_pos==4'd15 || blank_pos==4'd11 || blank_pos==4'd7 || blank_pos==4'd3)begin
                         next_state = PLAY;
                         n_steps = steps;
-                        n_blank = blank;
-                        n_gamepad = gamepad;
+                        n_blank_pos = blank_pos;
+                        n_game_map = game_map;
+                        n_print_0 = 1'b0;
                     end else begin
                         next_state = CHECK;
                         n_steps = steps;
-                        n_blank = blank + 4'd1;
-                        n_gamepad = gamepad;
+                        n_blank_pos = blank_pos + 4'd1;
+                        case(blank_pos) // {unchanged(0~56), swapped(4), swapped(4), unchanged(56~0)}
+                            4'd15: n_game_map = {                 game_map[59:56], game_map[63:60], game_map[55:0]};
+                            4'd14: n_game_map = {game_map[63:60], game_map[55:52], game_map[59:56], game_map[51:0]};
+                            4'd13: n_game_map = {game_map[63:56], game_map[51:48], game_map[55:52], game_map[47:0]};
+                            
+                            4'd11: n_game_map = {game_map[63:48], game_map[43:40], game_map[47:44], game_map[39:0]};
+                            4'd10: n_game_map = {game_map[63:44], game_map[39:36], game_map[43:40], game_map[35:0]};
+                            4'd9:  n_game_map = {game_map[63:40], game_map[35:32], game_map[39:36], game_map[31:0]};
+                            
+                            4'd7:  n_game_map = {game_map[63:32], game_map[27:24], game_map[31:28], game_map[23:0]};
+                            4'd6:  n_game_map = {game_map[63:28], game_map[23:20], game_map[27:24], game_map[19:0]};
+                            4'd5:  n_game_map = {game_map[63:24], game_map[19:16], game_map[23:20], game_map[15:0]};
+                            
+                            4'd3:  n_game_map = {game_map[63:16], game_map[11:8] , game_map[15:12], game_map[7:0] };
+                            4'd2:  n_game_map = {game_map[63:12], game_map[7:4]  , game_map[11:8] , game_map[3:0] };
+                            4'd1:  n_game_map = {game_map[63:8] , game_map[3:0]  , game_map[7:4]                  };
+                            default: n_game_map = game_map;
+                        endcase
+                        n_print_0 = 1'b0;
                     end              
                 end else begin
                     next_state = PLAY;
                     n_steps = steps;
-                    n_blank = blank;
-                    n_gamepad = gamepad;           
+                    n_blank_pos = blank_pos;
+                    n_game_map = game_map;  
+                    n_print_0 = 1'b0;     
                 end
-                //nFSM_sim = 16'd3;
             end
             CHECK:begin // check if player win
-                next_state = PLAY;
+                if(finished)begin
+                    next_state = WIN;
+                    n_print_0 = 1'b1;
+                end else begin
+                    next_state = PLAY;
+                    n_print_0 = 1'b0;
+                end
                 if(steps<14'd9999) n_steps = steps + 14'd1;
                 else n_steps = 14'd0; // Who would play over 10000 moves tho
-                n_blank = blank;
-                n_gamepad = gamepad;
-                //nFSM_sim = 16'd4;
+                n_blank_pos = blank_pos;
+                n_game_map = game_map;
             end
             WIN:begin
-                
-            
+                next_state = WIN;
+                n_steps = steps;
+                n_blank_pos = blank_pos;
+                n_game_map = game_map;
+                n_print_0 = 1'b1;
             end
             default:begin
                 next_state = INIT;
                 n_steps = 14'd0;
-                n_blank = 16'b0000_0000_0000_0001;
-                n_gamepad = gamepad;
-                //nFSM_sim = 16'd0;
+                n_blank_pos = 4'd0;
+                n_game_map = game_map;
+                n_print_0 = 1'b0;
             end
         endcase
     end
@@ -185,6 +276,4 @@ module top(
     wire [3:0] s1 = steps % 10;
     wire [15:0] nums = {s1000, s100, s10, s1};
     SevenSegment _display(DISPLAY, DIGIT, nums, rst_1p, clk_16);
-    //SevenSegment _test(DISPLAY, DIGIT, FSM_sim, rst_1p, clk);
-    
 endmodule
