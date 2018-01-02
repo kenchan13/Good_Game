@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Dec 28 17:54:43 2017
+# Process ID: 6520
+# Current directory: C:/Users/AquaDragon/Desktop/Good_Game/Good_Game
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14096 C:\Users\AquaDragon\Desktop\Good_Game\Good_Game\Good_Game.xpr
+# Log file: C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/vivado.log
+# Journal file: C:/Users/AquaDragon/Desktop/Good_Game/Good_Game\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.xpr
+update_compile_order -fileset sources_1
