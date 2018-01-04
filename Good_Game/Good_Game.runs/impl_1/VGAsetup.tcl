@@ -61,10 +61,12 @@ set rc [catch {
   add_files -quiet C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/VGAsetup.dcp
   read_ip -quiet C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/blk_mem_gen_15.xci
   set_property is_locked true [get_files C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/blk_mem_gen_15.xci]
-  read_ip -quiet C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci
-  set_property is_locked true [get_files C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci]
-  read_ip -quiet C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci
-  set_property is_locked true [get_files C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci]
+  read_ip -quiet C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_14/blk_mem_gen_14.xci
+  set_property is_locked true [get_files C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_14/blk_mem_gen_14.xci]
+  read_ip -quiet C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/blk_mem_gen_13.xci
+  set_property is_locked true [get_files C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/blk_mem_gen_13.xci]
+  read_ip -quiet C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_12/blk_mem_gen_12.xci
+  set_property is_locked true [get_files C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_12/blk_mem_gen_12.xci]
   read_xdc C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/constrs_1/imports/Downloads/Basys3_Constraints.xdc
   link_design -top VGAsetup -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb

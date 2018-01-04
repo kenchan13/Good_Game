@@ -1,23 +1,31 @@
 module mem_addr_gen(
-   input [3:0] curr_part,
-   input clk,
-   input rst,
-   input [9:0] h_cnt,
-   input [9:0] v_cnt,
-   output [16:0] pixel_addr
-   );
-    
-   reg [7:0] position;
-  
-   assign pixel_addr = ((h_cnt>>1)+320*(v_cnt>>1)+ position*320 )% 76800;  //640*480 --> 320*240 // To-do
-
-   /*always @ (posedge clk or posedge rst) begin
-      if(rst)
-          position <= 0;
-       else if(position < 239)
-           position <= position + 1;
-       else
-           position <= 0;
-   end*/
-    
+    input clk,
+    input rst,
+    input [9:0] h_cnt,
+    input [9:0] v_cnt,
+    input [3:0] pair_with,
+    output reg [9:0] pixel_addr,
+    output reg [3:0] pic_selected
+    );
+   
+    reg [9:0] n_pixel_addr;
+    reg [3:0] n_pic_selected;
+    //assign pixel_addr = ( ((h_cnt>>1) + position) % 30 +(v_cnt>>1)*30) % 900;
+   
+    always@(posedge clk)begin
+        if(rst)begin
+            pic_selected <= 4'd15;
+            pixel_addr <= 10'd0;
+        end else begin
+            pic_selected <= n_pic_selected;
+            pixel_addr <= n_pixel_addr;
+        end
+    end
+   
+    always@(*)begin
+        if( (260 < h_cnt && h_cnt <= 290) && (180 < v_cnt && v_cnt <= 210)) n_pic_selected = 4'd15;
+        
+        ////////////////////////////////////////////////////////////////
+        n_pixel_addr = pair_with==pic_selected ? pixel_addr + 10'd1 : pixel_addr;
+    end
 endmodule

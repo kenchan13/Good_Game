@@ -6,14 +6,19 @@
 # IP: ip/blk_mem_gen_15/blk_mem_gen_15.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_15 || ORIG_REF_NAME==blk_mem_gen_15}]
 
-# IP: ip/blk_mem_gen_7/blk_mem_gen_7.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_7 || ORIG_REF_NAME==blk_mem_gen_7}]
+# IP: ip/blk_mem_gen_14/blk_mem_gen_14.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_14 || ORIG_REF_NAME==blk_mem_gen_14}]
 
-# IP: ip/blk_mem_gen_6/blk_mem_gen_6.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_6 || ORIG_REF_NAME==blk_mem_gen_6}]
+# IP: ip/blk_mem_gen_13/blk_mem_gen_13.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_13 || ORIG_REF_NAME==blk_mem_gen_13}]
+
+# IP: ip/blk_mem_gen_12/blk_mem_gen_12.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_12 || ORIG_REF_NAME==blk_mem_gen_12}]
 
 # XDC: ip/blk_mem_gen_15/blk_mem_gen_15_ooc.xdc
 
-# XDC: ip/blk_mem_gen_7/blk_mem_gen_7_ooc.xdc
+# XDC: ip/blk_mem_gen_14/blk_mem_gen_14_ooc.xdc
 
-# XDC: ip/blk_mem_gen_6/blk_mem_gen_6_ooc.xdc
+# XDC: ip/blk_mem_gen_13/blk_mem_gen_13_ooc.xdc
+
+# XDC: ip/blk_mem_gen_12/blk_mem_gen_12_ooc.xdc
