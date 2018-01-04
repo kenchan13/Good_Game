@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date             : Thu Jan  4 16:30:10 2018
+| Date             : Thu Jan  4 17:41:30 2018
 | Host             : DESKTOP-21QJ68E running 64-bit major release  (build 9200)
 | Command          : report_power -file VGAsetup_power_routed.rpt -pb VGAsetup_power_summary_routed.pb -rpx VGAsetup_power_routed.rpx
 | Design           : VGAsetup
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.073 |
-| Dynamic (W)              | 0.001 |
+| Total On-Chip Power (W)  | 0.085 |
+| Dynamic (W)              | 0.014 |
 | Device Static (W)        | 0.072 |
 | Effective TJA (C/W)      | 5.0   |
 | Max Ambient (C)          | 84.6  |
@@ -50,15 +50,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       82 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       39 |     20800 |            0.19 |
-|   Register     |    <0.001 |       25 |     41600 |            0.06 |
-|   Others       |     0.000 |        8 |       --- |             --- |
-| Signals        |    <0.001 |       65 |       --- |             --- |
-| Block RAM      |     0.000 |      0.5 |        50 |            1.00 |
-| I/O            |    <0.001 |       16 |       106 |           15.09 |
+| Slice Logic    |    <0.001 |      132 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       46 |     20800 |            0.22 |
+|   Register     |    <0.001 |       56 |     41600 |            0.13 |
+|   CARRY4       |    <0.001 |        6 |      8150 |            0.07 |
+|   Others       |     0.000 |        9 |       --- |             --- |
+| Signals        |    <0.001 |      102 |       --- |             --- |
+| Block RAM      |    <0.001 |      0.5 |        50 |            1.00 |
+| I/O            |     0.012 |       16 |       106 |           15.09 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.073 |          |           |                 |
+| Total          |     0.085 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -68,9 +69,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.010 |       0.001 |      0.010 |
+| Vccint    |       1.000 |     0.011 |       0.001 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
-| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
+| Vcco33    |       3.300 |     0.004 |       0.003 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -137,15 +138,17 @@ Table of Contents
 +----------------------------------------------+-----------+
 | Name                                         | Power (W) |
 +----------------------------------------------+-----------+
-| VGAsetup                                     |    <0.001 |
+| VGAsetup                                     |     0.014 |
+|   _clk_22                                    |    <0.001 |
 |   _clk_25MHz                                 |    <0.001 |
-|   blk_mem_gen_6_inst                         |     0.000 |
-|     U0                                       |     0.000 |
-|       inst_blk_mem_gen                       |     0.000 |
-|         gnbram.gnativebmg.native_blk_mem_gen |     0.000 |
-|           valid.cstr                         |     0.000 |
-|             ramloop[0].ram.r                 |     0.000 |
-|               prim_init.ram                  |     0.000 |
+|   addr_15                                    |    <0.001 |
+|   blk_mem_gen_15_inst                        |    <0.001 |
+|     U0                                       |    <0.001 |
+|       inst_blk_mem_gen                       |    <0.001 |
+|         gnbram.gnativebmg.native_blk_mem_gen |    <0.001 |
+|           valid.cstr                         |    <0.001 |
+|             ramloop[0].ram.r                 |    <0.001 |
+|               prim_init.ram                  |    <0.001 |
 |   vga_inst                                   |    <0.001 |
 +----------------------------------------------+-----------+
 

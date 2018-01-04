@@ -48,6 +48,7 @@ module top(
     OnePulse _right(right, key_down[D_CODES], clk_16);
     OnePulse _start(start, key_down[ENTER_CODES], clk_16);
     ////////////////////////////////////////////////////////////////
+    /*
     // VGA part
     wire [11:0] data_0_origin, data_0_blank, data_1, data_2, data_3, data_4, data_5, data_6, data_7, data_8, data_9, data_10, data_11, data_12, data_13, data_14, data_15;
     wire [16:0] pixel_addr_0_origin, pixel_addr_0_blank, pixel_addr_1, pixel_addr_2, pixel_addr_3, pixel_addr_4, pixel_addr_5, pixel_addr_6, pixel_addr_7, pixel_addr_8;
@@ -75,7 +76,7 @@ module top(
     blk_mem_gen_13 blk_mem_gen_13_inst(.clka(clk_25MHz), .wea(0), .addra(pixel_addr_13), .dina(data_13[11:0]), .douta(pixel_13));
     blk_mem_gen_14 blk_mem_gen_14_inst(.clka(clk_25MHz), .wea(0), .addra(pixel_addr_14), .dina(data_14[11:0]), .douta(pixel_14));
     blk_mem_gen_15 blk_mem_gen_15_inst(.clka(clk_25MHz), .wea(0), .addra(pixel_addr_15), .dina(data_15[11:0]), .douta(pixel_15));
-    vga_controller vga_inst(.pclk(clk_25MHz), .reset(rst_1p), .hsync(hsync), .vsync(vsync), .valid(valid), .h_cnt(h_cnt), .v_cnt(v_cnt));
+    vga_controller vga_inst(.pclk(clk_25MHz), .reset(rst_1p), .hsync(hsync), .vsync(vsync), .valid(valid), .h_cnt(h_cnt), .v_cnt(v_cnt));*/
     ////////////////////////////////////////////////////////////////
 
     reg [5:0] curr_state, next_state;
@@ -299,26 +300,6 @@ module top(
                 n_print_0 = 1'b0;
             end
         endcase
-        ////////////////////////////////////////////////////////////////
-        /*case(curr_part)
-            4'd0: vga_RGB = print_0 ? pixel_0_origin : pixel_0_blank;
-            4'd1: vga_RGB = pixel_1;
-            4'd2: vga_RGB = pixel_2;
-            4'd3: vga_RGB = pixel_3;
-            4'd4: vga_RGB = pixel_4;
-            4'd5: vga_RGB = pixel_5;
-            4'd6: vga_RGB = pixel_6;
-            4'd7: vga_RGB = pixel_7;
-            4'd8: vga_RGB = pixel_8;
-            4'd9: vga_RGB = pixel_9;
-            4'd10: vga_RGB = pixel_10;
-            4'd11: vga_RGB = pixel_11;
-            4'd12: vga_RGB = pixel_12;
-            4'd13: vga_RGB = pixel_13;
-            4'd14: vga_RGB = pixel_14;
-            4'd15: vga_RGB = pixel_15;
-            default: vga_RGB = 12'h0;
-        endcase*/
     end
     
     wire [3:0] s1000 = (steps / 1000) % 10;

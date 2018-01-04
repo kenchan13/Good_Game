@@ -37,6 +37,7 @@ add_files C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Pictrans/14.coe
 add_files C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Pictrans/15.coe
 read_verilog -library xil_defaultlib {
   C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/clock_divider.v
+  C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/demo2/mem_addr_gen.v
   C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/demo2/vga.v
   C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v
 }
@@ -44,13 +45,17 @@ read_ip -quiet C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/so
 set_property used_in_implementation false [get_files -all c:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/blk_mem_gen_15_ooc.xdc]
 set_property is_locked true [get_files C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/blk_mem_gen_15.xci]
 
-read_ip -quiet C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci
-set_property used_in_implementation false [get_files -all c:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7_ooc.xdc]
-set_property is_locked true [get_files C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci]
+read_ip -quiet C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_14/blk_mem_gen_14.xci
+set_property used_in_implementation false [get_files -all c:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_14/blk_mem_gen_14_ooc.xdc]
+set_property is_locked true [get_files C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_14/blk_mem_gen_14.xci]
 
-read_ip -quiet C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci
-set_property used_in_implementation false [get_files -all c:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6_ooc.xdc]
-set_property is_locked true [get_files C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci]
+read_ip -quiet C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/blk_mem_gen_13.xci
+set_property used_in_implementation false [get_files -all c:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/blk_mem_gen_13_ooc.xdc]
+set_property is_locked true [get_files C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/blk_mem_gen_13.xci]
+
+read_ip -quiet C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_12/blk_mem_gen_12.xci
+set_property used_in_implementation false [get_files -all c:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_12/blk_mem_gen_12_ooc.xdc]
+set_property is_locked true [get_files C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_12/blk_mem_gen_12.xci]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
