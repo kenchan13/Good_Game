@@ -27,7 +27,7 @@ module top(
     parameter [8:0] ENTER_CODES = 9'h5A;
     
     wire clk_25MHz, clk_13, clk_16, clk_22, clk_25;
-    clock_divider #(.n(1)) _clk_25MHz(clk, clk_25MHz);
+    clock_divider #(.n(2)) _clk_25MHz(clk, clk_25MHz);
     clock_divider #(.n(13)) _clk_13(clk, clk_13);
     clock_divider #(.n(16)) _clk_16(clk, clk_16);
     clock_divider #(.n(22)) _clk_22(clk, clk_22);
@@ -300,7 +300,7 @@ module top(
             end
         endcase
         ////////////////////////////////////////////////////////////////
-        case(curr_part)
+        /*case(curr_part)
             4'd0: vga_RGB = print_0 ? pixel_0_origin : pixel_0_blank;
             4'd1: vga_RGB = pixel_1;
             4'd2: vga_RGB = pixel_2;
@@ -318,7 +318,7 @@ module top(
             4'd14: vga_RGB = pixel_14;
             4'd15: vga_RGB = pixel_15;
             default: vga_RGB = 12'h0;
-        endcase
+        endcase*/
     end
     
     wire [3:0] s1000 = (steps / 1000) % 10;
