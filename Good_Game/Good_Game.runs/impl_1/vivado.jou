@@ -2,11 +2,11 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Thu Dec 28 17:10:42 2017
-# Process ID: 17864
-# Current directory: C:/Users/AquaDragon/Desktop/Computer Science/Digital Logic Design and Lab/Project/Good_Game/Good_Game.runs/impl_1
-# Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
-# Log file: C:/Users/AquaDragon/Desktop/Computer Science/Digital Logic Design and Lab/Project/Good_Game/Good_Game.runs/impl_1/top.vdi
-# Journal file: C:/Users/AquaDragon/Desktop/Computer Science/Digital Logic Design and Lab/Project/Good_Game/Good_Game.runs/impl_1\vivado.jou
+# Start of session at: Thu Jan  4 16:28:47 2018
+# Process ID: 2432
+# Current directory: C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1
+# Command line: vivado.exe -log VGAsetup.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source VGAsetup.tcl -notrace
+# Log file: C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/VGAsetup.vdi
+# Journal file: C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source top.tcl -notrace
+source VGAsetup.tcl -notrace

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/AquaDragon/Desktop/Computer Science/Digital Logic Design and Lab/Project/Good_Game/Good_Game.runs/synth_1'
+HD_PWD='C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+EAStep vivado -log VGAsetup.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGAsetup.tcl
