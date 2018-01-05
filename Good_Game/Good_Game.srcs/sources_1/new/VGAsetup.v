@@ -27,7 +27,7 @@ module VGAsetup(
     wire valid;
     wire [9:0] h_cnt; //300
     wire [9:0] v_cnt; //300
-    wire [4:0] curr_block; // 5 bits for out of range part
+    wire [4:0] curr_block; // 5 bits for out-of-range part
     reg [3:0] pic_idx;
     mem_addr_gen addr_12(.clk(clk_22), .rst(rst), .h_cnt(h_cnt), .v_cnt(v_cnt), .pixel_addr(pixel_addr_12));
     mem_addr_gen addr_13(.clk(clk_22), .rst(rst), .h_cnt(h_cnt), .v_cnt(v_cnt), .pixel_addr(pixel_addr_13));
@@ -71,14 +71,17 @@ module VGAsetup(
             5'd2:  pic_idx = game_map[11:8];
             5'd1:  pic_idx = game_map[7:4];
             5'd0:  pic_idx = game_map[3:0];*/
-            default: pic_idx = game_map[63:60];
+            default: pic_idx = 4'd0; // Make out of range problem into here
         endcase
     end
     
     always@(*)begin // Show the corresponding picture
         if(valid)begin
             case(pic_idx)
-                4'd0: {vgaRed, vgaGreen, vgaBlue} = finished ? pixel_0_origin : pixel_0_blank;
+                4'd0:begin
+                    if(h_cnt < 80 || h_cnt >= 560) {vgaRed, vgaGreen, vgaBlue} = 12'h0; 
+                    else {vgaRed, vgaGreen, vgaBlue} = finished ? pixel_0_origin : pixel_0_blank;
+                end
                 4'd1: {vgaRed, vgaGreen, vgaBlue} = pixel_1;
                 4'd2: {vgaRed, vgaGreen, vgaBlue} = pixel_2;
                 4'd3: {vgaRed, vgaGreen, vgaBlue} = pixel_3;
