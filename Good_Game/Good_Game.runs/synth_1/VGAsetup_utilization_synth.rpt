@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Fri Jan  5 21:30:15 2018
+| Date         : Fri Jan  5 22:18:35 2018
 | Host         : PC-20 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file VGAsetup_utilization_synth.rpt -pb VGAsetup_utilization_synth.pb
 | Design       : VGAsetup
@@ -30,13 +30,13 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  190 |     0 |     20800 |  0.91 |
-|   LUT as Logic          |  190 |     0 |     20800 |  0.91 |
+| Slice LUTs*             |  256 |     0 |     20800 |  1.23 |
+|   LUT as Logic          |  256 |     0 |     20800 |  1.23 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
 | Slice Registers         |   24 |     0 |     41600 |  0.06 |
 |   Register as Flip Flop |   24 |     0 |     41600 |  0.06 |
 |   Register as Latch     |    0 |     0 |     41600 |  0.00 |
-| F7 Muxes                |    0 |     0 |     16300 |  0.00 |
+| F7 Muxes                |   12 |     0 |     16300 |  0.07 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -67,10 +67,10 @@ Table of Contents
 +-------------------+------+-------+-----------+-------+
 |     Site Type     | Used | Fixed | Available | Util% |
 +-------------------+------+-------+-----------+-------+
-| Block RAM Tile    |    2 |     0 |        50 |  4.00 |
+| Block RAM Tile    |  8.5 |     0 |        50 | 17.00 |
 |   RAMB36/FIFO*    |    0 |     0 |        50 |  0.00 |
-|   RAMB18          |    4 |     0 |       100 |  4.00 |
-|     RAMB18E1 only |    4 |       |           |       |
+|   RAMB18          |   17 |     0 |       100 | 17.00 |
+|     RAMB18E1 only |   17 |       |           |       |
 +-------------------+------+-------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
 
@@ -117,7 +117,7 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Fixed | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |    1 |     0 |        32 |  3.13 |
+| BUFGCTRL   |    2 |     0 |        32 |  6.25 |
 | BUFIO      |    0 |     0 |        20 |  0.00 |
 | MMCME2_ADV |    0 |     0 |         5 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |         5 |  0.00 |
@@ -151,20 +151,21 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT2     |   85 |                 LUT |
-| LUT6     |   55 |                 LUT |
-| CARRY4   |   37 |          CarryLogic |
+| LUT2     |  104 |                 LUT |
+| LUT6     |   88 |                 LUT |
+| CARRY4   |   46 |          CarryLogic |
+| LUT5     |   36 |                 LUT |
 | FDRE     |   22 |        Flop & Latch |
-| LUT5     |   20 |                 LUT |
-| LUT3     |   17 |                 LUT |
-| LUT1     |   17 |                 LUT |
+| RAMB18E1 |   17 |        Block Memory |
+| LUT4     |   15 |                 LUT |
+| LUT3     |   15 |                 LUT |
 | OBUF     |   14 |                  IO |
-| LUT4     |   14 |                 LUT |
-| RAMB18E1 |    4 |        Block Memory |
+| LUT1     |   14 |                 LUT |
+| MUXF7    |   12 |               MuxFx |
 | IBUF     |    2 |                  IO |
 | FDSE     |    2 |        Flop & Latch |
+| BUFG     |    2 |               Clock |
 | DSP48E1  |    1 |    Block Arithmetic |
-| BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
 
