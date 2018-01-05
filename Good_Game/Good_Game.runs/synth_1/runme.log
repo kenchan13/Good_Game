@@ -12,27 +12,33 @@ source VGAsetup.tcl -notrace
 Command: synth_design -top VGAsetup -part xc7a35tcpg236-1 -directive RuntimeOptimized -quick
 WARNING: [Vivado_Tcl 4-15] The '-quick' option has been deprecated. Please use '-effort_level quick'.
 Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/blk_mem_gen_15.xci
+C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_14/blk_mem_gen_14.xci
+C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/blk_mem_gen_13.xci
+C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_12/blk_mem_gen_12.xci
+
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1616 
+INFO: Helper process launched with PID 7336 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 323.285 ; gain = 87.410
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 324.777 ; gain = 83.328
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'VGAsetup' [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:3]
-INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/clock_divider.v:23]
+INFO: [Synth 8-638] synthesizing module 'VGAsetup' [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:3]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/clock_divider.v:23]
 	Parameter n bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clock_divider' (1#1) [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/clock_divider.v:23]
-INFO: [Synth 8-638] synthesizing module 'clock_divider__parameterized0' [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/clock_divider.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (1#1) [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/clock_divider.v:23]
+INFO: [Synth 8-638] synthesizing module 'clock_divider__parameterized0' [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/clock_divider.v:23]
 	Parameter n bound to: 22 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clock_divider__parameterized0' (1#1) [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/clock_divider.v:23]
-INFO: [Synth 8-638] synthesizing module 'mem_addr_gen' [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/demo2/mem_addr_gen.v:1]
-INFO: [Synth 8-256] done synthesizing module 'mem_addr_gen' (2#1) [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/demo2/mem_addr_gen.v:1]
-WARNING: [Synth 8-689] width (17) of port connection 'pixel_addr' does not match port width (10) of module 'mem_addr_gen' [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:27]
-WARNING: [Synth 8-689] width (17) of port connection 'pixel_addr' does not match port width (10) of module 'mem_addr_gen' [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:28]
-WARNING: [Synth 8-689] width (17) of port connection 'pixel_addr' does not match port width (10) of module 'mem_addr_gen' [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:29]
-WARNING: [Synth 8-689] width (17) of port connection 'pixel_addr' does not match port width (10) of module 'mem_addr_gen' [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:30]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_12' [c:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_12/synth/blk_mem_gen_12.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider__parameterized0' (1#1) [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/clock_divider.v:23]
+INFO: [Synth 8-638] synthesizing module 'mem_addr_gen' [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/demo2/mem_addr_gen.v:1]
+INFO: [Synth 8-256] done synthesizing module 'mem_addr_gen' (2#1) [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/demo2/mem_addr_gen.v:1]
+WARNING: [Synth 8-689] width (17) of port connection 'pixel_addr' does not match port width (10) of module 'mem_addr_gen' [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:32]
+WARNING: [Synth 8-689] width (17) of port connection 'pixel_addr' does not match port width (10) of module 'mem_addr_gen' [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:33]
+WARNING: [Synth 8-689] width (17) of port connection 'pixel_addr' does not match port width (10) of module 'mem_addr_gen' [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:34]
+WARNING: [Synth 8-689] width (17) of port connection 'pixel_addr' does not match port width (10) of module 'mem_addr_gen' [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:35]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_12' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_12/synth/blk_mem_gen_12.vhd:69]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -106,12 +112,12 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_12' [c:/Users/AquaDragon/De
 	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.43485 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_12/synth/blk_mem_gen_12.vhd:230]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_12/synth/blk_mem_gen_12.vhd:230]
 WARNING: [Synth 8-6014] Unused sequential element i_reg was removed. 
 WARNING: [Synth 8-6014] Unused sequential element i_reg was removed. 
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_12' (11#1) [c:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_12/synth/blk_mem_gen_12.vhd:69]
-WARNING: [Synth 8-689] width (17) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_12' [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:44]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_13' [c:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/synth/blk_mem_gen_13.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_12' (11#1) [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_12/synth/blk_mem_gen_12.vhd:69]
+WARNING: [Synth 8-689] width (17) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_12' [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_13' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/synth/blk_mem_gen_13.vhd:69]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -185,10 +191,10 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_13' [c:/Users/AquaDragon/De
 	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.43485 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/synth/blk_mem_gen_13.vhd:230]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_13' (12#1) [c:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/synth/blk_mem_gen_13.vhd:69]
-WARNING: [Synth 8-689] width (17) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_13' [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:45]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_14' [c:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_14/synth/blk_mem_gen_14.vhd:69]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/synth/blk_mem_gen_13.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_13' (12#1) [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/synth/blk_mem_gen_13.vhd:69]
+WARNING: [Synth 8-689] width (17) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_13' [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_14' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_14/synth/blk_mem_gen_14.vhd:69]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -262,10 +268,10 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_14' [c:/Users/AquaDragon/De
 	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.43485 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_14/synth/blk_mem_gen_14.vhd:230]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_14' (13#1) [c:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_14/synth/blk_mem_gen_14.vhd:69]
-WARNING: [Synth 8-689] width (17) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_14' [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:46]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_15' [c:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/synth/blk_mem_gen_15.vhd:69]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_14/synth/blk_mem_gen_14.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_14' (13#1) [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_14/synth/blk_mem_gen_14.vhd:69]
+WARNING: [Synth 8-689] width (17) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_14' [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_15' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/synth/blk_mem_gen_15.vhd:69]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -339,10 +345,13 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_15' [c:/Users/AquaDragon/De
 	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.43485 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/synth/blk_mem_gen_15.vhd:230]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_15' (14#1) [c:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/synth/blk_mem_gen_15.vhd:69]
-WARNING: [Synth 8-689] width (17) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_15' [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:47]
-INFO: [Synth 8-638] synthesizing module 'vga_controller' [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/demo2/vga.v:6]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/synth/blk_mem_gen_15.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_15' (14#1) [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/synth/blk_mem_gen_15.vhd:69]
+WARNING: [Synth 8-689] width (17) of port connection 'addra' does not match port width (10) of module 'blk_mem_gen_15' [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+INFO: [Synth 8-638] synthesizing module 'hv_cnt_find_block' [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/hv_cnt_find_block.v:3]
+INFO: [Synth 8-256] done synthesizing module 'hv_cnt_find_block' (15#1) [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/hv_cnt_find_block.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:80]
+INFO: [Synth 8-638] synthesizing module 'vga_controller' [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/demo2/vga.v:6]
 	Parameter HD bound to: 640 - type: integer 
 	Parameter HF bound to: 16 - type: integer 
 	Parameter HS bound to: 96 - type: integer 
@@ -355,23 +364,24 @@ INFO: [Synth 8-638] synthesizing module 'vga_controller' [C:/Users/AquaDragon/De
 	Parameter VT bound to: 525 - type: integer 
 	Parameter hsync_default bound to: 1'b1 
 	Parameter vsync_default bound to: 1'b1 
-INFO: [Synth 8-256] done synthesizing module 'vga_controller' (15#1) [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/demo2/vga.v:6]
-WARNING: [Synth 8-3848] Net pixel_1 in module/entity VGAsetup does not have driver. [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:22]
-WARNING: [Synth 8-3848] Net pixel_2 in module/entity VGAsetup does not have driver. [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:22]
-WARNING: [Synth 8-3848] Net pixel_3 in module/entity VGAsetup does not have driver. [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:22]
-WARNING: [Synth 8-3848] Net pixel_4 in module/entity VGAsetup does not have driver. [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:22]
-WARNING: [Synth 8-3848] Net pixel_5 in module/entity VGAsetup does not have driver. [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:22]
-WARNING: [Synth 8-3848] Net pixel_6 in module/entity VGAsetup does not have driver. [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:22]
-WARNING: [Synth 8-3848] Net pixel_7 in module/entity VGAsetup does not have driver. [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:22]
-WARNING: [Synth 8-3848] Net pixel_8 in module/entity VGAsetup does not have driver. [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:22]
-WARNING: [Synth 8-3848] Net pixel_9 in module/entity VGAsetup does not have driver. [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:22]
-WARNING: [Synth 8-3848] Net pixel_10 in module/entity VGAsetup does not have driver. [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:22]
-WARNING: [Synth 8-3848] Net pixel_11 in module/entity VGAsetup does not have driver. [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:22]
-WARNING: [Synth 8-3848] Net data_12 in module/entity VGAsetup does not have driver. [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:19]
-WARNING: [Synth 8-3848] Net data_13 in module/entity VGAsetup does not have driver. [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:19]
-WARNING: [Synth 8-3848] Net data_14 in module/entity VGAsetup does not have driver. [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:19]
-WARNING: [Synth 8-3848] Net data_15 in module/entity VGAsetup does not have driver. [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:19]
-INFO: [Synth 8-256] done synthesizing module 'VGAsetup' (16#1) [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:3]
+INFO: [Synth 8-256] done synthesizing module 'vga_controller' (16#1) [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/demo2/vga.v:6]
+WARNING: [Synth 8-3848] Net pixel_0_blank in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:26]
+WARNING: [Synth 8-3848] Net pixel_1 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:26]
+WARNING: [Synth 8-3848] Net pixel_2 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:26]
+WARNING: [Synth 8-3848] Net pixel_3 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:26]
+WARNING: [Synth 8-3848] Net pixel_4 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:26]
+WARNING: [Synth 8-3848] Net pixel_5 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:26]
+WARNING: [Synth 8-3848] Net pixel_6 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:26]
+WARNING: [Synth 8-3848] Net pixel_7 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:26]
+WARNING: [Synth 8-3848] Net pixel_8 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:26]
+WARNING: [Synth 8-3848] Net pixel_9 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:26]
+WARNING: [Synth 8-3848] Net pixel_10 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:26]
+WARNING: [Synth 8-3848] Net pixel_11 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:26]
+WARNING: [Synth 8-3848] Net data_12 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:23]
+WARNING: [Synth 8-3848] Net data_13 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:23]
+WARNING: [Synth 8-3848] Net data_14 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:23]
+WARNING: [Synth 8-3848] Net data_15 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:23]
+INFO: [Synth 8-256] done synthesizing module 'VGAsetup' (17#1) [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:3]
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized2 has unconnected port SSRA
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized2 has unconnected port CLKB
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized2 has unconnected port SSRB
@@ -474,7 +484,7 @@ WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[2]
 WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[1]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:03:05 ; elapsed = 00:03:07 . Memory (MB): peak = 606.742 ; gain = 370.867
+Finished RTL Elaboration : Time (s): cpu = 00:02:27 ; elapsed = 00:02:28 . Memory (MB): peak = 553.281 ; gain = 311.832
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -483,56 +493,56 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[11] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:44]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[10] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:44]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[9] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:44]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[8] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:44]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[7] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:44]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[6] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:44]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[5] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:44]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[4] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:44]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[3] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:44]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[2] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:44]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[1] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:44]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[0] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:44]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[11] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:45]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[10] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:45]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[9] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:45]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[8] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:45]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[7] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:45]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[6] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:45]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[5] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:45]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[4] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:45]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[3] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:45]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[2] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:45]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[1] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:45]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[0] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:45]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[11] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:46]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[10] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:46]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[9] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:46]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[8] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:46]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[7] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:46]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[6] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:46]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[5] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:46]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[4] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:46]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[3] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:46]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[2] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:46]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[1] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:46]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[0] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:46]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[11] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:47]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[10] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:47]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[9] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:47]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[8] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:47]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[7] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:47]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[6] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:47]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[5] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:47]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[4] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:47]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[3] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:47]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[2] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:47]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[1] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:47]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[0] to constant 0 [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:47]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[11] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[10] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[9] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[8] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[7] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[6] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[5] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[4] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[3] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[2] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[1] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_12_inst:dina[0] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[11] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[10] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[9] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[8] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[7] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[6] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[5] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[4] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[3] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[2] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[1] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_13_inst:dina[0] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[11] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[10] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[9] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[8] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[7] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[6] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[5] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[4] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[3] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[2] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[1] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_14_inst:dina[0] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[11] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[10] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[9] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[8] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[7] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[6] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[5] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[4] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[3] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[2] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[1] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[0] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:06 ; elapsed = 00:03:07 . Memory (MB): peak = 606.742 ; gain = 370.867
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:27 ; elapsed = 00:02:28 . Memory (MB): peak = 553.281 ; gain = 311.832
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -541,27 +551,27 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/constrs_1/imports/Downloads/Basys3_Constraints.xdc]
-Finished Parsing XDC File [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/constrs_1/imports/Downloads/Basys3_Constraints.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/constrs_1/imports/Downloads/Basys3_Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VGAsetup_propImpl.xdc].
+Parsing XDC File [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/constrs_1/imports/Downloads/Basys3_Constraints.xdc]
+Finished Parsing XDC File [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/constrs_1/imports/Downloads/Basys3_Constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/constrs_1/imports/Downloads/Basys3_Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VGAsetup_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/VGAsetup_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 674.090 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 632.363 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:03:18 ; elapsed = 00:03:20 . Memory (MB): peak = 674.090 ; gain = 438.215
+Finished Constraint Validation : Time (s): cpu = 00:02:36 ; elapsed = 00:02:41 . Memory (MB): peak = 632.363 ; gain = 390.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:03:18 ; elapsed = 00:03:20 . Memory (MB): peak = 674.090 ; gain = 438.215
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:36 ; elapsed = 00:02:41 . Memory (MB): peak = 632.363 ; gain = 390.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -571,17 +581,19 @@ Applied set_property DONT_TOUCH = true for blk_mem_gen_13_inst. (constraint file
 Applied set_property DONT_TOUCH = true for blk_mem_gen_14_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for blk_mem_gen_15_inst. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:18 ; elapsed = 00:03:20 . Memory (MB): peak = 674.090 ; gain = 438.215
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:36 ; elapsed = 00:02:41 . Memory (MB): peak = 632.363 ; gain = 390.914
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element curr_num_reg was removed.  [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/clock_divider.v:29]
-WARNING: [Synth 8-6014] Unused sequential element pixel_addr_reg was removed.  [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/demo2/mem_addr_gen.v:18]
+WARNING: [Synth 8-6014] Unused sequential element curr_num_reg was removed.  [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/clock_divider.v:29]
 INFO: [Synth 8-5546] ROM "line_cnt" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element pixel_cnt_reg was removed.  [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/demo2/vga.v:32]
-WARNING: [Synth 8-6014] Unused sequential element line_cnt_reg was removed.  [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/demo2/vga.v:50]
-WARNING: [Synth 8-327] inferring latch for variable 'n_pic_selected_reg' [C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/demo2/mem_addr_gen.v:26]
+WARNING: [Synth 8-6014] Unused sequential element pixel_cnt_reg was removed.  [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/demo2/vga.v:32]
+WARNING: [Synth 8-6014] Unused sequential element line_cnt_reg was removed.  [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/demo2/vga.v:50]
+INFO: [Synth 8-5546] ROM "pic_idx" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:19 ; elapsed = 00:03:21 . Memory (MB): peak = 674.090 ; gain = 438.215
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:37 ; elapsed = 00:02:41 . Memory (MB): peak = 632.363 ; gain = 390.914
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'addr_12' (mem_addr_gen) to 'addr_13'
+INFO: [Synth 8-223] decloning instance 'addr_12' (mem_addr_gen) to 'addr_14'
+INFO: [Synth 8-223] decloning instance 'addr_12' (mem_addr_gen) to 'addr_15'
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -593,16 +605,17 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     10 Bit       Adders := 6     
+	   2 Input     10 Bit       Adders := 2     
 	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
-	               10 Bit    Registers := 6     
-	                4 Bit    Registers := 4     
+	               10 Bit    Registers := 2     
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
 +---Muxes : 
 	   2 Input     10 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 3     
+	  22 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   4 Input      4 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -614,20 +627,18 @@ Hierarchical RTL Component report
 Module VGAsetup 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 7     
+	   4 Input      4 Bit        Muxes := 1     
 Module clock_divider 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
 	                2 Bit    Registers := 1     
-Module mem_addr_gen 
+Module hv_cnt_find_block 
 Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     10 Bit       Adders := 1     
-+---Registers : 
-	               10 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
++---Muxes : 
+	  22 Input      5 Bit        Muxes := 1     
 Module vga_controller 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -653,55 +664,30 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'addr_14/pic_selected_reg[3]' (FDS) to 'addr_14/pic_selected_reg[0]'
-INFO: [Synth 8-3886] merging instance 'addr_14/pic_selected_reg[0]' (FDS) to 'addr_14/pic_selected_reg[1]'
-INFO: [Synth 8-3886] merging instance 'addr_14/pic_selected_reg[1]' (FDS) to 'addr_14/pic_selected_reg[2]'
-INFO: [Synth 8-3886] merging instance 'addr_14/pic_selected_reg[2]' (FDS) to 'addr_12/pic_selected_reg[0]'
-INFO: [Synth 8-3886] merging instance 'addr_13/pic_selected_reg[3]' (FDS) to 'addr_12/pic_selected_reg[0]'
-INFO: [Synth 8-3886] merging instance 'addr_13/pic_selected_reg[0]' (FDS) to 'addr_12/pic_selected_reg[0]'
-INFO: [Synth 8-3886] merging instance 'addr_13/pic_selected_reg[1]' (FDS) to 'addr_12/pic_selected_reg[0]'
-INFO: [Synth 8-3886] merging instance 'addr_13/pic_selected_reg[2]' (FDS) to 'addr_12/pic_selected_reg[0]'
-INFO: [Synth 8-3886] merging instance 'addr_12/pic_selected_reg[3]' (FDS) to 'addr_12/pic_selected_reg[0]'
-INFO: [Synth 8-3886] merging instance 'addr_12/pic_selected_reg[0]' (FDS) to 'addr_12/pic_selected_reg[1]'
-INFO: [Synth 8-3886] merging instance 'addr_12/pic_selected_reg[1]' (FDS) to 'addr_12/pic_selected_reg[2]'
-INFO: [Synth 8-3886] merging instance 'addr_12/pic_selected_reg[2]' (FDS) to 'addr_15/pic_selected_reg[3]'
-INFO: [Synth 8-3886] merging instance 'addr_15/pic_selected_reg[0]' (FDS) to 'addr_15/pic_selected_reg[3]'
-INFO: [Synth 8-3886] merging instance 'addr_15/pic_selected_reg[1]' (FDS) to 'addr_15/pic_selected_reg[3]'
-INFO: [Synth 8-3886] merging instance 'addr_15/pic_selected_reg[2]' (FDS) to 'addr_15/pic_selected_reg[3]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\addr_15/pic_selected_reg[3] )
-WARNING: [Synth 8-3332] Sequential element (addr_12/pixel_addr_reg[9]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_12/pixel_addr_reg[8]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_12/pixel_addr_reg[7]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_12/pixel_addr_reg[6]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_12/pixel_addr_reg[5]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_12/pixel_addr_reg[4]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_12/pixel_addr_reg[3]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_12/pixel_addr_reg[2]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_12/pixel_addr_reg[1]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_12/pixel_addr_reg[0]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_13/pixel_addr_reg[9]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_13/pixel_addr_reg[8]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_13/pixel_addr_reg[7]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_13/pixel_addr_reg[6]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_13/pixel_addr_reg[5]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_13/pixel_addr_reg[4]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_13/pixel_addr_reg[3]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_13/pixel_addr_reg[2]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_13/pixel_addr_reg[1]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_13/pixel_addr_reg[0]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_14/pixel_addr_reg[9]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_14/pixel_addr_reg[8]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_14/pixel_addr_reg[7]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_14/pixel_addr_reg[6]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_14/pixel_addr_reg[5]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_14/pixel_addr_reg[4]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_14/pixel_addr_reg[3]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_14/pixel_addr_reg[2]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_14/pixel_addr_reg[1]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_14/pixel_addr_reg[0]) is unused and will be removed from module VGAsetup.
-WARNING: [Synth 8-3332] Sequential element (addr_15/pic_selected_reg[3]) is unused and will be removed from module VGAsetup.
+WARNING: [Synth 8-3332] Sequential element (_clk_22/curr_num_reg[0]) is unused and will be removed from module VGAsetup.
+WARNING: [Synth 8-3332] Sequential element (_clk_22/curr_num_reg[1]) is unused and will be removed from module VGAsetup.
+WARNING: [Synth 8-3332] Sequential element (_clk_22/curr_num_reg[2]) is unused and will be removed from module VGAsetup.
+WARNING: [Synth 8-3332] Sequential element (_clk_22/curr_num_reg[3]) is unused and will be removed from module VGAsetup.
+WARNING: [Synth 8-3332] Sequential element (_clk_22/curr_num_reg[4]) is unused and will be removed from module VGAsetup.
+WARNING: [Synth 8-3332] Sequential element (_clk_22/curr_num_reg[5]) is unused and will be removed from module VGAsetup.
+WARNING: [Synth 8-3332] Sequential element (_clk_22/curr_num_reg[6]) is unused and will be removed from module VGAsetup.
+WARNING: [Synth 8-3332] Sequential element (_clk_22/curr_num_reg[7]) is unused and will be removed from module VGAsetup.
+WARNING: [Synth 8-3332] Sequential element (_clk_22/curr_num_reg[8]) is unused and will be removed from module VGAsetup.
+WARNING: [Synth 8-3332] Sequential element (_clk_22/curr_num_reg[9]) is unused and will be removed from module VGAsetup.
+WARNING: [Synth 8-3332] Sequential element (_clk_22/curr_num_reg[10]) is unused and will be removed from module VGAsetup.
+WARNING: [Synth 8-3332] Sequential element (_clk_22/curr_num_reg[11]) is unused and will be removed from module VGAsetup.
+WARNING: [Synth 8-3332] Sequential element (_clk_22/curr_num_reg[12]) is unused and will be removed from module VGAsetup.
+WARNING: [Synth 8-3332] Sequential element (_clk_22/curr_num_reg[13]) is unused and will be removed from module VGAsetup.
+WARNING: [Synth 8-3332] Sequential element (_clk_22/curr_num_reg[14]) is unused and will be removed from module VGAsetup.
+WARNING: [Synth 8-3332] Sequential element (_clk_22/curr_num_reg[15]) is unused and will be removed from module VGAsetup.
+WARNING: [Synth 8-3332] Sequential element (_clk_22/curr_num_reg[16]) is unused and will be removed from module VGAsetup.
+WARNING: [Synth 8-3332] Sequential element (_clk_22/curr_num_reg[17]) is unused and will be removed from module VGAsetup.
+WARNING: [Synth 8-3332] Sequential element (_clk_22/curr_num_reg[18]) is unused and will be removed from module VGAsetup.
+WARNING: [Synth 8-3332] Sequential element (_clk_22/curr_num_reg[19]) is unused and will be removed from module VGAsetup.
+WARNING: [Synth 8-3332] Sequential element (_clk_22/curr_num_reg[20]) is unused and will be removed from module VGAsetup.
+WARNING: [Synth 8-3332] Sequential element (_clk_22/curr_num_reg[21]) is unused and will be removed from module VGAsetup.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:19 ; elapsed = 00:03:21 . Memory (MB): peak = 674.090 ; gain = 438.215
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:38 ; elapsed = 00:02:42 . Memory (MB): peak = 632.363 ; gain = 390.914
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -713,7 +699,7 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:30 ; elapsed = 00:03:32 . Memory (MB): peak = 693.262 ; gain = 457.387
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:49 ; elapsed = 00:02:54 . Memory (MB): peak = 677.348 ; gain = 435.898
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -725,7 +711,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:03:30 ; elapsed = 00:03:32 . Memory (MB): peak = 713.051 ; gain = 477.176
+Finished Technology Mapping : Time (s): cpu = 00:02:49 ; elapsed = 00:02:54 . Memory (MB): peak = 697.633 ; gain = 456.184
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -797,7 +783,7 @@ WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[2] to consta
 WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[1] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_15_inst:dina[0] to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:03:30 ; elapsed = 00:03:32 . Memory (MB): peak = 713.051 ; gain = 477.176
+Finished IO Insertion : Time (s): cpu = 00:02:50 ; elapsed = 00:02:54 . Memory (MB): peak = 697.633 ; gain = 456.184
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -810,7 +796,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:03:30 ; elapsed = 00:03:32 . Memory (MB): peak = 713.051 ; gain = 477.176
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:50 ; elapsed = 00:02:54 . Memory (MB): peak = 697.633 ; gain = 456.184
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -822,25 +808,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:31 ; elapsed = 00:03:32 . Memory (MB): peak = 713.051 ; gain = 477.176
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:50 ; elapsed = 00:02:54 . Memory (MB): peak = 697.633 ; gain = 456.184
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:03:31 ; elapsed = 00:03:32 . Memory (MB): peak = 713.051 ; gain = 477.176
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:50 ; elapsed = 00:02:54 . Memory (MB): peak = 697.633 ; gain = 456.184
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:03:31 ; elapsed = 00:03:32 . Memory (MB): peak = 713.051 ; gain = 477.176
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:50 ; elapsed = 00:02:54 . Memory (MB): peak = 697.633 ; gain = 456.184
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:03:31 ; elapsed = 00:03:32 . Memory (MB): peak = 713.051 ; gain = 477.176
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:50 ; elapsed = 00:02:54 . Memory (MB): peak = 697.633 ; gain = 456.184
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -857,28 +843,30 @@ Report Cell Usage:
 |      |Cell       |Count |
 +------+-----------+------+
 |1     |BUFG       |     1|
-|2     |CARRY4     |     6|
-|3     |LUT1       |    26|
-|4     |LUT2       |     6|
-|5     |LUT3       |     7|
-|6     |LUT4       |     9|
-|7     |LUT5       |    23|
-|8     |LUT6       |    11|
-|9     |RAMB18E1   |     1|
-|10    |RAMB18E1_1 |     1|
-|11    |RAMB18E1_2 |     1|
-|12    |RAMB18E1_3 |     1|
-|13    |FDRE       |    54|
-|14    |FDSE       |     2|
-|15    |IBUF       |     2|
-|16    |OBUF       |    14|
+|2     |CARRY4     |    29|
+|3     |DSP48E1    |     1|
+|4     |LUT1       |    17|
+|5     |LUT2       |    85|
+|6     |LUT3       |    17|
+|7     |LUT4       |    14|
+|8     |LUT5       |    20|
+|9     |LUT6       |    55|
+|10    |RAMB18E1   |     1|
+|11    |RAMB18E1_1 |     1|
+|12    |RAMB18E1_2 |     1|
+|13    |RAMB18E1_3 |     1|
+|14    |XORCY      |     8|
+|15    |FDRE       |    22|
+|16    |FDSE       |     2|
+|17    |IBUF       |     2|
+|18    |OBUF       |    14|
 +------+-----------+------+
 
 Report Instance Areas: 
 +------+-----------------------------------------------+----------------------------------------------+------+
 |      |Instance                                       |Module                                        |Cells |
 +------+-----------------------------------------------+----------------------------------------------+------+
-|1     |top                                            |                                              |   165|
+|1     |top                                            |                                              |   291|
 |2     |  blk_mem_gen_12_inst                          |blk_mem_gen_12                                |     1|
 |3     |    U0                                         |blk_mem_gen_v8_3_6                            |     1|
 |4     |      inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth                      |     1|
@@ -907,28 +895,28 @@ Report Instance Areas:
 |27    |          \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized2      |     1|
 |28    |            \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized2        |     1|
 |29    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized2 |     1|
-|30    |  _clk_22                                      |clock_divider__parameterized0                 |    50|
-|31    |  _clk_25MHz                                   |clock_divider                                 |     4|
-|32    |  addr_15                                      |mem_addr_gen                                  |    21|
-|33    |  vga_inst                                     |vga_controller                                |    69|
+|30    |  _clk_25MHz                                   |clock_divider                                 |     4|
+|31    |  addr_12                                      |mem_addr_gen                                  |   144|
+|32    |  vga_inst                                     |vga_controller                                |   122|
 +------+-----------------------------------------------+----------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:03:31 ; elapsed = 00:03:32 . Memory (MB): peak = 713.051 ; gain = 477.176
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:50 ; elapsed = 00:02:54 . Memory (MB): peak = 697.633 ; gain = 456.184
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 84 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:03:23 . Memory (MB): peak = 713.051 ; gain = 409.828
-Synthesis Optimization Complete : Time (s): cpu = 00:03:31 ; elapsed = 00:03:33 . Memory (MB): peak = 713.051 ; gain = 477.176
+Synthesis finished with 0 errors, 0 critical warnings and 73 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:02:45 . Memory (MB): peak = 697.633 ; gain = 377.102
+Synthesis Optimization Complete : Time (s): cpu = 00:02:50 ; elapsed = 00:02:55 . Memory (MB): peak = 697.633 ; gain = 456.184
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 8 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 8 instances
 
-53 Infos, 258 Warnings, 0 Critical Warnings and 0 Errors encountered.
+44 Infos, 249 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:34 ; elapsed = 00:03:37 . Memory (MB): peak = 715.906 ; gain = 483.199
-INFO: [Common 17-1381] The checkpoint 'C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/VGAsetup.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 715.906 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Jan  4 17:40:25 2018...
+synth_design: Time (s): cpu = 00:02:52 ; elapsed = 00:02:58 . Memory (MB): peak = 697.633 ; gain = 459.660
+INFO: [Common 17-1381] The checkpoint 'C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/VGAsetup.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 697.633 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  5 21:30:15 2018...
