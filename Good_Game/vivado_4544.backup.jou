@@ -1,0 +1,82 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Jan  4 15:43:11 2018
+# Process ID: 4544
+# Current directory: C:/Users/AquaDragon/Desktop/Good_Game/Good_Game
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10548 C:\Users\AquaDragon\Desktop\Good_Game\Good_Game\Good_Game.xpr
+# Log file: C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/vivado.log
+# Journal file: C:/Users/AquaDragon/Desktop/Good_Game/Good_Game\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v w ]
+add_files C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top VGAsetup [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+set_property STEPS.SYNTH_DESIGN.ARGS.DIRECTIVE RuntimeOptimized [get_runs synth_1]
+set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value -quick -objects [get_runs synth_1]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run impl_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183711773A]
+close_hw
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183711728A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183711728A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/VGAsetup.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/VGAsetup.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/VGAsetup.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1

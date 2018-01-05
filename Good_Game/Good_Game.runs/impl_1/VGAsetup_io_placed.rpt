@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date                      : Thu Jan  4 17:41:08 2018
-| Host                      : DESKTOP-21QJ68E running 64-bit major release  (build 9200)
+| Date                      : Fri Jan  5 20:51:00 2018
+| Host                      : PC-20 running 64-bit Service Pack 1  (build 7601)
 | Command                   : report_io -file VGAsetup_io_placed.rpt
 | Design                    : VGAsetup
 | Device                    : xc7a35t

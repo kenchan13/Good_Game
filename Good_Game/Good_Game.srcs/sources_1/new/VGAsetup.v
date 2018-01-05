@@ -4,12 +4,16 @@ module VGAsetup(
     input clk,
     input rst,
     //input [63:0] game_map,
+    //input finished,
     output hsync,
     output vsync,
     output reg [3:0] vgaRed,
     output reg [3:0] vgaGreen,
     output reg [3:0] vgaBlue
     );
+    
+    wire [63:0] game_map = {4'd15, 4'd14, 4'd13, 4'd12, 4'd11, 4'd10, 4'd9, 4'd8, 4'd7, 4'd6, 4'd5, 4'd4, 4'd3, 4'd2, 4'd1, 4'd0};
+    wire finished = 0;
     
     wire clk_25MHz, clk_22;
     clock_divider #(.n(2)) _clk_25MHz(clk, clk_25MHz);
@@ -23,11 +27,12 @@ module VGAsetup(
     wire valid;
     wire [9:0] h_cnt; //300
     wire [9:0] v_cnt; //300
-    wire [3:0] pic_selected;
-    mem_addr_gen addr_12(.clk(clk_22), .rst(rst), .pair_with(4'd12), .h_cnt(h_cnt), .v_cnt(v_cnt), .pixel_addr(pixel_addr_12), .pic_selected());
-    mem_addr_gen addr_13(.clk(clk_22), .rst(rst), .pair_with(4'd13), .h_cnt(h_cnt), .v_cnt(v_cnt), .pixel_addr(pixel_addr_13), .pic_selected());
-    mem_addr_gen addr_14(.clk(clk_22), .rst(rst), .pair_with(4'd14), .h_cnt(h_cnt), .v_cnt(v_cnt), .pixel_addr(pixel_addr_14), .pic_selected());
-    mem_addr_gen addr_15(.clk(clk_22), .rst(rst), .pair_with(4'd15), .h_cnt(h_cnt), .v_cnt(v_cnt), .pixel_addr(pixel_addr_15), .pic_selected(pic_selected));
+    wire [4:0] curr_block; // 5 bits for out of range part
+    reg [3:0] pic_idx;
+    mem_addr_gen addr_12(.clk(clk_22), .rst(rst), .h_cnt(h_cnt), .v_cnt(v_cnt), .pixel_addr(pixel_addr_12));
+    mem_addr_gen addr_13(.clk(clk_22), .rst(rst), .h_cnt(h_cnt), .v_cnt(v_cnt), .pixel_addr(pixel_addr_13));
+    mem_addr_gen addr_14(.clk(clk_22), .rst(rst), .h_cnt(h_cnt), .v_cnt(v_cnt), .pixel_addr(pixel_addr_14));
+    mem_addr_gen addr_15(.clk(clk_22), .rst(rst), .h_cnt(h_cnt), .v_cnt(v_cnt), .pixel_addr(pixel_addr_15));
 //    blk_mem_gen_0_origin blk_mem_gen_0_origin_inst(.clka(clk_25MHz), .wea(0), .addra(pixel_addr_0_origin), .dina(data_0_origin[11:0]), .douta(pixel_0_origin)); 
 //    blk_mem_gen_0_blank blk_mem_gen_0_blank_inst(.clka(clk_25MHz), .wea(0), .addra(pixel_addr_0_blank), .dina(data_0_blank[11:0]), .douta(pixel_0_blank));
 //    blk_mem_gen_1 blk_mem_gen_1_inst(.clka(clk_25MHz), .wea(0), .addra(pixel_addr_1), .dina(data_1[11:0]), .douta(pixel_1));
@@ -46,10 +51,34 @@ module VGAsetup(
     blk_mem_gen_14 blk_mem_gen_14_inst(.clka(clk_25MHz), .wea(0), .addra(pixel_addr_14), .dina(data_14[11:0]), .douta(pixel_14));
     blk_mem_gen_15 blk_mem_gen_15_inst(.clka(clk_25MHz), .wea(0), .addra(pixel_addr_15), .dina(data_15[11:0]), .douta(pixel_15));
     
-    always@(*)begin
+    hv_cnt_find_block _find(h_cnt, v_cnt, curr_block);
+    
+    always@(*)begin // Get the picture index of the block
+        case(curr_block)
+            5'd15: pic_idx = game_map[63:60];
+            5'd14: pic_idx = game_map[59:56];
+            5'd13: pic_idx = game_map[55:52];
+            5'd12: pic_idx = game_map[51:48];
+            /*5'd11: pic_idx = game_map[47:44];
+            5'd10: pic_idx = game_map[43:40];
+            5'd9:  pic_idx = game_map[39:36];
+            5'd8:  pic_idx = game_map[35:32];
+            5'd7:  pic_idx = game_map[31:28];
+            5'd6:  pic_idx = game_map[27:24];
+            5'd5:  pic_idx = game_map[23:20];
+            5'd4:  pic_idx = game_map[19:16];
+            5'd3:  pic_idx = game_map[15:12];
+            5'd2:  pic_idx = game_map[11:8];
+            5'd1:  pic_idx = game_map[7:4];
+            5'd0:  pic_idx = game_map[3:0];*/
+            default: pic_idx = game_map[63:60];
+        endcase
+    end
+    
+    always@(*)begin // Show the corresponding picture
         if(valid)begin
-            case(pic_selected)
-                //4'd0: {vgaRed, vgaGreen, vgaBlue} = finished ? pixel_0_origin : pixel_0_blank;
+            case(pic_idx)
+                4'd0: {vgaRed, vgaGreen, vgaBlue} = finished ? pixel_0_origin : pixel_0_blank;
                 4'd1: {vgaRed, vgaGreen, vgaBlue} = pixel_1;
                 4'd2: {vgaRed, vgaGreen, vgaBlue} = pixel_2;
                 4'd3: {vgaRed, vgaGreen, vgaBlue} = pixel_3;
