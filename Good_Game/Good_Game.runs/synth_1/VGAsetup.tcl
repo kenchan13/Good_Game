@@ -57,6 +57,58 @@ read_ip -quiet C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_
 set_property used_in_implementation false [get_files -all c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_12/blk_mem_gen_12_ooc.xdc]
 set_property is_locked true [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_12/blk_mem_gen_12.xci]
 
+read_ip -quiet C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_11/blk_mem_gen_11.xci
+set_property used_in_implementation false [get_files -all c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_11/blk_mem_gen_11_ooc.xdc]
+set_property is_locked true [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_11/blk_mem_gen_11.xci]
+
+read_ip -quiet C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_10/blk_mem_gen_10.xci
+set_property used_in_implementation false [get_files -all c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_10/blk_mem_gen_10_ooc.xdc]
+set_property is_locked true [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_10/blk_mem_gen_10.xci]
+
+read_ip -quiet C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_9/blk_mem_gen_9.xci
+set_property used_in_implementation false [get_files -all c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_9/blk_mem_gen_9_ooc.xdc]
+set_property is_locked true [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_9/blk_mem_gen_9.xci]
+
+read_ip -quiet C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_8/blk_mem_gen_8.xci
+set_property used_in_implementation false [get_files -all c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_8/blk_mem_gen_8_ooc.xdc]
+set_property is_locked true [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_8/blk_mem_gen_8.xci]
+
+read_ip -quiet C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci
+set_property used_in_implementation false [get_files -all c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7_ooc.xdc]
+set_property is_locked true [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci]
+
+read_ip -quiet C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci
+set_property used_in_implementation false [get_files -all c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6_ooc.xdc]
+set_property is_locked true [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci]
+
+read_ip -quiet C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci
+set_property used_in_implementation false [get_files -all c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5_ooc.xdc]
+set_property is_locked true [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci]
+
+read_ip -quiet C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci
+set_property used_in_implementation false [get_files -all c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4_ooc.xdc]
+set_property is_locked true [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci]
+
+read_ip -quiet C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci
+set_property used_in_implementation false [get_files -all c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3_ooc.xdc]
+set_property is_locked true [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci]
+
+read_ip -quiet C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci
+set_property used_in_implementation false [get_files -all c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2_ooc.xdc]
+set_property is_locked true [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci]
+
+read_ip -quiet C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
+set_property used_in_implementation false [get_files -all c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc]
+set_property is_locked true [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci]
+
+read_ip -quiet C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_0_blank/blk_mem_gen_0_blank.xci
+set_property used_in_implementation false [get_files -all c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_0_blank/blk_mem_gen_0_blank_ooc.xdc]
+set_property is_locked true [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_0_blank/blk_mem_gen_0_blank.xci]
+
+read_ip -quiet C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_0_origin/blk_mem_gen_0_origin.xci
+set_property used_in_implementation false [get_files -all c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_0_origin/blk_mem_gen_0_origin_ooc.xdc]
+set_property is_locked true [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_0_origin/blk_mem_gen_0_origin.xci]
+
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be

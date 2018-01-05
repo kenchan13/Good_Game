@@ -15,6 +15,45 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_13 
 # IP: ip/blk_mem_gen_12/blk_mem_gen_12.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_12 || ORIG_REF_NAME==blk_mem_gen_12}]
 
+# IP: ip/blk_mem_gen_11/blk_mem_gen_11.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_11 || ORIG_REF_NAME==blk_mem_gen_11}]
+
+# IP: ip/blk_mem_gen_10/blk_mem_gen_10.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_10 || ORIG_REF_NAME==blk_mem_gen_10}]
+
+# IP: ip/blk_mem_gen_9/blk_mem_gen_9.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_9 || ORIG_REF_NAME==blk_mem_gen_9}]
+
+# IP: ip/blk_mem_gen_8/blk_mem_gen_8.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_8 || ORIG_REF_NAME==blk_mem_gen_8}]
+
+# IP: ip/blk_mem_gen_7/blk_mem_gen_7.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_7 || ORIG_REF_NAME==blk_mem_gen_7}]
+
+# IP: ip/blk_mem_gen_6/blk_mem_gen_6.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_6 || ORIG_REF_NAME==blk_mem_gen_6}]
+
+# IP: ip/blk_mem_gen_5/blk_mem_gen_5.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_5 || ORIG_REF_NAME==blk_mem_gen_5}]
+
+# IP: ip/blk_mem_gen_4/blk_mem_gen_4.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_4 || ORIG_REF_NAME==blk_mem_gen_4}]
+
+# IP: ip/blk_mem_gen_3/blk_mem_gen_3.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_3 || ORIG_REF_NAME==blk_mem_gen_3}]
+
+# IP: ip/blk_mem_gen_2/blk_mem_gen_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_2 || ORIG_REF_NAME==blk_mem_gen_2}]
+
+# IP: ip/blk_mem_gen_1/blk_mem_gen_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_1 || ORIG_REF_NAME==blk_mem_gen_1}]
+
+# IP: ip/blk_mem_gen_0_blank/blk_mem_gen_0_blank.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_0_blank || ORIG_REF_NAME==blk_mem_gen_0_blank}]
+
+# IP: ip/blk_mem_gen_0_origin/blk_mem_gen_0_origin.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_0_origin || ORIG_REF_NAME==blk_mem_gen_0_origin}]
+
 # XDC: ip/blk_mem_gen_15/blk_mem_gen_15_ooc.xdc
 
 # XDC: ip/blk_mem_gen_14/blk_mem_gen_14_ooc.xdc
@@ -22,3 +61,29 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_12 
 # XDC: ip/blk_mem_gen_13/blk_mem_gen_13_ooc.xdc
 
 # XDC: ip/blk_mem_gen_12/blk_mem_gen_12_ooc.xdc
+
+# XDC: ip/blk_mem_gen_11/blk_mem_gen_11_ooc.xdc
+
+# XDC: ip/blk_mem_gen_10/blk_mem_gen_10_ooc.xdc
+
+# XDC: ip/blk_mem_gen_9/blk_mem_gen_9_ooc.xdc
+
+# XDC: ip/blk_mem_gen_8/blk_mem_gen_8_ooc.xdc
+
+# XDC: ip/blk_mem_gen_7/blk_mem_gen_7_ooc.xdc
+
+# XDC: ip/blk_mem_gen_6/blk_mem_gen_6_ooc.xdc
+
+# XDC: ip/blk_mem_gen_5/blk_mem_gen_5_ooc.xdc
+
+# XDC: ip/blk_mem_gen_4/blk_mem_gen_4_ooc.xdc
+
+# XDC: ip/blk_mem_gen_3/blk_mem_gen_3_ooc.xdc
+
+# XDC: ip/blk_mem_gen_2/blk_mem_gen_2_ooc.xdc
+
+# XDC: ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc
+
+# XDC: ip/blk_mem_gen_0_blank/blk_mem_gen_0_blank_ooc.xdc
+
+# XDC: ip/blk_mem_gen_0_origin/blk_mem_gen_0_origin_ooc.xdc
