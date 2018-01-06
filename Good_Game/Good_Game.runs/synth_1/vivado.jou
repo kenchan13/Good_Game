@@ -2,8 +2,8 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Fri Jan  5 22:07:29 2018
-# Process ID: 5468
+# Start of session at: Sat Jan  6 20:10:17 2018
+# Process ID: 3412
 # Current directory: C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1
 # Command line: vivado.exe -log VGAsetup.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGAsetup.tcl
 # Log file: C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/VGAsetup.vds

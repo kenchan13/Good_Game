@@ -2,152 +2,19 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Fri Jan  5 19:48:23 2018
-# Process ID: 1252
+# Start of session at: Sat Jan  6 19:45:05 2018
+# Process ID: 2544
 # Current directory: C:/Users/user/Desktop/Good_Game/Good_Game
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5352 C:\Users\user\Desktop\Good_Game\Good_Game\Good_Game.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1648 C:\Users\user\Desktop\Good_Game\Good_Game\Good_Game.xpr
 # Log file: C:/Users/user/Desktop/Good_Game/Good_Game/vivado.log
 # Journal file: C:/Users/user/Desktop/Good_Game/Good_Game\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.xpr
 update_compile_order -fileset sources_1
-close [ open C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/pic_select.v w ]
-add_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/pic_select.v
-update_compile_order -fileset sources_1
-remove_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/pic_select.v
-file delete -force C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/pic_select.v
-close [ open C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/hv_cnt_find_block.v w ]
-add_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/hv_cnt_find_block.v
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-open_hw
-connect_hw_server
-disconnect_hw_server localhost:3121
-connect_hw_server
-disconnect_hw_server localhost:3121
-connect_hw_server
-close_hw
-open_hw
-connect_hw_server -url localhost:3121
-current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183711728A]
-set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183711728A]
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/VGAsetup.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/VGAsetup.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/VGAsetup.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw
-set_property -dict [list CONFIG.Coe_File {C:/Users/user/Desktop/Good_Game/Good_Game/Pictrans/0.coe}] [get_ips blk_mem_gen_0_origin]
-generate_target all [get_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_0_origin/blk_mem_gen_0_origin.xci]
-export_ip_user_files -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_0_origin/blk_mem_gen_0_origin.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_0_origin/blk_mem_gen_0_origin.xci] -directory C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files -ipstatic_source_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/modelsim} {questa=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/questa} {riviera=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/riviera} {activehdl=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-set_property -dict [list CONFIG.Coe_File {C:/Users/user/Desktop/Good_Game/Good_Game/Pictrans/1.coe}] [get_ips blk_mem_gen_1]
-generate_target all [get_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci]
-export_ip_user_files -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci] -directory C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files -ipstatic_source_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/modelsim} {questa=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/questa} {riviera=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/riviera} {activehdl=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-set_property -dict [list CONFIG.Coe_File {C:/Users/user/Desktop/Good_Game/Good_Game/Pictrans/2.coe}] [get_ips blk_mem_gen_2]
-generate_target all [get_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci]
-export_ip_user_files -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci] -directory C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files -ipstatic_source_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/modelsim} {questa=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/questa} {riviera=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/riviera} {activehdl=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-set_property -dict [list CONFIG.Coe_File {C:/Users/user/Desktop/Good_Game/Good_Game/Pictrans/3.coe}] [get_ips blk_mem_gen_3]
-generate_target all [get_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci]
-export_ip_user_files -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci] -directory C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files -ipstatic_source_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/modelsim} {questa=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/questa} {riviera=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/riviera} {activehdl=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-set_property -dict [list CONFIG.Coe_File {C:/Users/user/Desktop/Good_Game/Good_Game/Pictrans/4.coe}] [get_ips blk_mem_gen_4]
-generate_target all [get_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci]
-export_ip_user_files -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci] -directory C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files -ipstatic_source_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/modelsim} {questa=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/questa} {riviera=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/riviera} {activehdl=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-set_property -dict [list CONFIG.Coe_File {C:/Users/user/Desktop/Good_Game/Good_Game/Pictrans/5.coe}] [get_ips blk_mem_gen_5]
-generate_target all [get_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci]
-export_ip_user_files -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci] -directory C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files -ipstatic_source_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/modelsim} {questa=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/questa} {riviera=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/riviera} {activehdl=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-set_property -dict [list CONFIG.Coe_File {C:/Users/user/Desktop/Good_Game/Good_Game/Pictrans/6.coe}] [get_ips blk_mem_gen_6]
-generate_target all [get_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci]
-export_ip_user_files -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci] -directory C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files -ipstatic_source_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/modelsim} {questa=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/questa} {riviera=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/riviera} {activehdl=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-set_property -dict [list CONFIG.Coe_File {C:/Users/user/Desktop/Good_Game/Good_Game/Pictrans/7.coe}] [get_ips blk_mem_gen_7]
-generate_target all [get_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci]
-export_ip_user_files -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci] -directory C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files -ipstatic_source_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/modelsim} {questa=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/questa} {riviera=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/riviera} {activehdl=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-set_property -dict [list CONFIG.Coe_File {C:/Users/user/Desktop/Good_Game/Good_Game/Pictrans/8.coe}] [get_ips blk_mem_gen_8]
-generate_target all [get_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_8/blk_mem_gen_8.xci]
-export_ip_user_files -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_8/blk_mem_gen_8.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_8/blk_mem_gen_8.xci] -directory C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files -ipstatic_source_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/modelsim} {questa=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/questa} {riviera=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/riviera} {activehdl=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-set_property -dict [list CONFIG.Coe_File {C:/Users/user/Desktop/Good_Game/Good_Game/Pictrans/9.coe}] [get_ips blk_mem_gen_9]
-generate_target all [get_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_9/blk_mem_gen_9.xci]
-export_ip_user_files -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_9/blk_mem_gen_9.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_9/blk_mem_gen_9.xci] -directory C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files -ipstatic_source_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/modelsim} {questa=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/questa} {riviera=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/riviera} {activehdl=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-set_property -dict [list CONFIG.Coe_File {C:/Users/user/Desktop/Good_Game/Good_Game/Pictrans/10.coe}] [get_ips blk_mem_gen_10]
-generate_target all [get_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_10/blk_mem_gen_10.xci]
-export_ip_user_files -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_10/blk_mem_gen_10.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_10/blk_mem_gen_10.xci] -directory C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files -ipstatic_source_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/modelsim} {questa=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/questa} {riviera=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/riviera} {activehdl=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-set_property -dict [list CONFIG.Coe_File {C:/Users/user/Desktop/Good_Game/Good_Game/Pictrans/11.coe}] [get_ips blk_mem_gen_11]
-generate_target all [get_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_11/blk_mem_gen_11.xci]
-export_ip_user_files -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_11/blk_mem_gen_11.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_11/blk_mem_gen_11.xci] -directory C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files -ipstatic_source_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/modelsim} {questa=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/questa} {riviera=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/riviera} {activehdl=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-set_property -dict [list CONFIG.Coe_File {C:/Users/user/Desktop/Good_Game/Good_Game/Pictrans/12.coe}] [get_ips blk_mem_gen_12]
-generate_target all [get_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_12/blk_mem_gen_12.xci]
-export_ip_user_files -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_12/blk_mem_gen_12.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_12/blk_mem_gen_12.xci] -directory C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files -ipstatic_source_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/modelsim} {questa=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/questa} {riviera=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/riviera} {activehdl=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-set_property -dict [list CONFIG.Coe_File {C:/Users/user/Desktop/Good_Game/Good_Game/Pictrans/13.coe}] [get_ips blk_mem_gen_13]
-generate_target all [get_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/blk_mem_gen_13.xci]
-export_ip_user_files -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/blk_mem_gen_13.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/blk_mem_gen_13.xci] -directory C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files -ipstatic_source_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/modelsim} {questa=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/questa} {riviera=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/riviera} {activehdl=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-generate_target all [get_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/blk_mem_gen_13.xci]
-export_ip_user_files -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/blk_mem_gen_13.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/blk_mem_gen_13.xci] -directory C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files -ipstatic_source_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/modelsim} {questa=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/questa} {riviera=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/riviera} {activehdl=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-generate_target all [get_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_14/blk_mem_gen_14.xci]
-export_ip_user_files -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_14/blk_mem_gen_14.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_14/blk_mem_gen_14.xci] -directory C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files -ipstatic_source_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/modelsim} {questa=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/questa} {riviera=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/riviera} {activehdl=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-set_property -dict [list CONFIG.Coe_File {C:/Users/user/Desktop/Good_Game/Good_Game/Pictrans/15.coe}] [get_ips blk_mem_gen_15]
-generate_target all [get_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/blk_mem_gen_15.xci]
-export_ip_user_files -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/blk_mem_gen_15.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/blk_mem_gen_15.xci] -directory C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files -ipstatic_source_dir C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/modelsim} {questa=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/questa} {riviera=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/riviera} {activehdl=C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_hw
-connect_hw_server -url localhost:3121
-current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183711728A]
-set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183711728A]
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/VGAsetup.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/VGAsetup.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/VGAsetup.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/impl_1/VGAsetup.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+remove_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/BCD_counter.v
+file delete -force C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/BCD_counter.v
+remove_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/Random_Direction.v
+file delete -force C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/Random_Direction.v
+remove_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/LFSR.v
+file delete -force C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/LFSR.v

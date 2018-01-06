@@ -2,14 +2,13 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Sat Jan  6 19:45:05 2018
-# Process ID: 2544
+# Start of session at: Sat Jan  6 19:42:15 2018
+# Process ID: 3784
 # Current directory: C:/Users/user/Desktop/Good_Game/Good_Game
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1648 C:\Users\user\Desktop\Good_Game\Good_Game\Good_Game.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3908 C:\Users\user\Desktop\Good_Game\Good_Game\Good_Game.xpr
 # Log file: C:/Users/user/Desktop/Good_Game/Good_Game/vivado.log
 # Journal file: C:/Users/user/Desktop/Good_Game/Good_Game\vivado.jou
 #-----------------------------------------------------------
-INFO: [Common 17-724] Xilinx Tcl Store apps are automatically updated.
 start_gui
 open_project C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.xpr
 Scanning sources...
@@ -22,13 +21,8 @@ INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/dat
 WARNING: [IP_Flow 19-2162] IP 'KeyboardCtrl_0' is locked:
 * IP definition 'KeyboardCtrl (1.0)' for IP 'KeyboardCtrl_0' (customized with software release 2017.2) was not found in the IP Catalog.
 Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 776.863 ; gain = 97.957
 update_compile_order -fileset sources_1
-remove_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/BCD_counter.v
-file delete -force C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/BCD_counter.v
-remove_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/Random_Direction.v
-file delete -force C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/Random_Direction.v
-remove_files  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/LFSR.v
-file delete -force C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/LFSR.v
-INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+exit
+INFO: [Common exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jan  6 19:45:04 2018...
