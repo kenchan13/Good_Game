@@ -1,0 +1,101 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Sat Jan  6 21:52:22 2018
+| Host         : PC-31 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    33 |
+| Unused register locations in slices containing registers |   115 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              36 |           10 |
+| No           | No                    | Yes                    |              91 |           40 |
+| No           | Yes                   | No                     |              12 |            6 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             128 |           82 |
+| Yes          | Yes                   | No                     |              10 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+---------------------------------------------------+--------------------------------------+------------------+----------------+
+|          Clock Signal         |                   Enable Signal                   |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
++-------------------------------+---------------------------------------------------+--------------------------------------+------------------+----------------+
+|  clk_25MHz                    |                                                   | rst_IBUF                             |                2 |              2 |
+|  clk_16_BUFG                  | key_de/game_map_reg[60][12]                       | _rst_1p/AR[0]                        |                4 |              4 |
+|  clk_16_BUFG                  | key_de/game_map_reg[60][15]                       | _rst_1p/AR[0]                        |                4 |              4 |
+|  clk_16_BUFG                  | key_de/E[0]                                       | _rst_1p/AR[0]                        |                3 |              4 |
+|  clk_16_BUFG                  | key_de/game_map_reg[60][0]                        | _rst_1p/AR[0]                        |                4 |              4 |
+|  clk_16_BUFG                  | key_de/game_map_reg[60][1]                        | _rst_1p/AR[0]                        |                3 |              4 |
+|  clk_16_BUFG                  | key_de/game_map_reg[60][2]                        | _rst_1p/AR[0]                        |                4 |              4 |
+|  clk_16_BUFG                  | key_de/game_map_reg[60][3]                        | _rst_1p/AR[0]                        |                4 |              4 |
+|  clk_16_BUFG                  | key_de/game_map_reg[60][4]                        | _rst_1p/AR[0]                        |                3 |              4 |
+|  clk_16_BUFG                  | key_de/game_map_reg[60][5]                        | _rst_1p/AR[0]                        |                3 |              4 |
+|  clk_16_BUFG                  | key_de/game_map_reg[60][6]                        | _rst_1p/AR[0]                        |                3 |              4 |
+|  clk_16_BUFG                  | key_de/game_map_reg[60][9]                        | _rst_1p/AR[0]                        |                4 |              4 |
+|  clk_16_BUFG                  | key_de/game_map_reg[60][7]                        | _rst_1p/AR[0]                        |                4 |              4 |
+|  clk_16_BUFG                  | key_de/game_map_reg[60][8]                        | _rst_1p/AR[0]                        |                4 |              4 |
+|  clk_16_BUFG                  | key_de/game_map_reg[60][10]                       | _rst_1p/AR[0]                        |                4 |              4 |
+|  clk_16_BUFG                  | key_de/game_map_reg[60][11]                       | _rst_1p/AR[0]                        |                4 |              4 |
+|  clk_IBUF_BUFG                | key_de/inst/inst/Ps2Interface_i/bits_count        | rst_IBUF                             |                2 |              4 |
+|  clk_16_BUFG                  | key_de/game_map_reg[60][13]                       | _rst_1p/AR[0]                        |                3 |              4 |
+|  clk_16_BUFG                  | key_de/game_map_reg[60][14]                       | _rst_1p/AR[0]                        |                3 |              4 |
+|  clk_IBUF_BUFG                | key_de/op/signal_single_pulse                     | rst_IBUF                             |                2 |              5 |
+|  clk_16_BUFG                  |                                                   | _rst_1p/AR[0]                        |                3 |              7 |
+|  _display/clk_divider_reg[15] |                                                   | _rst_1p/AR[0]                        |                3 |              7 |
+|  clk_IBUF_BUFG                | key_de/inst/inst/Ps2Interface_i/rx_finish         | rst_IBUF                             |                3 |              8 |
+|  clk_IBUF_BUFG                | key_de/inst/inst/Ps2Interface_i/rx_valid          | rst_IBUF                             |                2 |              8 |
+|  clk_25MHz                    |                                                   | _setup/vga_inst/pixel_cnt[9]_i_1_n_0 |                4 |             10 |
+|  clk_25MHz                    | _setup/vga_inst/line_cnt                          | _setup/vga_inst/line_cnt[9]_i_1_n_0  |                5 |             10 |
+|  clk_IBUF_BUFG                | key_de/key[9]_i_1_n_0                             | rst_IBUF                             |                3 |             10 |
+|  clk_IBUF_BUFG                | key_de/inst/inst/Ps2Interface_i/frame[10]_i_1_n_0 | rst_IBUF                             |                4 |             11 |
+|  clk_16_BUFG                  | steps[13]_i_1_n_0                                 | _rst_1p/AR[0]                        |                5 |             14 |
+|  clk_16_BUFG                  |                                                   |                                      |                4 |             16 |
+|  clk_IBUF_BUFG                |                                                   | _rst_1p/AR[0]                        |                4 |             16 |
+|  clk_IBUF_BUFG                |                                                   |                                      |                6 |             20 |
+|  clk_IBUF_BUFG                |                                                   | rst_IBUF                             |               30 |             61 |
++-------------------------------+---------------------------------------------------+--------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     1 |
+| 4      |                    18 |
+| 5      |                     1 |
+| 7      |                     2 |
+| 8      |                     2 |
+| 10     |                     3 |
+| 11     |                     1 |
+| 14     |                     1 |
+| 16+    |                     4 |
++--------+-----------------------+
+
+

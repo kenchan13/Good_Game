@@ -3,8 +3,8 @@
 module VGAsetup(
     input clk,
     input rst,
-    //input [63:0] game_map,
-    //input finished,
+    input [63:0] game_map,
+    input finished,
     output hsync,
     output vsync,
     output reg [3:0] vgaRed,
@@ -12,8 +12,8 @@ module VGAsetup(
     output reg [3:0] vgaBlue
     );
     
-    wire [63:0] game_map = {4'd15, 4'd14, 4'd13, 4'd12, 4'd11, 4'd10, 4'd9, 4'd8, 4'd7, 4'd6, 4'd5, 4'd4, 4'd3, 4'd2, 4'd1, 4'd0};
-    wire finished = 0;
+//    wire [63:0] game_map = {4'd15, 4'd14, 4'd13, 4'd12, 4'd11, 4'd10, 4'd9, 4'd8, 4'd7, 4'd6, 4'd5, 4'd4, 4'd3, 4'd2, 4'd1, 4'd0};
+//    wire finished = 0;
     
     wire clk_25MHz, clk_22;
     clock_divider #(.n(2)) _clk_25MHz(clk, clk_25MHz);
