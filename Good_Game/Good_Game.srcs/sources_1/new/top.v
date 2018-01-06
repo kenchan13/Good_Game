@@ -95,15 +95,15 @@ module top(
             INIT:begin
                 next_state = RANDOM;
                 n_steps = 14'd0;
-                n_blank_pos = blank_pos;
-                n_game_map = game_map;
+                n_blank_pos = 4'd0;
+                n_game_map = {4'd8, 4'd12, 4'd14, 4'd7, 4'd4, 4'd10, 4'd5, 4'd11, 4'd6, 4'd3, 4'd2, 4'd1, 4'd9, 4'd13, 4'd15, 4'd0};
                 n_print_0 = 1'b0;
             end
             RANDOM:begin
                 if(start) next_state = PLAY;
                 else next_state = RANDOM;
                 n_steps = 14'd0;
-                n_blank_pos = blank_pos;
+                n_blank_pos = 4'd0;
                 n_game_map = {game_map[59:4], game_map[63:60], game_map[3:0]};
                 n_print_0 = 1'b0;
             end
@@ -137,7 +137,7 @@ module top(
                             4'd9:  n_game_map = {game_map[63:40], game_map[23:20], game_map[35:24], game_map[39:36], game_map[19:0]};
                             4'd8:  n_game_map = {game_map[63:36], game_map[19:16], game_map[31:20], game_map[35:32], game_map[15:0]};
                             4'd7:  n_game_map = {game_map[63:32], game_map[15:12], game_map[27:16], game_map[31:28], game_map[11:0]};
-                            4'd6:  n_game_map = {game_map[63:28], game_map[11:8] , game_map[23:15], game_map[27:24], game_map[7:0] };
+                            4'd6:  n_game_map = {game_map[63:28], game_map[11:8] , game_map[23:12], game_map[27:24], game_map[7:0] };
                             4'd5:  n_game_map = {game_map[63:24], game_map[7:4]  , game_map[19:8] , game_map[23:20], game_map[3:0] };
                             4'd4:  n_game_map = {game_map[63:20], game_map[3:0]  , game_map[15:4] , game_map[19:16]                };
                             default: n_game_map = game_map;
@@ -145,7 +145,7 @@ module top(
                         n_print_0 = 1'b0;
                     end
                 end else if(last_change==A_CODES)begin // LEFT
-                    if(blank_pos==4'd12 || blank_pos==4'd8 || blank_pos==4'd4 || blank_pos==4'd0)begin // 3 7 11 15
+                    if(blank_pos==4'd12 || blank_pos==4'd8 || blank_pos==4'd4 || blank_pos==4'd0)begin
                         next_state = PLAY;
                         n_steps = steps;
                         n_blank_pos = blank_pos;
@@ -187,7 +187,7 @@ module top(
                         n_steps = steps;
                         n_blank_pos = blank_pos + 4'd4;
                         case(blank_pos) // {unchanged(0~44), swapped(4), unchanged(12), swapped(4), unchanged(44~0)}
-                            4'd11: n_game_map = {                 game_map[47:43], game_map[59:48], game_map[63:60], game_map[43:0]};
+                            4'd11: n_game_map = {                 game_map[47:44], game_map[59:48], game_map[63:60], game_map[43:0]};
                             4'd10: n_game_map = {game_map[63:60], game_map[43:40], game_map[55:44], game_map[59:56], game_map[39:0]};
                             4'd9:  n_game_map = {game_map[63:56], game_map[39:36], game_map[51:40], game_map[55:52], game_map[35:0]};
                             4'd8:  n_game_map = {game_map[63:52], game_map[35:32], game_map[47:36], game_map[51:48], game_map[31:0]};
@@ -196,7 +196,7 @@ module top(
                             4'd5:  n_game_map = {game_map[63:40], game_map[23:20], game_map[35:24], game_map[39:36], game_map[19:0]};
                             4'd4:  n_game_map = {game_map[63:36], game_map[19:16], game_map[31:20], game_map[35:32], game_map[15:0]};
                             4'd3:  n_game_map = {game_map[63:32], game_map[15:12], game_map[27:16], game_map[31:28], game_map[11:0]};
-                            4'd2:  n_game_map = {game_map[63:28], game_map[11:8] , game_map[23:15], game_map[27:24], game_map[7:0] };
+                            4'd2:  n_game_map = {game_map[63:28], game_map[11:8] , game_map[23:12], game_map[27:24], game_map[7:0] };
                             4'd1:  n_game_map = {game_map[63:24], game_map[7:4]  , game_map[19:8] , game_map[23:20], game_map[3:0] };
                             4'd0:  n_game_map = {game_map[63:20], game_map[3:0]  , game_map[15:4] , game_map[19:16]                };
                             default: n_game_map = game_map;
@@ -215,21 +215,21 @@ module top(
                         n_steps = steps;
                         n_blank_pos = blank_pos + 4'd1;
                         case(blank_pos) // {unchanged(0~56), swapped(4), swapped(4), unchanged(56~0)}
-                            4'd15: n_game_map = {                 game_map[59:56], game_map[63:60], game_map[55:0]};
-                            4'd14: n_game_map = {game_map[63:60], game_map[55:52], game_map[59:56], game_map[51:0]};
-                            4'd13: n_game_map = {game_map[63:56], game_map[51:48], game_map[55:52], game_map[47:0]};
+                            4'd14: n_game_map = {                 game_map[59:56], game_map[63:60], game_map[55:0]};
+                            4'd13: n_game_map = {game_map[63:60], game_map[55:52], game_map[59:56], game_map[51:0]};
+                            4'd12: n_game_map = {game_map[63:56], game_map[51:48], game_map[55:52], game_map[47:0]};
                             
-                            4'd11: n_game_map = {game_map[63:48], game_map[43:40], game_map[47:44], game_map[39:0]};
-                            4'd10: n_game_map = {game_map[63:44], game_map[39:36], game_map[43:40], game_map[35:0]};
-                            4'd9:  n_game_map = {game_map[63:40], game_map[35:32], game_map[39:36], game_map[31:0]};
+                            4'd10: n_game_map = {game_map[63:48], game_map[43:40], game_map[47:44], game_map[39:0]};
+                            4'd9:  n_game_map = {game_map[63:44], game_map[39:36], game_map[43:40], game_map[35:0]};
+                            4'd8:  n_game_map = {game_map[63:40], game_map[35:32], game_map[39:36], game_map[31:0]};
                             
-                            4'd7:  n_game_map = {game_map[63:32], game_map[27:24], game_map[31:28], game_map[23:0]};
-                            4'd6:  n_game_map = {game_map[63:28], game_map[23:20], game_map[27:24], game_map[19:0]};
-                            4'd5:  n_game_map = {game_map[63:24], game_map[19:16], game_map[23:20], game_map[15:0]};
+                            4'd6:  n_game_map = {game_map[63:32], game_map[27:24], game_map[31:28], game_map[23:0]};
+                            4'd5:  n_game_map = {game_map[63:28], game_map[23:20], game_map[27:24], game_map[19:0]};
+                            4'd4:  n_game_map = {game_map[63:24], game_map[19:16], game_map[23:20], game_map[15:0]};
                             
-                            4'd3:  n_game_map = {game_map[63:16], game_map[11:8] , game_map[15:12], game_map[7:0] };
-                            4'd2:  n_game_map = {game_map[63:12], game_map[7:4]  , game_map[11:8] , game_map[3:0] };
-                            4'd1:  n_game_map = {game_map[63:8] , game_map[3:0]  , game_map[7:4]                  };
+                            4'd2:  n_game_map = {game_map[63:16], game_map[11:8] , game_map[15:12], game_map[7:0] };
+                            4'd1:  n_game_map = {game_map[63:12], game_map[7:4]  , game_map[11:8] , game_map[3:0] };
+                            4'd0:  n_game_map = {game_map[63:8] , game_map[3:0]  , game_map[7:4]                  };
                             default: n_game_map = game_map;
                         endcase
                         n_print_0 = 1'b0;
@@ -272,12 +272,12 @@ module top(
         endcase
     end
     
-    //VGAsetup _setup(clk, rst, game_map, finished, hsync, vsync, vgaRed, vgaGreen, vgaBlue);
+    VGAsetup _setup(clk, rst, game_map, finished, hsync, vsync, vgaRed, vgaGreen, vgaBlue);
     
     wire [3:0] s1000 = (steps / 1000) % 10;
     wire [3:0] s100 = (steps / 100) % 10;
     wire [3:0] s10 = (steps / 10) % 10;
     wire [3:0] s1 = steps % 10;
     wire [15:0] nums = {s1000, s100, s10, s1};
-    SevenSegment _display(DISPLAY, DIGIT, nums, rst_1p, clk_16);
+    SevenSegment _display(DISPLAY, DIGIT, nums, rst_1p, clk);
 endmodule
