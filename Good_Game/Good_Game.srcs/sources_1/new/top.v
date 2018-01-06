@@ -259,7 +259,7 @@ module top(
                 next_state = WIN;
                 n_steps = steps;
                 n_blank_pos = blank_pos;
-                n_game_map = game_map;
+                n_game_map = {4'd15, 4'd14, 4'd13, 4'd12, 4'd11, 4'd10, 4'd9, 4'd8, 4'd7, 4'd6, 4'd5, 4'd4, 4'd3, 4'd2, 4'd1, 4'd0};
                 n_print_0 = 1'b1;
             end
             default:begin
