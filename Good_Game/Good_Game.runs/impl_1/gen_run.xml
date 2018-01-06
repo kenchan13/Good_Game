@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1515161248">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1515240616">
   <File Type="PWROPT-DRC" Name="VGAsetup_drc_pwropted.rpt"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="VGAsetup_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="VGAsetup_timing_summary_init.rpt"/>
@@ -222,16 +222,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/Downloads/BCD_counter.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/BCD_counter.v"/>
-        <Attr Name="ImportTime" Val="1514245843"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/KeyboardSampleCode/KeyboardDecoder.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -242,31 +232,11 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/Downloads/LFSR.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/LFSR.v"/>
-        <Attr Name="ImportTime" Val="1513675306"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/KeyboardSampleCode/OnePulse.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../../KeyboardSampleCode/OnePulse.v"/>
         <Attr Name="ImportTime" Val="1514245762"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/Downloads/Random_Direction.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/Random_Direction.v"/>
-        <Attr Name="ImportTime" Val="1513675298"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

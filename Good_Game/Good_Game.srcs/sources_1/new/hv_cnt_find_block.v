@@ -10,7 +10,7 @@ module hv_cnt_find_block(
     
     always@(*)begin
         if(h_cnt < 80 || h_cnt >= 560) curr_block = 5'd20;
-        else if(80 <= h_cnt && h_cnt < 160)begin
+        else if(80 <= h_cnt && h_cnt < 200)begin
             if(0 <= v_cnt && v_cnt < 120) curr_block = 5'd15;
             else if(120 <= v_cnt && v_cnt < 240) curr_block = 5'd11;
             else if(240 <= v_cnt && v_cnt < 360) curr_block = 5'd7;

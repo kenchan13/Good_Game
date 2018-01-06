@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Fri Jan  5 22:19:04 2018
-| Host         : PC-20 running 64-bit Service Pack 1  (build 7601)
+| Date         : Sat Jan  6 20:22:00 2018
+| Host         : PC-31 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_drc -file VGAsetup_drc_opted.rpt
 | Design       : VGAsetup
 | Device       : xc7a35tcpg236-1

@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date             : Fri Jan  5 22:19:26 2018
-| Host             : PC-20 running 64-bit Service Pack 1  (build 7601)
+| Date             : Sat Jan  6 20:22:24 2018
+| Host             : PC-31 running 64-bit Service Pack 1  (build 7601)
 | Command          : report_power -file VGAsetup_power_routed.rpt -pb VGAsetup_power_summary_routed.pb -rpx VGAsetup_power_routed.rpx
 | Design           : VGAsetup
 | Device           : xc7a35tcpg236-1
@@ -50,17 +50,17 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.002 |      401 |       --- |             --- |
-|   LUT as Logic |     0.001 |      250 |     20800 |            1.20 |
+| Slice Logic    |     0.002 |      398 |       --- |             --- |
+|   LUT as Logic |     0.001 |      246 |     20800 |            1.18 |
 |   CARRY4       |    <0.001 |       46 |      8150 |            0.56 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   F7/F8 Muxes  |    <0.001 |       12 |     32600 |            0.04 |
 |   Register     |    <0.001 |       24 |     41600 |            0.06 |
 |   Others       |     0.000 |       51 |       --- |             --- |
-| Signals        |     0.003 |      493 |       --- |             --- |
+| Signals        |     0.003 |      489 |       --- |             --- |
 | Block RAM      |     0.004 |        8 |        50 |           16.00 |
 | DSPs           |    <0.001 |        1 |        90 |            1.11 |
-| I/O            |     0.007 |       16 |       106 |           15.09 |
+| I/O            |     0.008 |       16 |       106 |           15.09 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.089 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
