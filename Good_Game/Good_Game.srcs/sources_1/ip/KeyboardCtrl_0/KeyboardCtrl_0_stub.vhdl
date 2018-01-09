@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
--- Date        : Tue Dec 26 16:05:36 2017
--- Host        : pc-37 running 64-bit Service Pack 1  (build 7601)
+-- Date        : Tue Jan  9 16:25:53 2018
+-- Host        : PC-57 running 64-bit Service Pack 1  (build 7601)
 -- Command     : write_vhdl -force -mode synth_stub
---               C:/Users/NTHUCS/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0_stub.vhdl
+--               C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0_stub.vhdl
 -- Design      : KeyboardCtrl_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a35tcpg236-1

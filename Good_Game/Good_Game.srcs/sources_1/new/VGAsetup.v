@@ -4,6 +4,7 @@ module VGAsetup(
     input clk,
     input rst,
     input [63:0] game_map,
+    input show_original,
     input finished,
     output hsync,
     output vsync,
@@ -21,8 +22,8 @@ module VGAsetup(
     
     // VGA part
     wire [11:0] data_0_origin, data_0_blank, data_1, data_2, data_3, data_4, data_5, data_6, data_7, data_8, data_9, data_10, data_11, data_12, data_13, data_14, data_15;
-    wire [9:0] pixel_addr_0_origin, pixel_addr_0_blank, pixel_addr_1, pixel_addr_2, pixel_addr_3, pixel_addr_4, pixel_addr_5, pixel_addr_6, pixel_addr_7, pixel_addr_8;
-    wire [9:0] pixel_addr_9, pixel_addr_10, pixel_addr_11, pixel_addr_12, pixel_addr_13, pixel_addr_14, pixel_addr_15;
+    wire [11:0] pixel_addr_0_origin, pixel_addr_0_blank, pixel_addr_1, pixel_addr_2, pixel_addr_3, pixel_addr_4, pixel_addr_5, pixel_addr_6, pixel_addr_7, pixel_addr_8;
+    wire [11:0] pixel_addr_9, pixel_addr_10, pixel_addr_11, pixel_addr_12, pixel_addr_13, pixel_addr_14, pixel_addr_15;
     wire [11:0] pixel_0_origin, pixel_0_blank, pixel_1, pixel_2, pixel_3, pixel_4, pixel_5, pixel_6, pixel_7, pixel_8, pixel_9, pixel_10, pixel_11, pixel_12, pixel_13, pixel_14, pixel_15;
     wire valid;
     wire [9:0] h_cnt; //300
@@ -67,25 +68,28 @@ module VGAsetup(
     hv_cnt_find_block _find(h_cnt, v_cnt, curr_block);
     
     always@(*)begin // Get the picture index of the block
-        case(curr_block)
-            5'd15: pic_idx = game_map[63:60];
-            5'd14: pic_idx = game_map[59:56];
-            5'd13: pic_idx = game_map[55:52];
-            5'd12: pic_idx = game_map[51:48];
-            5'd11: pic_idx = game_map[47:44];
-            5'd10: pic_idx = game_map[43:40];
-            5'd9:  pic_idx = game_map[39:36];
-            5'd8:  pic_idx = game_map[35:32];
-            5'd7:  pic_idx = game_map[31:28];
-            5'd6:  pic_idx = game_map[27:24];
-            5'd5:  pic_idx = game_map[23:20];
-            5'd4:  pic_idx = game_map[19:16];
-            5'd3:  pic_idx = game_map[15:12];
-            5'd2:  pic_idx = game_map[11:8];
-            5'd1:  pic_idx = game_map[7:4];
-            5'd0:  pic_idx = game_map[3:0];
-            default: pic_idx = 4'd0; // Make out of range problem into here
-        endcase
+        if(show_original) pic_idx = curr_block; // show pictrue n on block n
+        else begin
+            case(curr_block)
+                5'd15: pic_idx = game_map[63:60];
+                5'd14: pic_idx = game_map[59:56];
+                5'd13: pic_idx = game_map[55:52];
+                5'd12: pic_idx = game_map[51:48];
+                5'd11: pic_idx = game_map[47:44];
+                5'd10: pic_idx = game_map[43:40];
+                5'd9:  pic_idx = game_map[39:36];
+                5'd8:  pic_idx = game_map[35:32];
+                5'd7:  pic_idx = game_map[31:28];
+                5'd6:  pic_idx = game_map[27:24];
+                5'd5:  pic_idx = game_map[23:20];
+                5'd4:  pic_idx = game_map[19:16];
+                5'd3:  pic_idx = game_map[15:12];
+                5'd2:  pic_idx = game_map[11:8];
+                5'd1:  pic_idx = game_map[7:4];
+                5'd0:  pic_idx = game_map[3:0];
+                default: pic_idx = 4'd0; // Make out of range problem into here
+            endcase
+        end
     end
     
     always@(*)begin // Show the corresponding picture

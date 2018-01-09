@@ -70,7 +70,7 @@ module top(
         03 02 01 00
         */    
     
-    reg finished;
+    reg finished, show_original;
     
     always@(posedge clk_16 or posedge rst_1p)begin
         if(rst_1p)begin
@@ -78,6 +78,7 @@ module top(
             steps <= 14'd0;
             blank_pos <= 4'd0;
             game_map <= {4'd8, 4'd12, 4'd14, 4'd7, 4'd4, 4'd10, 4'd5, 4'd11, 4'd6, 4'd3, 4'd2, 4'd1, 4'd9, 4'd13, 4'd15, 4'd0};
+            show_original <= 1'b1;
             finished <= 1'b0;
             print_0 <= 1'b0;
         end else begin
@@ -85,6 +86,7 @@ module top(
             steps <= n_steps;
             blank_pos <= n_blank_pos;
             game_map <= n_game_map;
+            show_original <= curr_state==INIT || curr_state==RANDOM || curr_state==WIN;
             finished <= (game_map=={4'd15, 4'd14, 4'd13, 4'd12, 4'd11, 4'd10, 4'd9, 4'd8, 4'd7, 4'd6, 4'd5, 4'd4, 4'd3, 4'd2, 4'd1, 4'd0});
             print_0 <= n_print_0;
         end    
@@ -272,7 +274,7 @@ module top(
         endcase
     end
     
-    VGAsetup _setup(clk, rst, game_map, finished, hsync, vsync, vgaRed, vgaGreen, vgaBlue);
+    VGAsetup _setup(clk, rst, game_map, show_original, finished, hsync, vsync, vgaRed, vgaGreen, vgaBlue);
     
     wire [3:0] s1000 = (steps / 1000) % 10;
     wire [3:0] s100 = (steps / 100) % 10;
