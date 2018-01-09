@@ -18,9 +18,9 @@ Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5788 
+INFO: Helper process launched with PID 5476 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 329.453 ; gain = 76.355
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 329.613 ; gain = 76.809
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/top.v:3]
 	Parameter INIT bound to: 6'b000001 
@@ -61,8 +61,8 @@ INFO: [Synth 8-638] synthesizing module 'KeyboardDecoder' [C:/Users/user/Desktop
 	Parameter IS_INIT bound to: 8'b10101010 
 	Parameter IS_EXTEND bound to: 8'b11100000 
 	Parameter IS_BREAK bound to: 8'b11110000 
-INFO: [Synth 8-638] synthesizing module 'KeyboardCtrl_0' [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/.Xil/Vivado-11080-PC-31/realtime/KeyboardCtrl_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'KeyboardCtrl_0' (4#1) [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/.Xil/Vivado-11080-PC-31/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'KeyboardCtrl_0' [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/.Xil/Vivado-10064-PC-57/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'KeyboardCtrl_0' (4#1) [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/.Xil/Vivado-10064-PC-57/realtime/KeyboardCtrl_0_stub.v:6]
 INFO: [Synth 8-226] default block is never used [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/KeyboardSampleCode/KeyboardDecoder.v:64]
 INFO: [Synth 8-256] done synthesizing module 'KeyboardDecoder' (5#1) [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/KeyboardSampleCode/KeyboardDecoder.v:1]
 INFO: [Synth 8-638] synthesizing module 'VGAsetup' [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:3]
@@ -100,9 +100,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0_origin' [c:/Users/user/De
 	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -114,9 +114,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0_origin' [c:/Users/user/De
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -139,9 +139,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0_origin' [c:/Users/user/De
 	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.43485 mW - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.822999 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_0_origin/synth/blk_mem_gen_0_origin.vhd:230]
 WARNING: [Synth 8-6014] Unused sequential element i_reg was removed. 
 WARNING: [Synth 8-6014] Unused sequential element i_reg was removed. 
@@ -178,9 +178,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0_blank' [c:/Users/user/Des
 	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -192,9 +192,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0_blank' [c:/Users/user/Des
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -217,9 +217,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0_blank' [c:/Users/user/Des
 	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.43485 mW - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.822999 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_0_blank/synth/blk_mem_gen_0_blank.vhd:230]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0_blank' (16#1) [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_0_blank/synth/blk_mem_gen_0_blank.vhd:69]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_1/synth/blk_mem_gen_1.vhd:69]
@@ -254,9 +254,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [c:/Users/user/Desktop/G
 	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -268,9 +268,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [c:/Users/user/Desktop/G
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -293,9 +293,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [c:/Users/user/Desktop/G
 	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.43485 mW - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.822999 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_1/synth/blk_mem_gen_1.vhd:230]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (17#1) [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_1/synth/blk_mem_gen_1.vhd:69]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_2' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_2/synth/blk_mem_gen_2.vhd:69]
@@ -330,9 +330,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_2' [c:/Users/user/Desktop/G
 	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -344,9 +344,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_2' [c:/Users/user/Desktop/G
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -369,9 +369,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_2' [c:/Users/user/Desktop/G
 	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.43485 mW - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.822999 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_2/synth/blk_mem_gen_2.vhd:230]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_2' (18#1) [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_2/synth/blk_mem_gen_2.vhd:69]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_3' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_3/synth/blk_mem_gen_3.vhd:69]
@@ -406,9 +406,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_3' [c:/Users/user/Desktop/G
 	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -420,9 +420,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_3' [c:/Users/user/Desktop/G
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -445,9 +445,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_3' [c:/Users/user/Desktop/G
 	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.43485 mW - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.822999 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_3/synth/blk_mem_gen_3.vhd:230]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_3' (19#1) [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_3/synth/blk_mem_gen_3.vhd:69]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_4' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_4/synth/blk_mem_gen_4.vhd:69]
@@ -482,9 +482,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_4' [c:/Users/user/Desktop/G
 	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -496,9 +496,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_4' [c:/Users/user/Desktop/G
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -521,9 +521,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_4' [c:/Users/user/Desktop/G
 	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.43485 mW - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.822999 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_4/synth/blk_mem_gen_4.vhd:230]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_4' (20#1) [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_4/synth/blk_mem_gen_4.vhd:69]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_5' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_5/synth/blk_mem_gen_5.vhd:69]
@@ -558,9 +558,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_5' [c:/Users/user/Desktop/G
 	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -572,9 +572,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_5' [c:/Users/user/Desktop/G
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -597,9 +597,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_5' [c:/Users/user/Desktop/G
 	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.43485 mW - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.822999 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_5/synth/blk_mem_gen_5.vhd:230]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_5' (21#1) [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_5/synth/blk_mem_gen_5.vhd:69]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_6' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_6/synth/blk_mem_gen_6.vhd:69]
@@ -634,9 +634,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_6' [c:/Users/user/Desktop/G
 	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -648,9 +648,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_6' [c:/Users/user/Desktop/G
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -673,9 +673,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_6' [c:/Users/user/Desktop/G
 	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.43485 mW - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.822999 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_6/synth/blk_mem_gen_6.vhd:230]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_6' (22#1) [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_6/synth/blk_mem_gen_6.vhd:69]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_7' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_7/synth/blk_mem_gen_7.vhd:69]
@@ -710,9 +710,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_7' [c:/Users/user/Desktop/G
 	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -724,9 +724,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_7' [c:/Users/user/Desktop/G
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -749,9 +749,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_7' [c:/Users/user/Desktop/G
 	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.43485 mW - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.822999 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_7/synth/blk_mem_gen_7.vhd:230]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_7' (23#1) [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_7/synth/blk_mem_gen_7.vhd:69]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_8' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_8/synth/blk_mem_gen_8.vhd:69]
@@ -786,9 +786,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_8' [c:/Users/user/Desktop/G
 	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -800,9 +800,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_8' [c:/Users/user/Desktop/G
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -825,9 +825,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_8' [c:/Users/user/Desktop/G
 	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.43485 mW - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.822999 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_8/synth/blk_mem_gen_8.vhd:230]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_8' (24#1) [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_8/synth/blk_mem_gen_8.vhd:69]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_9' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_9/synth/blk_mem_gen_9.vhd:69]
@@ -862,9 +862,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_9' [c:/Users/user/Desktop/G
 	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -876,9 +876,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_9' [c:/Users/user/Desktop/G
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -901,9 +901,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_9' [c:/Users/user/Desktop/G
 	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.43485 mW - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.822999 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_9/synth/blk_mem_gen_9.vhd:230]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_9' (25#1) [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_9/synth/blk_mem_gen_9.vhd:69]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_10' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_10/synth/blk_mem_gen_10.vhd:69]
@@ -938,9 +938,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_10' [c:/Users/user/Desktop/
 	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -952,9 +952,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_10' [c:/Users/user/Desktop/
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -977,9 +977,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_10' [c:/Users/user/Desktop/
 	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.43485 mW - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.822999 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_10/synth/blk_mem_gen_10.vhd:230]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_10' (26#1) [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_10/synth/blk_mem_gen_10.vhd:69]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_11' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_11/synth/blk_mem_gen_11.vhd:69]
@@ -1014,9 +1014,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_11' [c:/Users/user/Desktop/
 	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -1028,9 +1028,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_11' [c:/Users/user/Desktop/
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -1053,9 +1053,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_11' [c:/Users/user/Desktop/
 	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.43485 mW - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.822999 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_11/synth/blk_mem_gen_11.vhd:230]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_11' (27#1) [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_11/synth/blk_mem_gen_11.vhd:69]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_12' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_12/synth/blk_mem_gen_12.vhd:69]
@@ -1090,9 +1090,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_12' [c:/Users/user/Desktop/
 	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -1104,9 +1104,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_12' [c:/Users/user/Desktop/
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -1129,9 +1129,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_12' [c:/Users/user/Desktop/
 	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.43485 mW - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.822999 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_12/synth/blk_mem_gen_12.vhd:230]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_12' (28#1) [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_12/synth/blk_mem_gen_12.vhd:69]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_13' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/synth/blk_mem_gen_13.vhd:69]
@@ -1166,9 +1166,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_13' [c:/Users/user/Desktop/
 	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -1180,9 +1180,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_13' [c:/Users/user/Desktop/
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -1205,9 +1205,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_13' [c:/Users/user/Desktop/
 	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.43485 mW - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.822999 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/synth/blk_mem_gen_13.vhd:230]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_13' (29#1) [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/synth/blk_mem_gen_13.vhd:69]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_14' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_14/synth/blk_mem_gen_14.vhd:69]
@@ -1242,9 +1242,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_14' [c:/Users/user/Desktop/
 	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -1256,9 +1256,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_14' [c:/Users/user/Desktop/
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -1281,9 +1281,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_14' [c:/Users/user/Desktop/
 	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.43485 mW - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.822999 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_14/synth/blk_mem_gen_14.vhd:230]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_14' (30#1) [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_14/synth/blk_mem_gen_14.vhd:69]
 INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_15' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/synth/blk_mem_gen_15.vhd:69]
@@ -1318,9 +1318,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_15' [c:/Users/user/Desktop/
 	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 900 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 3600 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_RSTB bound to: 0 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
 	Parameter C_RSTRAM_B bound to: 0 - type: integer 
@@ -1332,9 +1332,9 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_15' [c:/Users/user/Desktop/
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 900 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 3600 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 12 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
 	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
@@ -1357,14 +1357,14 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_15' [c:/Users/user/Desktop/
 	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     1.43485 mW - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.822999 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/synth/blk_mem_gen_15.vhd:230]
 INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_15' (31#1) [c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_15/synth/blk_mem_gen_15.vhd:69]
 INFO: [Synth 8-638] synthesizing module 'hv_cnt_find_block' [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/hv_cnt_find_block.v:3]
 INFO: [Synth 8-256] done synthesizing module 'hv_cnt_find_block' (32#1) [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/hv_cnt_find_block.v:3]
-INFO: [Synth 8-226] default block is never used [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:93]
+INFO: [Synth 8-226] default block is never used [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:97]
 INFO: [Synth 8-638] synthesizing module 'vga_controller' [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/demo2/vga.v:6]
 	Parameter HD bound to: 640 - type: integer 
 	Parameter HF bound to: 16 - type: integer 
@@ -1379,69 +1379,90 @@ INFO: [Synth 8-638] synthesizing module 'vga_controller' [C:/Users/user/Desktop/
 	Parameter hsync_default bound to: 1'b1 
 	Parameter vsync_default bound to: 1'b1 
 INFO: [Synth 8-256] done synthesizing module 'vga_controller' (33#1) [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/demo2/vga.v:6]
-WARNING: [Synth 8-3848] Net data_0_origin in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:23]
-WARNING: [Synth 8-3848] Net data_0_blank in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:23]
-WARNING: [Synth 8-3848] Net data_1 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:23]
-WARNING: [Synth 8-3848] Net data_2 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:23]
-WARNING: [Synth 8-3848] Net data_3 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:23]
-WARNING: [Synth 8-3848] Net data_4 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:23]
-WARNING: [Synth 8-3848] Net data_5 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:23]
-WARNING: [Synth 8-3848] Net data_6 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:23]
-WARNING: [Synth 8-3848] Net data_7 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:23]
-WARNING: [Synth 8-3848] Net data_8 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:23]
-WARNING: [Synth 8-3848] Net data_9 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:23]
-WARNING: [Synth 8-3848] Net data_10 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:23]
-WARNING: [Synth 8-3848] Net data_11 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:23]
-WARNING: [Synth 8-3848] Net data_12 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:23]
-WARNING: [Synth 8-3848] Net data_13 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:23]
-WARNING: [Synth 8-3848] Net data_14 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:23]
-WARNING: [Synth 8-3848] Net data_15 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:23]
+WARNING: [Synth 8-3848] Net data_0_origin in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:24]
+WARNING: [Synth 8-3848] Net data_0_blank in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:24]
+WARNING: [Synth 8-3848] Net data_1 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:24]
+WARNING: [Synth 8-3848] Net data_2 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:24]
+WARNING: [Synth 8-3848] Net data_3 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:24]
+WARNING: [Synth 8-3848] Net data_4 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:24]
+WARNING: [Synth 8-3848] Net data_5 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:24]
+WARNING: [Synth 8-3848] Net data_6 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:24]
+WARNING: [Synth 8-3848] Net data_7 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:24]
+WARNING: [Synth 8-3848] Net data_8 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:24]
+WARNING: [Synth 8-3848] Net data_9 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:24]
+WARNING: [Synth 8-3848] Net data_10 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:24]
+WARNING: [Synth 8-3848] Net data_11 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:24]
+WARNING: [Synth 8-3848] Net data_12 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:24]
+WARNING: [Synth 8-3848] Net data_13 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:24]
+WARNING: [Synth 8-3848] Net data_14 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:24]
+WARNING: [Synth 8-3848] Net data_15 in module/entity VGAsetup does not have driver. [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:24]
 INFO: [Synth 8-256] done synthesizing module 'VGAsetup' (34#1) [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:3]
 INFO: [Synth 8-638] synthesizing module 'SevenSegment' [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/KeyboardSampleCode/SevenSegment.v:1]
 INFO: [Synth 8-256] done synthesizing module 'SevenSegment' (35#1) [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/KeyboardSampleCode/SevenSegment.v:1]
-WARNING: [Synth 8-6014] Unused sequential element print_0_reg was removed.  [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/top.v:82]
-WARNING: [Synth 8-6014] Unused sequential element n_print_0_reg was removed.  [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/top.v:100]
+WARNING: [Synth 8-6014] Unused sequential element print_0_reg was removed.  [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/top.v:83]
+WARNING: [Synth 8-6014] Unused sequential element n_print_0_reg was removed.  [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/top.v:102]
 INFO: [Synth 8-256] done synthesizing module 'top' (36#1) [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/top.v:3]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port SSRA
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port CLKB
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port SSRB
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port ENB
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port REGCEB
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port WEB[0]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port ADDRB[9]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port ADDRB[8]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port ADDRB[7]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port ADDRB[6]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port ADDRB[5]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port ADDRB[4]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port ADDRB[3]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port ADDRB[2]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port ADDRB[1]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port ADDRB[0]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port DINB[17]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port DINB[16]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port DINB[15]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port DINB[14]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port DINB[13]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port DINB[12]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port DINB[11]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port DINB[10]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port DINB[9]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port DINB[8]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port DINB[7]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port DINB[6]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port DINB[5]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port DINB[4]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port DINB[3]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port DINB[2]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port DINB[1]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port DINB[0]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port SLEEP
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port INJECTSBITERR
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port INJECTDBITERR
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port ECCPIPECE
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port ram_rstram_b
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized15 has unconnected port ram_rstreg_b
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port ENB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port REGCEB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port WEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port ADDRB[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port ADDRB[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port ADDRB[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port ADDRB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port ADDRB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port ADDRB[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port ADDRB[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port ADDRB[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port ADDRB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port ADDRB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port ADDRB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port ADDRB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port DINB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port DINB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port DINB[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port DINB[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port DINB[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port DINB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port DINB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port DINB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port DINB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port ram_rstram_b
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized32 has unconnected port ram_rstreg_b
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port ENB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port REGCEB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port WEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port ADDRB[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port ADDRB[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port ADDRB[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port ADDRB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port ADDRB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port ADDRB[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port ADDRB[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port ADDRB[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port ADDRB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port ADDRB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port ADDRB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port ADDRB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port DINB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port DINB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port DINB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port DINB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port ram_rstram_b
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init__parameterized31 has unconnected port ram_rstreg_b
 WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized15 has unconnected port RSTA[0]
 WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized15 has unconnected port WEA[1]
 WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr__parameterized15 has unconnected port REGCEB[0]
@@ -1463,6 +1484,8 @@ WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I
 WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[0]
 WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port SBITERR_I
 WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[11]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[10]
 WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[9]
 WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[8]
 WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[7]
@@ -1479,32 +1502,9 @@ WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port REGCEA
 WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port CLKB
 WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port RSTB
 WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ENB
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port REGCEB
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port WEB[0]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[9]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[8]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[7]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[6]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[5]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[4]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[3]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[2]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[1]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[0]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[11]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[10]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[9]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[8]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[7]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[6]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[5]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[4]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[3]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[2]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[1]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:10:17 ; elapsed = 00:10:20 . Memory (MB): peak = 658.707 ; gain = 405.609
+Finished RTL Elaboration : Time (s): cpu = 00:10:38 ; elapsed = 00:10:40 . Memory (MB): peak = 671.508 ; gain = 418.703
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1513,119 +1513,119 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[11] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[10] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[9] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[8] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[7] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[6] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[5] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[4] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[3] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[2] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[1] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[0] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:49]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[11] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[10] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[9] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[8] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[7] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[6] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[5] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[4] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[3] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[2] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[1] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[0] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[11] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[10] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[9] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[8] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[7] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[6] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[5] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[4] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[3] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[2] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[1] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[0] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[11] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[10] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[9] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[8] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[7] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[6] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[5] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[4] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[3] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[2] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[1] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[0] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[11] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[10] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[9] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[8] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[7] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[6] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[5] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[4] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[3] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[2] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[1] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[0] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[11] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[10] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[9] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[8] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[7] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[6] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[5] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[4] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[3] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[2] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[1] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[0] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[11] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[10] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[9] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[8] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[7] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[6] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[5] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[4] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[3] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[2] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[1] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[0] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[11] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[10] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[9] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[8] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[7] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[6] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[5] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[4] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[3] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[2] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[1] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[0] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_7_inst:dina[11] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:57]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_7_inst:dina[10] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:57]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_7_inst:dina[9] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:57]
-WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_7_inst:dina[8] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:57]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[11] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[10] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[9] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[8] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[7] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[6] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[5] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[4] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[3] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[2] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[1] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_origin_inst:dina[0] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:50]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[11] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[10] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[9] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[8] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[7] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[6] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[5] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[4] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[3] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[2] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[1] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_0_blank_inst:dina[0] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:51]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[11] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[10] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[9] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[8] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[7] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[6] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[5] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[4] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[3] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[2] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[1] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_1_inst:dina[0] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:52]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[11] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[10] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[9] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[8] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[7] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[6] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[5] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[4] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[3] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[2] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[1] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_2_inst:dina[0] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:53]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[11] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[10] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[9] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[8] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[7] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[6] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[5] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[4] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[3] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[2] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[1] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_3_inst:dina[0] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:54]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[11] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[10] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[9] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[8] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[7] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[6] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[5] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[4] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[3] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[2] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[1] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_4_inst:dina[0] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:55]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[11] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[10] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[9] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[8] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[7] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[6] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[5] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[4] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[3] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[2] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[1] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_5_inst:dina[0] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:56]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[11] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:57]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[10] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:57]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[9] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:57]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[8] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:57]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[7] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:57]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[6] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:57]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[5] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:57]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[4] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:57]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[3] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:57]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[2] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:57]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[1] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:57]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_6_inst:dina[0] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:57]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_7_inst:dina[11] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:58]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_7_inst:dina[10] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:58]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_7_inst:dina[9] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:58]
+WARNING: [Synth 8-3295] tying undriven pin blk_mem_gen_7_inst:dina[8] to constant 0 [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/new/VGAsetup.v:58]
 INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:10:18 ; elapsed = 00:10:21 . Memory (MB): peak = 658.707 ; gain = 405.609
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:10:39 ; elapsed = 00:10:41 . Memory (MB): peak = 671.508 ; gain = 418.703
 ---------------------------------------------------------------------------------
-INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/.Xil/Vivado-11080-PC-31/dcp3/KeyboardCtrl_0_in_context.xdc] for cell 'key_de/inst'
-Finished Parsing XDC File [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/.Xil/Vivado-11080-PC-31/dcp3/KeyboardCtrl_0_in_context.xdc] for cell 'key_de/inst'
+Parsing XDC File [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/.Xil/Vivado-10064-PC-57/dcp3/KeyboardCtrl_0_in_context.xdc] for cell 'key_de/inst'
+Finished Parsing XDC File [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/.Xil/Vivado-10064-PC-57/dcp3/KeyboardCtrl_0_in_context.xdc] for cell 'key_de/inst'
 Parsing XDC File [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/constrs_1/imports/Downloads/Basys3_Constraints.xdc]
 Finished Parsing XDC File [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/constrs_1/imports/Downloads/Basys3_Constraints.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/constrs_1/imports/Downloads/Basys3_Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
@@ -1637,24 +1637,24 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 779.551 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 787.156 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:10:35 ; elapsed = 00:10:38 . Memory (MB): peak = 779.551 ; gain = 526.453
+Finished Constraint Validation : Time (s): cpu = 00:10:57 ; elapsed = 00:11:00 . Memory (MB): peak = 787.156 ; gain = 534.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:10:35 ; elapsed = 00:10:38 . Memory (MB): peak = 779.551 ; gain = 526.453
+Finished Loading Part and Timing Information : Time (s): cpu = 00:10:57 ; elapsed = 00:11:00 . Memory (MB): peak = 787.156 ; gain = 534.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for PS2_CLK. (constraint file  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/.Xil/Vivado-11080-PC-31/dcp3/KeyboardCtrl_0_in_context.xdc, line 1).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_CLK. (constraint file  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/.Xil/Vivado-11080-PC-31/dcp3/KeyboardCtrl_0_in_context.xdc, line 2).
-Applied set_property IO_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/.Xil/Vivado-11080-PC-31/dcp3/KeyboardCtrl_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/.Xil/Vivado-11080-PC-31/dcp3/KeyboardCtrl_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for PS2_CLK. (constraint file  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/.Xil/Vivado-10064-PC-57/dcp3/KeyboardCtrl_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_CLK. (constraint file  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/.Xil/Vivado-10064-PC-57/dcp3/KeyboardCtrl_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/.Xil/Vivado-10064-PC-57/dcp3/KeyboardCtrl_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/.Xil/Vivado-10064-PC-57/dcp3/KeyboardCtrl_0_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for _setup/blk_mem_gen_0_blank_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for _setup/blk_mem_gen_0_origin_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for _setup/blk_mem_gen_10_inst. (constraint file  auto generated constraint, line ).
@@ -1674,7 +1674,7 @@ Applied set_property DONT_TOUCH = true for _setup/blk_mem_gen_8_inst. (constrain
 Applied set_property DONT_TOUCH = true for _setup/blk_mem_gen_9_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for key_de/inst. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:10:35 ; elapsed = 00:10:38 . Memory (MB): peak = 779.551 ; gain = 526.453
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:10:57 ; elapsed = 00:11:00 . Memory (MB): peak = 787.156 ; gain = 534.352
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element curr_num_reg was removed.  [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/clock_divider.v:29]
 WARNING: [Synth 8-6014] Unused sequential element curr_num_reg was removed.  [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/Downloads/clock_divider.v:29]
@@ -1708,7 +1708,7 @@ WARNING: [Synth 8-6014] Unused sequential element digit_reg was removed.  [C:/Us
 INFO: [Synth 8-3354] encoded FSM with state register 'digit_reg' using encoding 'sequential' in module 'SevenSegment'
 WARNING: [Synth 8-6014] Unused sequential element digit_reg was removed.  [C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/KeyboardSampleCode/SevenSegment.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:10:37 ; elapsed = 00:10:41 . Memory (MB): peak = 779.551 ; gain = 526.453
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:10:59 ; elapsed = 00:11:03 . Memory (MB): peak = 787.156 ; gain = 534.352
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance '_setup/addr_0_origin' (mem_addr_gen) to '_setup/addr_0_blank'
 INFO: [Synth 8-223] decloning instance '_setup/addr_0_origin' (mem_addr_gen) to '_setup/addr_1'
@@ -1750,7 +1750,7 @@ Detailed RTL Component Info :
 	                6 Bit    Registers := 1     
 	                4 Bit    Registers := 3     
 	                2 Bit    Registers := 3     
-	                1 Bit    Registers := 21    
+	                1 Bit    Registers := 22    
 +---Muxes : 
 	   2 Input    512 Bit        Muxes := 1     
 	  14 Input     64 Bit        Muxes := 4     
@@ -1760,14 +1760,14 @@ Detailed RTL Component Info :
 	  13 Input     64 Bit        Muxes := 4     
 	   2 Input     14 Bit        Muxes := 1     
 	   7 Input     14 Bit        Muxes := 1     
-	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
 	   4 Input     10 Bit        Muxes := 1     
-	   2 Input     10 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 2     
 	   2 Input      6 Bit        Muxes := 1     
 	  22 Input      5 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 5     
 	   5 Input      5 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 9     
+	   2 Input      4 Bit        Muxes := 10    
 	   5 Input      4 Bit        Muxes := 2     
 	   4 Input      4 Bit        Muxes := 1     
 	   7 Input      4 Bit        Muxes := 1     
@@ -1794,7 +1794,7 @@ Detailed RTL Component Info :
 	               14 Bit    Registers := 1     
 	                6 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
 +---Muxes : 
 	  14 Input     64 Bit        Muxes := 4     
 	   5 Input     64 Bit        Muxes := 1     
@@ -1847,7 +1847,7 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     32 Bit       Adders := 1     
 +---Muxes : 
-	   2 Input     10 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
 Module hv_cnt_find_block 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -1866,7 +1866,7 @@ Module VGAsetup
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 7     
+	   2 Input      4 Bit        Muxes := 8     
 Module SevenSegment 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -1991,7 +1991,7 @@ WARNING: [Synth 8-3332] Sequential element (key_down_reg[475]) is unused and wil
 WARNING: [Synth 8-3332] Sequential element (key_down_reg[474]) is unused and will be removed from module KeyboardDecoder.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:10:45 ; elapsed = 00:10:49 . Memory (MB): peak = 779.551 ; gain = 526.453
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:11:06 ; elapsed = 00:11:10 . Memory (MB): peak = 787.156 ; gain = 534.352
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2003,7 +2003,7 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:10:57 ; elapsed = 00:11:01 . Memory (MB): peak = 779.551 ; gain = 526.453
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:11:19 ; elapsed = 00:11:23 . Memory (MB): peak = 788.414 ; gain = 535.609
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2015,7 +2015,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:10:58 ; elapsed = 00:11:02 . Memory (MB): peak = 779.551 ; gain = 526.453
+Finished Technology Mapping : Time (s): cpu = 00:11:20 ; elapsed = 00:11:24 . Memory (MB): peak = 814.973 ; gain = 562.168
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2039,7 +2039,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:10:59 ; elapsed = 00:11:03 . Memory (MB): peak = 779.551 ; gain = 526.453
+Finished IO Insertion : Time (s): cpu = 00:11:20 ; elapsed = 00:11:24 . Memory (MB): peak = 814.973 ; gain = 562.168
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2052,7 +2052,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:10:59 ; elapsed = 00:11:03 . Memory (MB): peak = 779.551 ; gain = 526.453
+Finished Renaming Generated Instances : Time (s): cpu = 00:11:21 ; elapsed = 00:11:25 . Memory (MB): peak = 814.973 ; gain = 562.168
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2064,25 +2064,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:10:59 ; elapsed = 00:11:03 . Memory (MB): peak = 779.551 ; gain = 526.453
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:11:21 ; elapsed = 00:11:25 . Memory (MB): peak = 814.973 ; gain = 562.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:10:59 ; elapsed = 00:11:03 . Memory (MB): peak = 779.551 ; gain = 526.453
+Finished Renaming Generated Ports : Time (s): cpu = 00:11:21 ; elapsed = 00:11:25 . Memory (MB): peak = 814.973 ; gain = 562.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:10:59 ; elapsed = 00:11:03 . Memory (MB): peak = 779.551 ; gain = 526.453
+Finished Handling Custom Attributes : Time (s): cpu = 00:11:21 ; elapsed = 00:11:25 . Memory (MB): peak = 814.973 ; gain = 562.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:10:59 ; elapsed = 00:11:03 . Memory (MB): peak = 779.551 ; gain = 526.453
+Finished Renaming Generated Nets : Time (s): cpu = 00:11:21 ; elapsed = 00:11:25 . Memory (MB): peak = 814.973 ; gain = 562.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -2101,15 +2101,15 @@ Report Cell Usage:
 +------+---------------+------+
 |1     |KeyboardCtrl_0 |     1|
 |2     |BUFG           |     3|
-|3     |CARRY4         |    87|
+|3     |CARRY4         |    91|
 |4     |DSP48E1        |     1|
-|5     |LUT1           |   116|
-|6     |LUT2           |   241|
-|7     |LUT3           |   163|
-|8     |LUT4           |    80|
-|9     |LUT5           |   103|
-|10    |LUT6           |   647|
-|11    |MUXF7          |    79|
+|5     |LUT1           |   123|
+|6     |LUT2           |   280|
+|7     |LUT3           |   184|
+|8     |LUT4           |    65|
+|9     |LUT5           |   148|
+|10    |LUT6           |   643|
+|11    |MUXF7          |   109|
 |12    |RAMB18E1       |     1|
 |13    |RAMB18E1_1     |     1|
 |14    |RAMB18E1_10    |     1|
@@ -2127,173 +2127,224 @@ Report Cell Usage:
 |26    |RAMB18E1_7     |     1|
 |27    |RAMB18E1_8     |     1|
 |28    |RAMB18E1_9     |     1|
-|29    |XORCY          |    33|
-|30    |FDCE           |    99|
-|31    |FDPE           |    33|
-|32    |FDRE           |    56|
-|33    |FDSE           |     2|
-|34    |IBUF           |     2|
-|35    |OBUF           |    25|
+|29    |RAMB36E1       |     1|
+|30    |RAMB36E1_1     |     1|
+|31    |RAMB36E1_10    |     1|
+|32    |RAMB36E1_11    |     1|
+|33    |RAMB36E1_12    |     1|
+|34    |RAMB36E1_13    |     1|
+|35    |RAMB36E1_14    |     1|
+|36    |RAMB36E1_15    |     1|
+|37    |RAMB36E1_16    |     1|
+|38    |RAMB36E1_2     |     1|
+|39    |RAMB36E1_3     |     1|
+|40    |RAMB36E1_4     |     1|
+|41    |RAMB36E1_5     |     1|
+|42    |RAMB36E1_6     |     1|
+|43    |RAMB36E1_7     |     1|
+|44    |RAMB36E1_8     |     1|
+|45    |RAMB36E1_9     |     1|
+|46    |XORCY          |    49|
+|47    |FDCE           |    99|
+|48    |FDPE           |    34|
+|49    |FDRE           |    56|
+|50    |FDSE           |     2|
+|51    |IBUF           |     2|
+|52    |OBUF           |    25|
 +------+---------------+------+
 
 Report Instance Areas: 
 +------+-------------------------------------------------+-----------------------------------------------+------+
 |      |Instance                                         |Module                                         |Cells |
 +------+-------------------------------------------------+-----------------------------------------------+------+
-|1     |top                                              |                                               |  1799|
+|1     |top                                              |                                               |  1960|
 |2     |  _clk_16                                        |clock_divider__parameterized1                  |    36|
-|3     |  _display                                       |SevenSegment                                   |   431|
+|3     |  _display                                       |SevenSegment                                   |   437|
 |4     |  _down                                          |OnePulse                                       |     2|
 |5     |  _left                                          |OnePulse_0                                     |     5|
 |6     |  _right                                         |OnePulse_1                                     |     2|
 |7     |  _rst_1p                                        |OnePulse_2                                     |     2|
 |8     |  _rst_db                                        |debouncer                                      |     6|
-|9     |  _setup                                         |VGAsetup                                       |   424|
-|10    |    blk_mem_gen_0_origin_inst                    |blk_mem_gen_0_origin                           |     1|
-|11    |      U0                                         |blk_mem_gen_v8_3_6                             |     1|
-|12    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth                       |     1|
-|13    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                                |     1|
-|14    |            \valid.cstr                          |blk_mem_gen_generic_cstr                       |     1|
+|9     |  _setup                                         |VGAsetup                                       |   490|
+|10    |    blk_mem_gen_0_origin_inst                    |blk_mem_gen_0_origin                           |     2|
+|11    |      U0                                         |blk_mem_gen_v8_3_6                             |     2|
+|12    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth                       |     2|
+|13    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                                |     2|
+|14    |            \valid.cstr                          |blk_mem_gen_generic_cstr                       |     2|
 |15    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width                         |     1|
 |16    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init                  |     1|
-|17    |    blk_mem_gen_0_blank_inst                     |blk_mem_gen_0_blank                            |     1|
-|18    |      U0                                         |blk_mem_gen_v8_3_6__parameterized1             |     1|
-|19    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized0       |     1|
-|20    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized0                |     1|
-|21    |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized0       |     1|
-|22    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized0         |     1|
-|23    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized0  |     1|
-|24    |    blk_mem_gen_1_inst                           |blk_mem_gen_1                                  |     1|
-|25    |      U0                                         |blk_mem_gen_v8_3_6__parameterized3             |     1|
-|26    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized1       |     1|
-|27    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized1                |     1|
-|28    |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized1       |     1|
-|29    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized1         |     1|
-|30    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized1  |     1|
-|31    |    blk_mem_gen_2_inst                           |blk_mem_gen_2                                  |     1|
-|32    |      U0                                         |blk_mem_gen_v8_3_6__parameterized5             |     1|
-|33    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized2       |     1|
-|34    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized2                |     1|
-|35    |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized2       |     1|
-|36    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized2         |     1|
-|37    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized2  |     1|
-|38    |    blk_mem_gen_3_inst                           |blk_mem_gen_3                                  |     1|
-|39    |      U0                                         |blk_mem_gen_v8_3_6__parameterized7             |     1|
-|40    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized3       |     1|
-|41    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized3                |     1|
-|42    |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized3       |     1|
-|43    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized3         |     1|
-|44    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized3  |     1|
-|45    |    blk_mem_gen_4_inst                           |blk_mem_gen_4                                  |     1|
-|46    |      U0                                         |blk_mem_gen_v8_3_6__parameterized9             |     1|
-|47    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized4       |     1|
-|48    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized4                |     1|
-|49    |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized4       |     1|
-|50    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized4         |     1|
-|51    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized4  |     1|
-|52    |    blk_mem_gen_5_inst                           |blk_mem_gen_5                                  |     1|
-|53    |      U0                                         |blk_mem_gen_v8_3_6__parameterized11            |     1|
-|54    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized5       |     1|
-|55    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized5                |     1|
-|56    |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized5       |     1|
-|57    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized5         |     1|
-|58    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized5  |     1|
-|59    |    blk_mem_gen_6_inst                           |blk_mem_gen_6                                  |     1|
-|60    |      U0                                         |blk_mem_gen_v8_3_6__parameterized13            |     1|
-|61    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized6       |     1|
-|62    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized6                |     1|
-|63    |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized6       |     1|
-|64    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized6         |     1|
-|65    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized6  |     1|
-|66    |    blk_mem_gen_7_inst                           |blk_mem_gen_7                                  |     1|
-|67    |      U0                                         |blk_mem_gen_v8_3_6__parameterized15            |     1|
-|68    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized7       |     1|
-|69    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized7                |     1|
-|70    |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized7       |     1|
-|71    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized7         |     1|
-|72    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized7  |     1|
-|73    |    blk_mem_gen_8_inst                           |blk_mem_gen_8                                  |     1|
-|74    |      U0                                         |blk_mem_gen_v8_3_6__parameterized17            |     1|
-|75    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized8       |     1|
-|76    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized8                |     1|
-|77    |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized8       |     1|
-|78    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized8         |     1|
-|79    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized8  |     1|
-|80    |    blk_mem_gen_9_inst                           |blk_mem_gen_9                                  |     1|
-|81    |      U0                                         |blk_mem_gen_v8_3_6__parameterized19            |     1|
-|82    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized9       |     1|
-|83    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized9                |     1|
-|84    |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized9       |     1|
-|85    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized9         |     1|
-|86    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized9  |     1|
-|87    |    blk_mem_gen_10_inst                          |blk_mem_gen_10                                 |     1|
-|88    |      U0                                         |blk_mem_gen_v8_3_6__parameterized21            |     1|
-|89    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized10      |     1|
-|90    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized10               |     1|
-|91    |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized10      |     1|
-|92    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized10        |     1|
-|93    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized10 |     1|
-|94    |    blk_mem_gen_11_inst                          |blk_mem_gen_11                                 |     1|
-|95    |      U0                                         |blk_mem_gen_v8_3_6__parameterized23            |     1|
-|96    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized11      |     1|
-|97    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized11               |     1|
-|98    |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized11      |     1|
-|99    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized11        |     1|
-|100   |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized11 |     1|
-|101   |    blk_mem_gen_12_inst                          |blk_mem_gen_12                                 |     1|
-|102   |      U0                                         |blk_mem_gen_v8_3_6__parameterized25            |     1|
-|103   |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized12      |     1|
-|104   |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized12               |     1|
-|105   |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized12      |     1|
-|106   |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized12        |     1|
-|107   |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized12 |     1|
-|108   |    blk_mem_gen_13_inst                          |blk_mem_gen_13                                 |     1|
-|109   |      U0                                         |blk_mem_gen_v8_3_6__parameterized27            |     1|
-|110   |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized13      |     1|
-|111   |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized13               |     1|
-|112   |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized13      |     1|
-|113   |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized13        |     1|
-|114   |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized13 |     1|
-|115   |    blk_mem_gen_14_inst                          |blk_mem_gen_14                                 |     1|
-|116   |      U0                                         |blk_mem_gen_v8_3_6__parameterized29            |     1|
-|117   |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized14      |     1|
-|118   |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized14               |     1|
-|119   |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized14      |     1|
-|120   |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized14        |     1|
-|121   |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized14 |     1|
-|122   |    blk_mem_gen_15_inst                          |blk_mem_gen_15                                 |     1|
-|123   |      U0                                         |blk_mem_gen_v8_3_6__parameterized31            |     1|
-|124   |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized15      |     1|
-|125   |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized15               |     1|
-|126   |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized15      |     1|
-|127   |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized15        |     1|
-|128   |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized15 |     1|
-|129   |    _clk_25MHz                                   |clock_divider                                  |     4|
-|130   |    addr_0_origin                                |mem_addr_gen                                   |   166|
-|131   |    vga_inst                                     |vga_controller                                 |   225|
-|132   |  _start                                         |OnePulse_3                                     |     4|
-|133   |  _up                                            |OnePulse_4                                     |     2|
-|134   |  key_de                                         |KeyboardDecoder                                |   526|
-|135   |    op                                           |OnePulse_5                                     |     3|
+|17    |              \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized0         |     1|
+|18    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized0  |     1|
+|19    |    blk_mem_gen_0_blank_inst                     |blk_mem_gen_0_blank                            |     2|
+|20    |      U0                                         |blk_mem_gen_v8_3_6__parameterized1             |     2|
+|21    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized0       |     2|
+|22    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized0                |     2|
+|23    |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized0       |     2|
+|24    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized1         |     1|
+|25    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized1  |     1|
+|26    |              \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized2         |     1|
+|27    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized2  |     1|
+|28    |    blk_mem_gen_1_inst                           |blk_mem_gen_1                                  |     2|
+|29    |      U0                                         |blk_mem_gen_v8_3_6__parameterized3             |     2|
+|30    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized1       |     2|
+|31    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized1                |     2|
+|32    |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized1       |     2|
+|33    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized3         |     1|
+|34    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized3  |     1|
+|35    |              \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized4         |     1|
+|36    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized4  |     1|
+|37    |    blk_mem_gen_2_inst                           |blk_mem_gen_2                                  |     2|
+|38    |      U0                                         |blk_mem_gen_v8_3_6__parameterized5             |     2|
+|39    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized2       |     2|
+|40    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized2                |     2|
+|41    |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized2       |     2|
+|42    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized5         |     1|
+|43    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized5  |     1|
+|44    |              \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized6         |     1|
+|45    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized6  |     1|
+|46    |    blk_mem_gen_3_inst                           |blk_mem_gen_3                                  |     2|
+|47    |      U0                                         |blk_mem_gen_v8_3_6__parameterized7             |     2|
+|48    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized3       |     2|
+|49    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized3                |     2|
+|50    |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized3       |     2|
+|51    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized7         |     1|
+|52    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized7  |     1|
+|53    |              \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized8         |     1|
+|54    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized8  |     1|
+|55    |    blk_mem_gen_4_inst                           |blk_mem_gen_4                                  |     2|
+|56    |      U0                                         |blk_mem_gen_v8_3_6__parameterized9             |     2|
+|57    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized4       |     2|
+|58    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized4                |     2|
+|59    |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized4       |     2|
+|60    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized9         |     1|
+|61    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized9  |     1|
+|62    |              \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized10        |     1|
+|63    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized10 |     1|
+|64    |    blk_mem_gen_5_inst                           |blk_mem_gen_5                                  |     2|
+|65    |      U0                                         |blk_mem_gen_v8_3_6__parameterized11            |     2|
+|66    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized5       |     2|
+|67    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized5                |     2|
+|68    |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized5       |     2|
+|69    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized11        |     1|
+|70    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized11 |     1|
+|71    |              \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized12        |     1|
+|72    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized12 |     1|
+|73    |    blk_mem_gen_6_inst                           |blk_mem_gen_6                                  |     2|
+|74    |      U0                                         |blk_mem_gen_v8_3_6__parameterized13            |     2|
+|75    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized6       |     2|
+|76    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized6                |     2|
+|77    |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized6       |     2|
+|78    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized13        |     1|
+|79    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized13 |     1|
+|80    |              \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized14        |     1|
+|81    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized14 |     1|
+|82    |    blk_mem_gen_7_inst                           |blk_mem_gen_7                                  |     2|
+|83    |      U0                                         |blk_mem_gen_v8_3_6__parameterized15            |     2|
+|84    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized7       |     2|
+|85    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized7                |     2|
+|86    |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized7       |     2|
+|87    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized15        |     1|
+|88    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized15 |     1|
+|89    |              \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized16        |     1|
+|90    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized16 |     1|
+|91    |    blk_mem_gen_8_inst                           |blk_mem_gen_8                                  |     2|
+|92    |      U0                                         |blk_mem_gen_v8_3_6__parameterized17            |     2|
+|93    |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized8       |     2|
+|94    |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized8                |     2|
+|95    |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized8       |     2|
+|96    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized17        |     1|
+|97    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized17 |     1|
+|98    |              \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized18        |     1|
+|99    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized18 |     1|
+|100   |    blk_mem_gen_9_inst                           |blk_mem_gen_9                                  |     2|
+|101   |      U0                                         |blk_mem_gen_v8_3_6__parameterized19            |     2|
+|102   |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized9       |     2|
+|103   |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized9                |     2|
+|104   |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized9       |     2|
+|105   |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized19        |     1|
+|106   |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized19 |     1|
+|107   |              \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized20        |     1|
+|108   |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized20 |     1|
+|109   |    blk_mem_gen_10_inst                          |blk_mem_gen_10                                 |     2|
+|110   |      U0                                         |blk_mem_gen_v8_3_6__parameterized21            |     2|
+|111   |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized10      |     2|
+|112   |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized10               |     2|
+|113   |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized10      |     2|
+|114   |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized21        |     1|
+|115   |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized21 |     1|
+|116   |              \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized22        |     1|
+|117   |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized22 |     1|
+|118   |    blk_mem_gen_11_inst                          |blk_mem_gen_11                                 |     2|
+|119   |      U0                                         |blk_mem_gen_v8_3_6__parameterized23            |     2|
+|120   |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized11      |     2|
+|121   |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized11               |     2|
+|122   |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized11      |     2|
+|123   |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized23        |     1|
+|124   |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized23 |     1|
+|125   |              \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized24        |     1|
+|126   |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized24 |     1|
+|127   |    blk_mem_gen_12_inst                          |blk_mem_gen_12                                 |     2|
+|128   |      U0                                         |blk_mem_gen_v8_3_6__parameterized25            |     2|
+|129   |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized12      |     2|
+|130   |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized12               |     2|
+|131   |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized12      |     2|
+|132   |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized25        |     1|
+|133   |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized25 |     1|
+|134   |              \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized26        |     1|
+|135   |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized26 |     1|
+|136   |    blk_mem_gen_13_inst                          |blk_mem_gen_13                                 |     2|
+|137   |      U0                                         |blk_mem_gen_v8_3_6__parameterized27            |     2|
+|138   |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized13      |     2|
+|139   |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized13               |     2|
+|140   |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized13      |     2|
+|141   |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized27        |     1|
+|142   |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized27 |     1|
+|143   |              \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized28        |     1|
+|144   |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized28 |     1|
+|145   |    blk_mem_gen_14_inst                          |blk_mem_gen_14                                 |     2|
+|146   |      U0                                         |blk_mem_gen_v8_3_6__parameterized29            |     2|
+|147   |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized14      |     2|
+|148   |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized14               |     2|
+|149   |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized14      |     2|
+|150   |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized29        |     1|
+|151   |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized29 |     1|
+|152   |              \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized30        |     1|
+|153   |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized30 |     1|
+|154   |    blk_mem_gen_15_inst                          |blk_mem_gen_15                                 |     2|
+|155   |      U0                                         |blk_mem_gen_v8_3_6__parameterized31            |     2|
+|156   |        inst_blk_mem_gen                         |blk_mem_gen_v8_3_6_synth__parameterized15      |     2|
+|157   |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized15               |     2|
+|158   |            \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized15      |     2|
+|159   |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized31        |     1|
+|160   |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized31 |     1|
+|161   |              \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized32        |     1|
+|162   |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized32 |     1|
+|163   |    _clk_25MHz                                   |clock_divider                                  |     4|
+|164   |    addr_0_origin                                |mem_addr_gen                                   |   215|
+|165   |    vga_inst                                     |vga_controller                                 |   225|
+|166   |  _start                                         |OnePulse_3                                     |     6|
+|167   |  _up                                            |OnePulse_4                                     |     2|
+|168   |  key_de                                         |KeyboardDecoder                                |   587|
+|169   |    op                                           |OnePulse_5                                     |     3|
 +------+-------------------------------------------------+-----------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:10:59 ; elapsed = 00:11:03 . Memory (MB): peak = 779.551 ; gain = 526.453
+Finished Writing Synthesis Report : Time (s): cpu = 00:11:21 ; elapsed = 00:11:25 . Memory (MB): peak = 814.973 ; gain = 562.168
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 807 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:10:48 . Memory (MB): peak = 779.551 ; gain = 405.609
-Synthesis Optimization Complete : Time (s): cpu = 00:10:59 ; elapsed = 00:11:03 . Memory (MB): peak = 779.551 ; gain = 526.453
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:11:09 . Memory (MB): peak = 814.973 ; gain = 446.520
+Synthesis Optimization Complete : Time (s): cpu = 00:11:21 ; elapsed = 00:11:25 . Memory (MB): peak = 814.973 ; gain = 562.168
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 140 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 177 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 33 instances were transformed.
-  (MUXCY,XORCY) => CARRY4: 33 instances
+  A total of 49 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 49 instances
 
 126 Infos, 333 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:11:03 ; elapsed = 00:11:09 . Memory (MB): peak = 779.551 ; gain = 541.914
+synth_design: Time (s): cpu = 00:11:26 ; elapsed = 00:11:34 . Memory (MB): peak = 814.973 ; gain = 577.191
 INFO: [Common 17-1381] The checkpoint 'C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.runs/synth_1/top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 779.551 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Jan  6 21:51:44 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 814.973 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jan  9 17:10:59 2018...

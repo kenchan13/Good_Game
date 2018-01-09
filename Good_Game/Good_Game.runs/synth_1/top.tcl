@@ -34,6 +34,22 @@ add_files C:/Users/user/Desktop/Good_Game/Good_Game/Pictrans/12.coe
 add_files C:/Users/user/Desktop/Good_Game/Good_Game/Pictrans/13.coe
 add_files C:/Users/user/Desktop/Good_Game/Good_Game/Pictrans/14.coe
 add_files C:/Users/user/Desktop/Good_Game/Good_Game/Pictrans/15.coe
+add_files c:/Users/user/Desktop/Good_Game/Good_Game/new_Pictrans/0.coe
+add_files c:/Users/user/Desktop/Good_Game/Good_Game/new_Pictrans/1.coe
+add_files c:/Users/user/Desktop/Good_Game/Good_Game/new_Pictrans/3.coe
+add_files c:/Users/user/Desktop/Good_Game/Good_Game/new_Pictrans/4.coe
+add_files c:/Users/user/Desktop/Good_Game/Good_Game/new_Pictrans/6.coe
+add_files c:/Users/user/Desktop/Good_Game/Good_Game/new_Pictrans/7.coe
+add_files c:/Users/user/Desktop/Good_Game/Good_Game/new_Pictrans/11.coe
+add_files c:/Users/user/Desktop/Good_Game/Good_Game/new_Pictrans/12.coe
+add_files c:/Users/user/Desktop/Good_Game/Good_Game/new_Pictrans/13.coe
+add_files c:/Users/user/Desktop/Good_Game/Good_Game/new_Pictrans/15.coe
+add_files c:/Users/user/Desktop/Good_Game/Good_Game/new_Pictrans/2.coe
+add_files c:/Users/user/Desktop/Good_Game/Good_Game/new_Pictrans/8.coe
+add_files c:/Users/user/Desktop/Good_Game/Good_Game/new_Pictrans/9.coe
+add_files c:/Users/user/Desktop/Good_Game/Good_Game/new_Pictrans/10.coe
+add_files c:/Users/user/Desktop/Good_Game/Good_Game/new_Pictrans/14.coe
+add_files c:/Users/user/Desktop/Good_Game/Good_Game/new_Pictrans/5.coe
 read_verilog -library xil_defaultlib {
   C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/KeyboardSampleCode/KeyboardDecoder.v
   C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/imports/KeyboardSampleCode/OnePulse.v
@@ -54,9 +70,9 @@ read_ip -quiet C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_
 set_property used_in_implementation false [get_files -all c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_14/blk_mem_gen_14_ooc.xdc]
 set_property is_locked true [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_14/blk_mem_gen_14.xci]
 
-read_ip -quiet c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/blk_mem_gen_13.xci
+read_ip -quiet C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/blk_mem_gen_13.xci
 set_property used_in_implementation false [get_files -all c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/blk_mem_gen_13_ooc.xdc]
-set_property is_locked true [get_files c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/blk_mem_gen_13.xci]
+set_property is_locked true [get_files C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_13/blk_mem_gen_13.xci]
 
 read_ip -quiet C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_12/blk_mem_gen_12.xci
 set_property used_in_implementation false [get_files -all c:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/sources_1/ip/blk_mem_gen_12/blk_mem_gen_12_ooc.xdc]
