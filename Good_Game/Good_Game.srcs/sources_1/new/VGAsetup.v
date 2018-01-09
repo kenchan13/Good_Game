@@ -99,15 +99,15 @@ module VGAsetup(
                     if(h_cnt < 80 || h_cnt >= 560) {vgaRed, vgaGreen, vgaBlue} = 12'h0; 
                     else {vgaRed, vgaGreen, vgaBlue} = finished ? pixel_0_origin : pixel_0_blank;
                 end
-                4'd1: {vgaRed, vgaGreen, vgaBlue} = pixel_1;
-                4'd2: {vgaRed, vgaGreen, vgaBlue} = pixel_2;
-                4'd3: {vgaRed, vgaGreen, vgaBlue} = pixel_3;
-                4'd4: {vgaRed, vgaGreen, vgaBlue} = pixel_4;
-                4'd5: {vgaRed, vgaGreen, vgaBlue} = pixel_5;
-                4'd6: {vgaRed, vgaGreen, vgaBlue} = pixel_6;
-                4'd7: {vgaRed, vgaGreen, vgaBlue} = pixel_7;
-                4'd8: {vgaRed, vgaGreen, vgaBlue} = pixel_8;
-                4'd9: {vgaRed, vgaGreen, vgaBlue} = pixel_9;
+                4'd1:  {vgaRed, vgaGreen, vgaBlue} = pixel_1;
+                4'd2:  {vgaRed, vgaGreen, vgaBlue} = pixel_2;
+                4'd3:  {vgaRed, vgaGreen, vgaBlue} = pixel_3;
+                4'd4:  {vgaRed, vgaGreen, vgaBlue} = pixel_4;
+                4'd5:  {vgaRed, vgaGreen, vgaBlue} = pixel_5;
+                4'd6:  {vgaRed, vgaGreen, vgaBlue} = pixel_6;
+                4'd7:  {vgaRed, vgaGreen, vgaBlue} = pixel_7;
+                4'd8:  {vgaRed, vgaGreen, vgaBlue} = pixel_8;
+                4'd9:  {vgaRed, vgaGreen, vgaBlue} = pixel_9;
                 4'd10: {vgaRed, vgaGreen, vgaBlue} = pixel_10;
                 4'd11: {vgaRed, vgaGreen, vgaBlue} = pixel_11;
                 4'd12: {vgaRed, vgaGreen, vgaBlue} = pixel_12;

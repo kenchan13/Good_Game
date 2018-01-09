@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date             : Tue Jan  9 17:12:08 2018
-| Host             : PC-57 running 64-bit Service Pack 1  (build 7601)
+| Date             : Tue Jan  9 20:48:40 2018
+| Host             : DESKTOP-21QJ68E running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
 | Device           : xc7a35tcpg236-1
@@ -31,7 +31,7 @@ Table of Contents
 
 +--------------------------+-------+
 | Total On-Chip Power (W)  | 0.118 |
-| Dynamic (W)              | 0.045 |
+| Dynamic (W)              | 0.044 |
 | Device Static (W)        | 0.073 |
 | Effective TJA (C/W)      | 5.0   |
 | Max Ambient (C)          | 84.4  |
@@ -49,11 +49,11 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.003 |     2211 |       --- |             --- |
+| Clocks         |     0.001 |        3 |       --- |             --- |
+| Slice Logic    |     0.003 |     2210 |       --- |             --- |
 |   LUT as Logic |     0.002 |     1373 |     20800 |            6.60 |
 |   CARRY4       |    <0.001 |      144 |      8150 |            1.77 |
-|   Register     |    <0.001 |      278 |     41600 |            0.67 |
+|   Register     |    <0.001 |      277 |     41600 |            0.67 |
 |   BUFG         |    <0.001 |        2 |        32 |            6.25 |
 |   F7/F8 Muxes  |    <0.001 |      110 |     32600 |            0.34 |
 |   Others       |     0.000 |      151 |       --- |             --- |
@@ -141,7 +141,7 @@ Table of Contents
 +------------------------------------------------+-----------+
 | Name                                           | Power (W) |
 +------------------------------------------------+-----------+
-| top                                            |     0.045 |
+| top                                            |     0.044 |
 |   _clk_16                                      |    <0.001 |
 |   _display                                     |    <0.001 |
 |   _down                                        |     0.000 |
@@ -309,8 +309,8 @@ Table of Contents
 |   _start                                       |    <0.001 |
 |   _up                                          |     0.000 |
 |   key_de                                       |     0.002 |
-|     inst                                       |     0.002 |
-|       inst                                     |     0.002 |
+|     inst                                       |     0.001 |
+|       inst                                     |     0.001 |
 |         Ps2Interface_i                         |     0.001 |
 |           IOBUF_inst_0                         |    <0.001 |
 |           IOBUF_inst_1                         |    <0.001 |

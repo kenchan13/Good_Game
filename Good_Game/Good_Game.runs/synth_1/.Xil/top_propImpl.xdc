@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/user/Desktop/Good_Game/Good_Game/Good_Game.srcs/constrs_1/imports/Downloads/Basys3_Constraints.xdc rfile:../../../Good_Game.srcs/constrs_1/imports/Downloads/Basys3_Constraints.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/AquaDragon/Desktop/Good_Game/Good_Game/Good_Game.srcs/constrs_1/imports/Downloads/Basys3_Constraints.xdc rfile:../../../Good_Game.srcs/constrs_1/imports/Downloads/Basys3_Constraints.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports clk]
 set_property src_info {type:XDC file:1 line:83 export:INPUT save:INPUT read:READ} [current_design]

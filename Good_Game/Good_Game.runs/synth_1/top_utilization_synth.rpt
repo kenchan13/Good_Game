@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Tue Jan  9 17:10:59 2018
-| Host         : PC-57 running 64-bit Service Pack 1  (build 7601)
+| Date         : Tue Jan  9 20:46:23 2018
+| Host         : DESKTOP-21QJ68E running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
 | Design       : top
 | Device       : 7a35tcpg236-1
@@ -33,8 +33,8 @@ Table of Contents
 | Slice LUTs*             | 1300 |     0 |     20800 |  6.25 |
 |   LUT as Logic          | 1300 |     0 |     20800 |  6.25 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |  191 |     0 |     41600 |  0.46 |
-|   Register as Flip Flop |  191 |     0 |     41600 |  0.46 |
+| Slice Registers         |  190 |     0 |     41600 |  0.46 |
+|   Register as Flip Flop |  190 |     0 |     41600 |  0.46 |
 |   Register as Latch     |    0 |     0 |     41600 |  0.00 |
 | F7 Muxes                |  109 |     0 |     16300 |  0.67 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
@@ -55,7 +55,7 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 34    |          Yes |           - |          Set |
-| 99    |          Yes |           - |        Reset |
+| 98    |          Yes |           - |        Reset |
 | 2     |          Yes |         Set |            - |
 | 56    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -159,7 +159,7 @@ Table of Contents
 | CARRY4   |  140 |          CarryLogic |
 | LUT1     |  123 |                 LUT |
 | MUXF7    |  109 |               MuxFx |
-| FDCE     |   99 |        Flop & Latch |
+| FDCE     |   98 |        Flop & Latch |
 | LUT4     |   65 |                 LUT |
 | FDRE     |   56 |        Flop & Latch |
 | FDPE     |   34 |        Flop & Latch |
