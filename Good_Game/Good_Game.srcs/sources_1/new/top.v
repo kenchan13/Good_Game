@@ -51,7 +51,6 @@ module top(
 
     reg [5:0] curr_state, next_state;
     reg [13:0] steps, n_steps;
-    reg print_0, n_print_0; // print blank or original part
     wire cmd_move = up || left || down || right;
     
     reg [63:0] game_map, n_game_map;
@@ -70,7 +69,8 @@ module top(
         03 02 01 00
         */    
     
-    reg finished, show_original;
+    reg show_original;
+    wire finished = game_map=={4'd15, 4'd14, 4'd13, 4'd12, 4'd11, 4'd10, 4'd9, 4'd8, 4'd7, 4'd6, 4'd5, 4'd4, 4'd3, 4'd2, 4'd1, 4'd0};
     
     always@(posedge clk_16 or posedge rst_1p)begin
         if(rst_1p)begin
@@ -79,16 +79,12 @@ module top(
             blank_pos <= 4'd0;
             game_map <= {4'd8, 4'd12, 4'd14, 4'd7, 4'd4, 4'd10, 4'd5, 4'd11, 4'd6, 4'd3, 4'd2, 4'd1, 4'd9, 4'd13, 4'd15, 4'd0};
             show_original <= 1'b1;
-            finished <= 1'b0;
-            print_0 <= 1'b0;
         end else begin
             curr_state <= next_state;
             steps <= n_steps;
             blank_pos <= n_blank_pos;
             game_map <= n_game_map;
             show_original <= curr_state==INIT || curr_state==RANDOM || curr_state==WIN;
-            finished <= (game_map=={4'd15, 4'd14, 4'd13, 4'd12, 4'd11, 4'd10, 4'd9, 4'd8, 4'd7, 4'd6, 4'd5, 4'd4, 4'd3, 4'd2, 4'd1, 4'd0});
-            print_0 <= n_print_0;
         end    
     end
     
@@ -99,7 +95,6 @@ module top(
                 n_steps = 14'd0;
                 n_blank_pos = 4'd0;
                 n_game_map = {4'd8, 4'd12, 4'd14, 4'd7, 4'd4, 4'd10, 4'd5, 4'd11, 4'd6, 4'd3, 4'd2, 4'd1, 4'd9, 4'd13, 4'd15, 4'd0};
-                n_print_0 = 1'b0;
             end
             RANDOM:begin
                 if(start) next_state = PLAY;
@@ -107,7 +102,6 @@ module top(
                 n_steps = 14'd0;
                 n_blank_pos = 4'd0;
                 n_game_map = {game_map[59:4], game_map[63:60], game_map[3:0]};
-                n_print_0 = 1'b0;
             end
             PLAY:begin
                 if(cmd_move) next_state = MOVE;
@@ -115,7 +109,6 @@ module top(
                 n_steps = steps;
                 n_blank_pos = blank_pos;
                 n_game_map = game_map;
-                n_print_0 = 1'b0;
             end
             MOVE:begin
                 if(last_change==W_CODES)begin // UP
@@ -124,7 +117,6 @@ module top(
                         n_steps = steps;
                         n_blank_pos = blank_pos;
                         n_game_map = game_map;
-                        n_print_0 = 1'b0;
                     end else begin
                         next_state = CHECK;
                         n_steps = steps;
@@ -144,7 +136,6 @@ module top(
                             4'd4:  n_game_map = {game_map[63:20], game_map[3:0]  , game_map[15:4] , game_map[19:16]                };
                             default: n_game_map = game_map;
                         endcase
-                        n_print_0 = 1'b0;
                     end
                 end else if(last_change==A_CODES)begin // LEFT
                     if(blank_pos==4'd12 || blank_pos==4'd8 || blank_pos==4'd4 || blank_pos==4'd0)begin
@@ -152,7 +143,6 @@ module top(
                         n_steps = steps;
                         n_blank_pos = blank_pos;
                         n_game_map = game_map;
-                        n_print_0 = 1'b0;
                     end else begin
                         next_state = CHECK;
                         n_steps = steps;
@@ -175,7 +165,6 @@ module top(
                             4'd1:  n_game_map = {game_map[63:8] , game_map[3:0]  , game_map[7:4]                  };
                             default: n_game_map = game_map;
                         endcase
-                        n_print_0 = 1'b0;
                     end 
                 end else if(last_change==S_CODES)begin // DOWN
                     if(blank_pos==4'd15 || blank_pos==4'd14 || blank_pos==4'd13 || blank_pos==4'd12)begin
@@ -183,7 +172,6 @@ module top(
                         n_steps = steps;
                         n_blank_pos = blank_pos;
                         n_game_map = game_map;
-                        n_print_0 = 1'b0;
                     end else begin
                         next_state = CHECK;
                         n_steps = steps;
@@ -203,7 +191,6 @@ module top(
                             4'd0:  n_game_map = {game_map[63:20], game_map[3:0]  , game_map[15:4] , game_map[19:16]                };
                             default: n_game_map = game_map;
                         endcase
-                        n_print_0 = 1'b0;
                     end
                 end else if(last_change==D_CODES)begin // RIGHT
                     if(blank_pos==4'd15 || blank_pos==4'd11 || blank_pos==4'd7 || blank_pos==4'd3)begin
@@ -211,7 +198,6 @@ module top(
                         n_steps = steps;
                         n_blank_pos = blank_pos;
                         n_game_map = game_map;
-                        n_print_0 = 1'b0;
                     end else begin
                         next_state = CHECK;
                         n_steps = steps;
@@ -234,23 +220,19 @@ module top(
                             4'd0:  n_game_map = {game_map[63:8] , game_map[3:0]  , game_map[7:4]                  };
                             default: n_game_map = game_map;
                         endcase
-                        n_print_0 = 1'b0;
                     end              
                 end else begin
                     next_state = PLAY;
                     n_steps = steps;
                     n_blank_pos = blank_pos;
                     n_game_map = game_map;  
-                    n_print_0 = 1'b0;     
                 end
             end
             CHECK:begin // check if player win
                 if(finished)begin
                     next_state = WIN;
-                    n_print_0 = 1'b1;
                 end else begin
                     next_state = PLAY;
-                    n_print_0 = 1'b0;
                 end
                 if(steps<14'd9999) n_steps = steps + 14'd1;
                 else n_steps = 14'd0; // Who would play over 10000 moves tho
@@ -262,14 +244,12 @@ module top(
                 n_steps = steps;
                 n_blank_pos = blank_pos;
                 n_game_map = {4'd15, 4'd14, 4'd13, 4'd12, 4'd11, 4'd10, 4'd9, 4'd8, 4'd7, 4'd6, 4'd5, 4'd4, 4'd3, 4'd2, 4'd1, 4'd0};
-                n_print_0 = 1'b1;
             end
             default:begin
                 next_state = INIT;
                 n_steps = 14'd0;
                 n_blank_pos = 4'd0;
                 n_game_map = game_map;
-                n_print_0 = 1'b0;
             end
         endcase
     end
